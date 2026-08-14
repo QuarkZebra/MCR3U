@@ -52,10 +52,10 @@ GitHub Pages redeploys automatically within a minute or two.
   site as it will appear on that day.
 - Theme toggle is remembered per student (localStorage), defaulting to their
   system preference.
-- The background is decorative canvas art: young parent functions grow up
-  slowly — a few table-of-values points appear first, then the curve gently
-  connects them, then it earns its label — and the whole curve literally grows
-  bigger for as long as it lives. Clicking empty space plots a point.
-  It disappears for users with reduced-motion enabled.
+- The background is decorative canvas art: baby parent functions fade in
+  tiny and grow at a steady rate — a slow continuous zoom — until they
+  outgrow the page and drift away. No dots, labels, or click effects; curves
+  just bend gently away from the cursor. It goes static for users with
+  reduced-motion enabled.
 - Check-in days are deliberately listed as plain "Practice" — check-ins are a
   surprise.
