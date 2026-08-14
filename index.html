@@ -437,10 +437,11 @@ render();renderHero();syncBtn();
 /* ══════════ Animated background: functions just starting to develop ══════════
    Young parent functions grow up slowly, the way a Gr 11 student meets
    them: first a few points appear one at a time (a table of values),
-   then a curve gently connects the dots, and only once it's fully
-   grown does it earn its label. No sums, no intersections yet — that's
-   next year. Curves dodge the cursor; clicking empty space plots a
-   point with its coordinates. */
+   then a curve gently connects the dots — and the whole thing starts
+   small and literally grows bigger for as long as it lives. Only once
+   fully drawn does it earn its label. No sums, no intersections yet —
+   that's next year. Curves dodge the cursor; clicking empty space
+   plots a point with its coordinates. */
 const cv=document.getElementById("bg"),cx=cv.getContext("2d");
 let W,H,DPR,RGB="139,92,246",ALPHA=.1;
 const reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -466,23 +467,33 @@ const FNS=[
   {label:"y = sin x", f:u=>Math.sin(u*Math.PI*3)},
   {label:"y = 2ˣ",    f:u=>Math.pow(2,(u*2-1)*3)/4-.9},
 ];
-/* slow lifecycle: dots → curve → label → long hold → gentle fade */
+/* slow lifecycle: dots → curve → label → long hold → gentle fade,
+   growing in size the whole time (G0 → G1 of full size) */
 const N_CURVES=4,DOT_N=8,DOT_INT=520,DOT_RAMP=700;
 const DOTS_T=DOT_N*DOT_INT+DOT_RAMP,T_DRAW=6800,T_FADE=4000;
+const G0=.4,G1=1.35;
 const easeIO=p=>p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;
 const curves=[];
 function spawn(i,now,stagger){
   const used=curves.filter((c,j)=>c&&j!==i).map(c=>c.fn.label);
   const pool=FNS.filter(f=>!used.includes(f.label));
   const fn=pool[Math.floor(Math.random()*pool.length)]||FNS[0];
-  const w=W*(.3+Math.random()*.32);
-  return{fn,x0:Math.random()*(W-w),w,
-    cy:H*(.1+Math.random()*.8),
-    scale:38+Math.random()*52,
+  const w0=W*(.28+Math.random()*.3);
+  const wMax=w0*G1;
+  return{fn,w0,cx:wMax/2+Math.random()*Math.max(W-wMax,1),
+    cy:H*(.14+Math.random()*.72),
+    scale0:34+Math.random()*46,
     flip:Math.random()<.5?-1:1,
     born:now+(stagger||0),
-    hold:DOTS_T+T_DRAW+8000+Math.random()*7000,
+    hold:DOTS_T+T_DRAW+9000+Math.random()*7000,
     seed:Math.random()*6.28};
+}
+/* steady growth across the whole visible life */
+function growOf(c,t){
+  if(c.fixed)return 1;
+  const age=t-c.born;
+  if(age<=0)return G0;
+  return G0+(G1-G0)*Math.min(age/(c.hold+T_FADE),1);
 }
 let mx=-9999,my=-9999;
 window.addEventListener("mousemove",e=>{mx=e.clientX;my=e.clientY});
@@ -500,8 +511,8 @@ function bend(x,yBase){
   return (dy>=0?1:-1)*s*36;
 }
 function curveY(c,x,t){
-  const u=(x-c.x0)/c.w;
-  let y=c.cy - c.fn.f(u)*c.scale*c.flip;
+  const u=(x-c._x0)/c._w;
+  let y=c.cy - c.fn.f(u)*c._scale*c.flip;
   y+=Math.sin(t*.0005 + x*.008 + c.seed)*2.5;
   return y+bend(x,y);
 }
@@ -515,15 +526,18 @@ function drawCurve(c,t){
   if(age<0)return true;
   if(age>c.hold+T_FADE)return false;
   const fade=fadeOf(c,t);
+  /* current size: the curve literally grows as it lives */
+  const g=growOf(c,t);
+  c._w=c.w0*g;c._x0=c.cx-c._w/2;c._scale=c.scale0*g;
   const lineAge=age-DOTS_T;
   const p=lineAge>0?easeIO(Math.min(lineAge/T_DRAW,1)):0;
-  const xEnd=c.x0+c.w*p;
+  const xEnd=c._x0+c._w*p;
   /* 1 — a table of values: points plotted one at a time */
   for(let i=0;i<DOT_N;i++){
     const dotAge=age-i*DOT_INT;
     if(dotAge<=0)continue;
     const ramp=Math.min(dotAge/DOT_RAMP,1);
-    const xd=c.x0+c.w*((i+.5)/DOT_N);
+    const xd=c._x0+c._w*((i+.5)/DOT_N);
     const yd=curveY(c,xd,t);
     const passed=p>0&&xd<=xEnd;      /* the curve has reached this dot */
     const a=(passed?.28:.5)*ramp*fade;
@@ -536,12 +550,12 @@ function drawCurve(c,t){
   if(p>0){
     cx.beginPath();
     let penY=0;
-    for(let x=c.x0;x<=xEnd;x+=6){
+    for(let x=c._x0;x<=xEnd;x+=6){
       penY=curveY(c,x,t);
-      x===c.x0?cx.moveTo(x,penY):cx.lineTo(x,penY);
+      x===c._x0?cx.moveTo(x,penY):cx.lineTo(x,penY);
     }
     cx.strokeStyle=`rgba(${RGB},${ALPHA*1.6*fade*(.55+.45*p)})`;
-    cx.lineWidth=2.2;cx.lineCap="round";
+    cx.lineWidth=1.3+g*.9;cx.lineCap="round";
     cx.stroke();
     if(p<1){
       cx.beginPath();cx.arc(xEnd,penY,3,0,Math.PI*2);
@@ -549,10 +563,10 @@ function drawCurve(c,t){
       cx.shadowColor=`rgba(${RGB},.8)`;cx.shadowBlur=12;
       cx.fill();cx.shadowBlur=0;
     }else{
-      /* 3 — fully grown: the function earns its name */
+      /* 3 — fully drawn: the function earns its name (and keeps growing) */
       const la=Math.min((lineAge-T_DRAW)/900,1);
-      const lx=Math.min(Math.max(xEnd-c.w*.22,8),W-110);
-      const ly=Math.min(Math.max(curveY(c,xEnd-c.w*.22,t)-12,16),H-8);
+      const lx=Math.min(Math.max(xEnd-c._w*.22,8),W-110);
+      const ly=Math.min(Math.max(curveY(c,xEnd-c._w*.22,t)-12,16),H-8);
       cx.font="italic "+MONO;
       cx.fillStyle=`rgba(${RGB},${Math.min(ALPHA*3.4,.34)*la*fade})`;
       cx.fillText(c.fn.label,lx,ly);
@@ -589,7 +603,7 @@ sizeBg();bgColors();
 for(let i=0;i<N_CURVES;i++)curves.push(spawn(i,performance.now(),i*2600));
 window.addEventListener("resize",()=>{sizeBg();if(reduce)drawStatic()});
 function drawStatic(){
-  curves.forEach(c=>{c.born=-1e9;c.hold=1e12});
+  curves.forEach(c=>{c.born=-1e9;c.hold=1e12;c.fixed=true});
   draw(0);
 }
 if(reduce)drawStatic();else requestAnimationFrame(loop);

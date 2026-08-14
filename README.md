@@ -54,5 +54,8 @@ GitHub Pages redeploys automatically within a minute or two.
   system preference.
 - The background is decorative canvas art: young parent functions grow up
   slowly — a few table-of-values points appear first, then the curve gently
-  connects them, then it earns its label. Clicking empty space plots a point.
+  connects them, then it earns its label — and the whole curve literally grows
+  bigger for as long as it lives. Clicking empty space plots a point.
   It disappears for users with reduced-motion enabled.
+- Check-in days are deliberately listed as plain "Practice" — check-ins are a
+  surprise.
