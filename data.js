@@ -155,10 +155,10 @@ const COURSE = {
     {d:5, iso:"2026-10-28", topic:"Transformations of Exponential Functions", num:"4.6",
       note:D("1Va-ECeEozxg5HOER1SCRG3Le8RzhptgF"),
       ans:"", /* key: D("1LxEVrFwZkfRmlHt3DFNUSMRKBknzgwZr") */ extras:[]},
+    /* d6 handout deliberately NOT posted — group investigation, no reading ahead.
+       Handout: D("1EYNFOFAW6a8qSsYaqyyRz7tv-6aCduFS") */
     {d:6, iso:"2026-10-29", topic:"Modelling Investigation",
-      noteLabel:"Investigation Handout",
-      note:D("1EYNFOFAW6a8qSsYaqyyRz7tv-6aCduFS"),
-      ans:"", /* no key — investigation */ extras:[]},
+      noteLabel:"Investigation Handout", note:"", ans:"", extras:[]},
     {d:7, iso:"2026-10-30", topic:"Applications: Growth & Decay", num:"4.7",
       note:D("1qF2JAHROy1_F7iGdrPPtE51Wsgv6KFKY"),
       ans:"", /* key: D("1Yg7cNFkXrPgKrvKZwR6TvvecXbRTS7j_") */ extras:[]},
