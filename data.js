@@ -39,7 +39,10 @@ const COURSE = {
   /* ── UNIT 1 ─────────────────────────────────────────────── */
   {name:"Intro to Functions", days:[
     {d:1, iso:"2026-09-01", topic:"Course Intro & Diagnostic", note:"", ans:"", extras:[
-      ["Ms Havrot: Functions 11 (full course playlist)","https://www.youtube.com/playlist?list=PLGinkJ_ZMO2HB1X2BhOiZE6xy99-zE-_b","vid"],
+      ["Course Outline","https://docs.google.com/document/d/1Cm6Lv9G2oagRwM2XqHnEbIvHnvqNS621GmoQ6gVOZgw/edit?usp=sharing","doc"],
+      ["Textbook","http://mrkennedy.pbworks.com/w/file/fetch/139473597/Nelson%20Functions%2011%20Textbook%281%29%281%29.pdf","doc"],
+      ["Textbook Solutions","http://mrkennedy.pbworks.com/w/page/73303748/MCR3U%20Textbook%20Solutions","doc"],
+      ["TVO Mathify (Resources & Free Tutoring)","https://mathify.tvolearn.com/","doc"],
     ]},
     {d:2, iso:"2026-09-02", topic:"Relations & Functions", num:"1.1",
       note:D("1uQzH0OU7Ym7tK1C2WPjXxSqtZIqftsG-"),
