@@ -124,7 +124,7 @@ const COURSE = {
       ["Check That You Get It",D("1JIfQqQd2HOrHuLZLbA8pjvSPcuCp0OD0"),"doc"],
       ["Answers",D("1JLWAg8PsAWuiwFzyF22xJccLtZ334R_O"),"ans"],
     ]},
-    {d:11, iso:"2026-09-16", topic:"Review", flag:"review", note:"", ans:"", extras:[
+    {d:11, iso:"2026-09-16", topic:"Review", note:"", ans:"", extras:[
       ["Ms Havrot: Chapter 1 Practice Test","https://www.youtube.com/watch?v=pJPaVZTtiGE","vid"],
       ["Transforming Domain & Range Practice",D("1Ke1I4WAOhmPcGB51oyfMLzMELB-BwZg9"),"doc"],
       ["Answers",D("1KeNWvjLYCUn0dkP7uMbBigagw8xYzFn-"),"ans"],
@@ -212,7 +212,7 @@ const COURSE = {
       ["Answers",D("1WwmFDonBoze4TegiPoUW9kUVSMV6hANV"),"ans"],
       ["Extra Practice (answers included)",D("1BfAiNvvv4h2i9jYehHXdm7HHfhtnWP-o"),"doc"],
     ]},
-    {d:9, iso:"2026-09-30", topic:"Review", flag:"review", note:"", ans:"", extras:[
+    {d:9, iso:"2026-09-30", topic:"Review", note:"", ans:"", extras:[
       ["Ms Havrot: Chapter 2 Practice Test","https://www.youtube.com/watch?v=xz-uUAnH8Wk","vid"],
       ["Review Questions",D("1CwCDD87KecF4N4PrKHVar_y8MyAMqTEk"),"doc"],
       ["Answers",D("1DID_X4PiHBjTXL7MmK7vzCWc0sdG5YZT"),"ans"],
@@ -301,7 +301,7 @@ const COURSE = {
       ["Extra Modelling Question",D("18tgNL0nXk_qFXyeNyHq4yaDw4HibmHu5"),"doc"],
       ["Answers",D("18u6p95YNoy5yr_h3NmPJblB2CZTLe66w"),"ans"],
     ]},
-    {d:11, iso:"2026-10-20", topic:"Review", flag:"review", note:"", ans:"", extras:[
+    {d:11, iso:"2026-10-20", topic:"Review", note:"", ans:"", extras:[
       ["Ms Havrot: Chapter 3 Practice Test (Part 1)","https://www.youtube.com/watch?v=Php2E7O9tAQ","vid"],
       ["Ms Havrot: Chapter 3 Practice Test (Part 2)","https://www.youtube.com/watch?v=XHgoHFdrp2k","vid"],
       ["JensenMath: Quadratics Unit Review",D("1y0dTdbIT-EJoYSFguwLSZEruKOOQj2ax"),"doc"],
@@ -380,7 +380,7 @@ const COURSE = {
       ["Ms Havrot: Chapter 4 Practice Test (Part A)","https://www.youtube.com/watch?v=ydSEGYXAD3s","vid"],
       ["More Graphs & Table of Values Practice",D("1iI86VKLlfMICXCVHyUf4LuErZT7c3SMZ"),"doc"],
     ]},
-    {d:9, iso:"2026-11-03", topic:"Review", flag:"review", note:"", ans:"", extras:[
+    {d:9, iso:"2026-11-03", topic:"Review", note:"", ans:"", extras:[
       ["Ms Havrot: Chapter 4 Practice Test (Part B)","https://www.youtube.com/watch?v=hNfJdisuCaQ","vid"],
       ["Review Questions",D("1iHVFMs2eDE0w-e4U_vxM1yoODDl7wuMx"),"doc"],
       ["Answers",D("1i7mrSmWO20Ers4DjTypBjGM9Iszyr6-s"),"ans"],
@@ -479,7 +479,7 @@ const COURSE = {
       ["JensenMath: Problems in 2-D and 3-D Worksheet",D("1rN-r8CkEAE7w8BCeih7BhJtY9AmcdHx_"),"doc"],
       ["Answers",D("14arJWRhR5WsXbhaYvXNw9IvVRTTyN-x0"),"ans"],
     ]},
-    {d:11, iso:"2026-11-19", topic:"Review", flag:"review", note:"", ans:"", extras:[
+    {d:11, iso:"2026-11-19", topic:"Review", note:"", ans:"", extras:[
       ["Ms Havrot: Unit 5 Review & Practice Test","https://www.youtube.com/watch?v=-WxwPhTrcZQ","vid"],
       ["JensenMath: Trig Geometry Unit Review",D("1e2Yfwaqq8CdB-aGG1mA1RarEB0_YMXMt"),"doc"],
       ["Answers",D("1bUOX200fks4m3DeC3dmU-dlkUbKe1TDK"),"ans"],
@@ -558,7 +558,7 @@ const COURSE = {
       ["JensenMath: Trig Applications Worksheet 2",D("1mF_QuMU8CEMOyFf3CJJf37AXcqT2evMg"),"doc"],
       ["Answers",D("1_ue-5SDtC7Ibhz9PZCL6mms1OjkoEWzj"),"ans"],
     ]},
-    {d:11, iso:"2026-12-08", topic:"Review", flag:"review", note:"", ans:"", extras:[
+    {d:11, iso:"2026-12-08", topic:"Review", note:"", ans:"", extras:[
       ["Ms Havrot: Unit 6 Practice Test","https://www.youtube.com/watch?v=FUaJhcVd52o","vid"],
       ["JensenMath: Trig Functions Unit Review",D("1-_j8rmJXIIjAsNDAqK_5A_xed03M_no_"),"doc"],
       ["Answers",D("1FkyAkDFksxttmyI3zPEk-6sb_NJ9_ZEr"),"ans"],
@@ -657,7 +657,7 @@ const COURSE = {
       ["Khan: Word Problems on Compound Interest","https://www.khanacademy.org/math/algebra-2-fl-best/x727ff003d4fc3b92:exponential-functions/x727ff003d4fc3b92:compound-interest/e/word-problems-on-compound-interest","doc"],
       ["Khan: Convert Recursive & Explicit Forms","https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:constructing-arithmetic-sequences/e/explicit-and-recursive-formulas-of-arithmetic-sequences","doc"],
     ]},
-    {d:15, iso:"2027-01-13", topic:"Review", flag:"review", note:"", ans:"", extras:[
+    {d:15, iso:"2027-01-13", topic:"Review", note:"", ans:"", extras:[
       ["Ms Havrot: Functions 11 (full course playlist)","https://www.youtube.com/playlist?list=PLGinkJ_ZMO2HB1X2BhOiZE6xy99-zE-_b","vid"],
       ["JensenMath: Discrete Functions Unit Review",D("1xqNZggVu-J53CUDbkf7unqvMtKZDeb-G"),"doc"],
       ["Answers",D("12EFq4uelsxk2GsaUmAlfOxRqzWvqJJ5D"),"ans"],
