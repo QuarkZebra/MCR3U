@@ -45,14 +45,14 @@ const COURSE = {
       ["TVO Mathify (Resources & Free Tutoring)","https://mathify.tvolearn.com/","doc"],
     ]},
     {d:2, iso:"2026-09-02", topic:"Relations & Functions", num:"1.1",
-      note:D("1uQzH0OU7Ym7tK1C2WPjXxSqtZIqftsG-"),
-      ans:"", /* key: D("1hfLTk46uzC9S57hYCVxFrrPYBQxw8YcO") */ extras:[
+      note:D("1DyMx3Mt-intXnPiuuNKxSrTkiwA_JAga"),
+      ans:"", /* key: D("1hztDASoA-AkJ2ZrgK1YS-wITpXBiNf_6") */ extras:[
       ["Ms Havrot 1.1: Relations & Functions","https://www.youtube.com/watch?v=8ndTq9VM6KM","vid"],
       ["Khan: What is a function?","https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/8th-functions-and-function-notation/v/what-is-a-function","vid"],
     ]},
     {d:3, iso:"2026-09-03", topic:"Function Notation", num:"1.2",
-      note:D("1Cp6GDenNG0x_VPkV26QLYlgByMe1p91N"),
-      ans:"", /* key: D("1V06pIxQd91EiEmk11MTfDZ__wfnFIPpx") */ extras:[
+      note:D("1cDt0K06FDEvX1VDqRa1Oruc6txdEbsLV"),
+      ans:"", /* key: D("1ikU0c2hfGY6TTePhBwgQreoEvs3quuGd") */ extras:[
       ["Ms Havrot 1.2: Function Notation","https://www.youtube.com/watch?v=3_WTOAB4n-s","vid"],
       ["Khan: Function Notation Example","https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/8th-functions-and-function-notation/v/understanding-function-notation-example-3","vid"],
       ["Function Notation Worksheet",D("1DeWzXMrOjoYrm9eEE3GwuGi3x_E6lqyx"),"doc"],
@@ -61,14 +61,14 @@ const COURSE = {
       ["Answers",D("1Zw-elTXJiayXJHbO8IRtlTkNSHD7U3VK"),"ans"],
     ]},
     {d:4, iso:"2026-09-04", topic:"Parent Functions", num:"1.3",
-      note:D("1paJr5icAY2_a0m-XBoyS2e80V7sp3az9"),
-      ans:"", /* key: D("1MZYafjaHynBGhFwwxd1DEC3sD_IfO5hl") */ extras:[
+      note:D("1aeMN_K8e478CCmjmkObs7n6gaKrU2Qzj"),
+      ans:"", /* key: D("15KItU9C_wm5Al7u5v2M-hQyjTlxmpsuY") */ extras:[
       ["Ms Havrot 1.3: Parent Functions","https://www.youtube.com/watch?v=A2Xp6aaFYnw","vid"],
       ["Ms Havrot 1.3: Finite Differences, Increasing & Decreasing","https://www.youtube.com/watch?v=ov9jc09ynuA","vid"],
     ]},
     {d:5, iso:"2026-09-08", topic:"Domain & Range", num:"1.4",
-      note:D("12o2bUykuAkDb6RUbZgjfSFq-N0vmrejw"),
-      ans:"", /* key: D("1KNTa4itBAyRXa9ycU4x5_eYfm2dgZMf9") */ extras:[
+      note:D("1Dxq-RRiKrkftTmvw73PfY0Jnklxr7UqV"),
+      ans:"", /* key: D("1oH-sSyLUw1qVIvMA227dcY4egS8z8l5k") */ extras:[
       ["Ms Havrot 1.4: Domain and Range","https://www.youtube.com/watch?v=FLGpA8QFYBw","vid"],
       ["Domain & Range in Set Notation","https://www.youtube.com/watch?v=vNqhnWrkPyY","vid"],
       ["Domain & Range from Graphs","https://www.youtube.com/watch?v=YjVc9ookvRs","vid"],
@@ -84,8 +84,8 @@ const COURSE = {
       ["Answers",D("1uMdptSAiTKu9ZUAxwaymfHeH9WH5STfb"),"ans"],
     ]},
     {d:7, iso:"2026-09-10", topic:"Inverse Functions", num:"1.5",
-      note:D("1B1RmcvW6NM4D3G2Om-TrNwPCyYzN-5zn"),
-      ans:"", /* key: D("1RxJkvkD2pj1wfP_WeTff0MZJd6BH0X9O") */ extras:[
+      note:D("14W1OuG_C-1YT4xoB4zJiqLpC2Rrv-xw9"),
+      ans:"", /* key: D("1M2WyLKfQI-Oo0NyZ5Mq2sh__40hgRz1A") */ extras:[
       ["Ms Havrot 1.5: Inverse Functions","https://www.youtube.com/watch?v=vfxoaiCaqk8","vid"],
       ["Inverse Functions Worksheet",D("1MIxluvaZYlVKiLwB7e7pTI-dZvCUj-SA"),"doc"],
       ["Answers",D("1MIvL0ozQ1bDWve90b7VXskJS9qKIB-HT"),"ans"],
@@ -93,8 +93,8 @@ const COURSE = {
       ["Answers",D("1hm_8DTcPQTPwWA8u4xB4VzEgqmDrLnl5"),"ans"],
     ]},
     {d:8, iso:"2026-09-11", topic:"Exploring Transformations", num:"1.6/1.7",
-      note:D("1hA6rmMxThD0Xhdr7yLgRkiW-Vk9MLNVS"),
-      ans:"", /* key: D("1QVg9nH2lh_GN_8dkWxvx4Rrrs7OjjgUw") */ extras:[
+      note:D("1IRZAsl8DUSdtP2vXimLtTBbEXz5K5FX_"),
+      ans:"", /* key: D("16MxaIbaCmrnf6ohMrUt6Hjyn-CFNLren") */ extras:[
       ["Ms Havrot 1.6: Vertical & Horizontal Translations","https://www.youtube.com/watch?v=dRIwgEtUYA0","vid"],
       ["Ms Havrot 1.6: Reflections in the x- and y-axis","https://www.youtube.com/watch?v=j4N18JHLHoo","vid"],
       ["Ms Havrot 1.7: Stretches & Compressions","https://www.youtube.com/watch?v=tF4P2Y47Odk","vid"],
@@ -105,8 +105,8 @@ const COURSE = {
       ["Answers",D("10f1AOaIQIOI8CPpUtKzGiLBXU16mocGP"),"ans"],
     ]},
     {d:9, iso:"2026-09-14", topic:"Combining Transformations", num:"1.8",
-      note:D("1PeHNFfsLZcFexpOZqU96KQp3aYEJXMmx"),
-      ans:"", /* key: D("1-wmn1EyyVwNYXAdi6uSHNyPGwCdkcsVm") */ extras:[
+      note:D("12_AHWxKw9tQY2Q_pGqJNEmGMND0IKJSb"),
+      ans:"", /* key: D("1mfbZjF0M7avSMRbo07FbkmVzUn04Eusi") */ extras:[
       ["Ms Havrot 1.7: Why the x-changes Feel Backwards","https://www.youtube.com/watch?v=H-IdTIi7Xr8","vid"],
       ["Ms Havrot 1.8: Mapping Rules","https://www.youtube.com/watch?v=Wkf24MjBC-U","vid"],
       ["All Types of Horizontal Transformations",D("1IRSqmlv38BnELA7tpwDTrk7rl6acdEwi"),"doc"],
@@ -137,8 +137,8 @@ const COURSE = {
   /* ── UNIT 2 ─────────────────────────────────────────────── */
   {name:"Equivalent Expressions", days:[
     {d:13, iso:"2026-09-18", topic:"Operations with Polynomials", num:"2.1/2.2",
-      note:D("19cNQaGU4cXw9SmCYOtt7XmHEgRovTnti"),
-      ans:"", /* key: D("1HqMutGUGTmXgJ040NHUNZFshzPffy4is") */ extras:[
+      note:D("1yp1psWtyLzOer2kV6zgv5N5dg-jpQgDo"),
+      ans:"", /* key: D("1tH5DsMPuAxNX-MpFBoxbpgbTLknXJoYR") */ extras:[
       ["Ms Havrot 2.1: Adding & Subtracting Polynomials","https://www.youtube.com/watch?v=3EKx3zeC8OU","vid"],
       ["Ms Havrot 2.2: Multiplying Polynomials","https://www.youtube.com/watch?v=dGQ6a3jiLbI","vid"],
       ["Order of Operations Practice",D("16aQAGMlrrvb-JdnI-lnbBjPpQvac1HU7"),"doc"],
@@ -146,8 +146,8 @@ const COURSE = {
     ]},
     {d:14, iso:"2026-09-21", topic:"Factoring I", num:"2.3",
       noteLabel:"Factoring I Blank Note & Practice Problems",
-      note:D("1mhVy3zAUCJhm1TqXyy8--7Ae6GFljDsp"),
-      ans:"", /* key: D("1__ln6SaM1YWoxkghd-M2AI523DUTH0gM") */ extras:[
+      note:D("1h-zlXBBuHL45eO588zOUL1G6cYuLWRii"),
+      ans:"", /* key: D("1IJrh56tEfyb4PC3CzBJPaa94TNZ9vBHO") */ extras:[
       ["Ms Havrot 2.3: Common Factoring & Grouping","https://www.youtube.com/watch?v=a9zVcmKx-Lc","vid"],
       ["Ms Havrot 2.3: Simple Trinomials","https://www.youtube.com/watch?v=a_B_Fbck5l8","vid"],
       ["Khan: Taking Common Factors","https://www.khanacademy.org/gclassroom/math/algebra2/x2ec2f6f830c9fb89:poly-factor/x2ec2f6f830c9fb89:common-factor/a/taking-common-factors","vid"],
@@ -155,8 +155,8 @@ const COURSE = {
     ]},
     {d:15, iso:"2026-09-22", topic:"Factoring II", num:"2.3",
       noteLabel:"Factoring II Blank Note & Practice Problems",
-      note:D("1i8yxX4cYiMC2hAK7M6pTOiUd1llnSRUr"),
-      ans:"", /* key: D("1o6Nxv9DpOJYBsQJzlVk6tzb6u_flSghi") */ extras:[
+      note:D("1-IdxYp6KOP-B2OfjyRb7B8SvUS8A0HLW"),
+      ans:"", /* key: D("18BbT74x5M3yyQ3h_yhUHuWl0gCY3ngwj") */ extras:[
       ["Ms Havrot 2.3: Complex Trinomials","https://www.youtube.com/watch?v=ZyVwwCxDxt0","vid"],
       ["Ms Havrot 2.3: Difference of Squares & Perfect Squares","https://www.youtube.com/watch?v=NVo_jE2LawY","vid"],
       ["Every Factoring Type, Worked","https://www.youtube.com/watch?v=blIh776gVsQ","vid"],
@@ -165,8 +165,8 @@ const COURSE = {
     ]},
     {d:16, iso:"2026-09-23", topic:"Operations with Radicals", flag:"pquiz",
       noteLabel:"Radicals Blank Note & Practice Problems",
-      note:D("1-bfpUX75S9So8H9teIdEpv1xEdJCSh9M"),
-      ans:"", /* key: D("1JZF1wIV3GtVnNHqbBtgkQsehJnVtSTZA") */ extras:[
+      note:D("1FhmUKKhbYLkpX1UpBbOI4oSXK2SSLeN7"),
+      ans:"", /* key: D("1WfRDRcf8qTSD3WDLlBQjrspddgpIQ_Bc") */ extras:[
       ["Ms Havrot 3.4: Operations with Radicals","https://www.youtube.com/watch?v=bn0_s7Ug0UY","vid"],
       ["Simplifying Square Roots","https://www.youtube.com/watch?v=74iuGIaBgRc","vid"],
       ["Adding Radicals, Quick and Simple","https://www.youtube.com/watch?v=o9onBMWckDc","vid"],
@@ -175,8 +175,8 @@ const COURSE = {
       ["Answers",D("1ZomLLGRyjfDMXiFjdc0mL2pKlaCWBWI9"),"ans"],
     ]},
     {d:17, iso:"2026-09-24", topic:"Simplifying Rational Expressions", num:"2.4/2.5",
-      note:D("1UT-h80MwT3px23XWSSEbXu-F_wA0g50Y"),
-      ans:"", /* key: D("1g2F-G-DwVnppwFQj1tCP5rfCzaErAoYs") */ extras:[
+      note:D("1SBvNw7eNT9NcuqnubM9HyMdhC8yvt2zH"),
+      ans:"", /* key: D("1Q3RlHBq-Y-TJi8u4ozhJ1dChaiW5R6qY") */ extras:[
       ["Ms Havrot 2.4: Simplifying Rational Expressions","https://www.youtube.com/watch?v=V-HXjfE2SOg","vid"],
       ["Ms Havrot 2.5: There is a Hole in the Graph","https://www.youtube.com/watch?v=HG1CBlGMFuc","vid"],
       ["Khan: Simplifying Rational Expressions","https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:rational/x2ec2f6f830c9fb89:cancel-common-factor/v/simplifying-rational-expressions-introduction","vid"],
@@ -186,8 +186,8 @@ const COURSE = {
       ["Answers",D("1fbQbUmtVi4HzWQ0cwvwPyPyGf75OEr9Y"),"ans"],
     ]},
     {d:18, iso:"2026-09-25", topic:"Multiplying & Dividing Rational Expressions", flag:"pquiz", num:"2.6",
-      note:D("1M8gSGla_kQmyQ6jOs4FuV5fzz8sDQPPa"),
-      ans:"", /* key: D("1sqjvy6h9eClitWzXIZhyorvfpG2Wu1V4") */ extras:[
+      note:D("1eC8nybUa_MxNJJNBs1Hiovpn2Q7SZ2mx"),
+      ans:"", /* key: D("18FDCj062GFTFuJqIMzz0bcAmI0fvz_UF") */ extras:[
       ["Ms Havrot 2.6: Multiplying & Dividing Rational Expressions","https://www.youtube.com/watch?v=Znsdg2NXOfQ","vid"],
       ["Multiply & Divide Worksheet",D("19vmowHQjkmaGZ-D4hmK84-ugEdDIYE4R"),"doc"],
       ["Answers",D("1AA4cWKRnuoVkFbi1nebq2cxiUusmhVil"),"ans"],
@@ -197,8 +197,8 @@ const COURSE = {
       ["Answers",D("1sMx9RTyvqWXTQ1L2GECGW-swx2HUZB11"),"ans"],
     ]},
     {d:19, iso:"2026-09-28", topic:"Adding & Subtracting Rational Expressions", num:"2.7",
-      note:D("1sT96KBcH6bNJo02nLh5R4XkCPMmCMGc2"),
-      ans:"", /* key: D("1MBdu-Zl0aVlju3yloRqU2b3W_vZj4wnl") */ extras:[
+      note:D("1WF9YkAGvvwMwVKauJcaWzQzDz10H-FTU"),
+      ans:"", /* key: D("10SlQXpVxVsXiPdViOdBRZV5uQyQvxLRp") */ extras:[
       ["Ms Havrot 2.7: Adding & Subtracting Rational Expressions","https://www.youtube.com/watch?v=TGdEY0DPmnI","vid"],
       ["Adding Rational Expressions","https://www.youtube.com/watch?v=Wk8ZZhE9ZjI","vid"],
       ["Subtracting Rational Expressions","https://www.youtube.com/watch?v=c-8xQyU0ch0","vid"],
@@ -225,8 +225,8 @@ const COURSE = {
   /* ── UNIT 3 ─────────────────────────────────────────────── */
   {name:"Quadratic Functions", days:[
     {d:23, iso:"2026-10-05", topic:"Properties of Quadratic Functions", num:"3.1",
-      note:D("1DXMtpVczwt-2PMUcmnHWgQm8s5DHDuOL"),
-      ans:"", /* key: D("16HuVy6PMVRPUh6rOWcxfm8zyVuA7uMSi") */ extras:[
+      note:D("1ec0lsmRI1tGqCPd-cfLCEigshD4x349j"),
+      ans:"", /* key: D("1NoyP-5JafrlV9q8LkWrYQcBtbjTd4PJl") */ extras:[
       ["Ms Havrot 3.1: Properties of Quadratic Functions","https://www.youtube.com/watch?v=MOT2XGonThs","vid"],
       ["Ms Havrot 3.1: Homework Examples","https://www.youtube.com/watch?v=pvAfEvuikTM","vid"],
       ["Properties Worksheet",D("1RepawH2pm059Xdi_AkO5_pThhxCON4ZO"),"doc"],
@@ -234,8 +234,8 @@ const COURSE = {
     ]},
     {d:24, iso:"2026-10-06", topic:"Max/Min I: Completing the Square", num:"3.2",
       noteLabel:"Max/Min I Blank Note & Practice Problems",
-      note:D("1Ze6crAh3G0sYC_Jbpk6dwKHwe-yb-DH4"),
-      ans:"", /* key: D("1rQAWwLBZJo9PEgUqn9W0LXGhs1vrGDkX") */ extras:[
+      note:D("1HK-9OBuf6DsBtG5RX31HxsxlPEoHfzTH"),
+      ans:"", /* key: D("1CTpoyug75BFjRGNpoiCaV6xdY02ACB_J") */ extras:[
       ["Ms Havrot 3.2: Max & Min Values, the Easiest Way","https://www.youtube.com/watch?v=7m3J7vmmD3o","vid"],
       ["Standard to Vertex Form Practice",D("13EysFDIUFt251ktqcsLzGxCd8E4nB7nz"),"doc"],
       ["How to Solve Quadratics (reference note)",D("1370rile9QT6u63jms7Brm9L1Edhqu-JM"),"doc"],
@@ -244,14 +244,14 @@ const COURSE = {
     ]},
     {d:25, iso:"2026-10-07", topic:"Max/Min II: Partial Factoring & Choosing a Method", num:"3.2",
       noteLabel:"Max/Min II Blank Note & Practice Problems",
-      note:D("1Ek4wSCzLLHnV_tMj2oafrwiFjze2Bvex"),
-      ans:"", /* key: D("1dZFEhTpdLNv_XH5yYrSCPDSQxB57LDLO") */ extras:[
+      note:D("1-BD-OM_KRYaeDQaAWUN6KQjVIhTyY7zx"),
+      ans:"", /* key: D("1vzodBY8YKrRzsgO86C934KEJN3p3dEQ3") */ extras:[
       ["Ms Havrot 3.2: Max & Min Values, the Easiest Way","https://www.youtube.com/watch?v=7m3J7vmmD3o","vid"],
       ["How to Solve Quadratics (reference note)",D("1370rile9QT6u63jms7Brm9L1Edhqu-JM"),"doc"],
     ]},
     {d:26, iso:"2026-10-08", topic:"Inverse of a Quadratic", flag:"pquiz", num:"3.3",
-      note:D("11Q_dxOtAFxdCmSK94Tum6DSaD4XLrybN"),
-      ans:"", /* key: D("1G6FJoNVTKxcV3-O0JluO6tTnHbHIOs8_") */ extras:[
+      note:D("1WCtkSfdTdUAJ7ndtTTFe3oreiBkw9I_s"),
+      ans:"", /* key: D("1kRk65_YpM98tuqaa0nAxevu4ETJnTWdA") */ extras:[
       ["Ms Havrot 3.3: Inverse of a Quadratic Function","https://www.youtube.com/watch?v=9ras8m0rNmY","vid"],
       ["Khan: Flipping & Shifting Radical Functions","https://www.khanacademy.org/math/algebra-home/alg-radical-eq-func/alg-graphs-of-radical-functions/v/flipping-shifting-radical-functions","vid"],
       ["Square Root Function Practice",D("1MJEsyIZUyOq1L6Y6yOrwHPDn9qciOTJh"),"doc"],
@@ -260,16 +260,16 @@ const COURSE = {
       ["Answers",D("13Y7ZOpE4FTmzFMwv-npfmuL6XeA1KzgN"),"ans"],
     ]},
     {d:27, iso:"2026-10-09", topic:"Solving Quadratic Equations", flag:"pquiz", num:"3.5",
-      note:D("1_LfHno5qT5HLOCqfZhUzwnMEy6AUTxAh"),
-      ans:"", /* key: D("1ywwgqqxm3cIipvDfpFAKb8Fm-zcCc4xz") */ extras:[
+      note:D("1mZonA8_Qjh2etiS0DxprxcPa6NDQGohf"),
+      ans:"", /* key: D("1Fc98G0ZRBU2WBVVHSN5YPmobF7LAjOw8") */ extras:[
       ["Ms Havrot 3.5: Solving Quadratic Equations","https://www.youtube.com/watch?v=gFnXJaS93mY","vid"],
       ["Where the Quadratic Formula Comes From","https://www.mathsisfun.com/algebra/quadratic-equation-derivation.html","doc"],
       ["JensenMath: Solving by Factoring Worksheet",D("1ikeR9ZuwzySkvSPdcYo90nJCt5NzzW0S"),"doc"],
       ["Answers",D("1K33HQjLsDOgyDkU8_j9L1oeBRZMP__K1"),"ans"],
     ]},
     {d:28, iso:"2026-10-13", topic:"Zeros & the Discriminant", num:"3.6",
-      note:D("1Olp8WuVJEN97zFjbPGBcOCmSf-krvn6F"),
-      ans:"", /* key: D("1SIYV916m0dSiAyxzqVwqAlxMwRGmNfDl") */ extras:[
+      note:D("1Lpjj4fsd6mYoBpwbldbnTM0PUBUb-3kf"),
+      ans:"", /* key: D("1qiU6ZmPYBAsuD0rybUSJKosgL2hzWIoC") */ extras:[
       ["Ms Havrot 3.6: Zeros of a Quadratic (Discriminant)","https://www.youtube.com/watch?v=xDhSMwBS4JY","vid"],
       ["JensenMath: Quadratic Formula Worksheet",D("1DUALyVJcSZYkwXj8_cKKGUpsSEUMTw6y"),"doc"],
       ["Answers",D("18wT6cU2qcO4T4KzGW1GjU08p2_MfVeKl"),"ans"],
@@ -279,14 +279,14 @@ const COURSE = {
       ["Extra Practice Quiz",D("13zU8Yv85XPAI0zFf0DOiLvWKYfnHku-U"),"doc"],
     ]},
     {d:30, iso:"2026-10-15", topic:"Families of Quadratic Functions", num:"3.7",
-      note:D("1fy2DJGVymS1zsk77v76DfgmIZiQsOGBe"),
-      ans:"", /* key: D("1fCM_LgXfVhq9jgYm3YCfeUk6Wkl8-9us") */ extras:[
+      note:D("1BqFevvF_iH4EHJ74reSfkF-0SK81ZvEp"),
+      ans:"", /* key: D("16X0Vu7M7k8IPuw98otp0mKdL0K3wIlok") */ extras:[
       ["Ms Havrot 3.7: Families of Quadratic Functions","https://www.youtube.com/watch?v=L5vpJ3jcWYc","vid"],
     ]},
     {d:31, iso:"2026-10-16", topic:"Linear–Quadratic Systems",
       noteLabel:"Blank Note & Practice Problems",
-      note:D("1KY6i8p8Ur8zbm9RmZPASzOdRPuZ3DrXm"),
-      ans:"", /* key: D("1BetoDkJucP1_SlDvGqn3-I3fWoLEW8vv") */ extras:[
+      note:D("1uP90ryBN8O1Ebpiwq_ZWRLMcXUL0Opsz"),
+      ans:"", /* key: D("1QJlU5CfqAA9mff5l28IfxgFWFcDnrx8G") */ extras:[
       ["Ms Havrot 3.8: Linear-Quadratic Systems","https://www.youtube.com/watch?v=1QuXn3hoRAU","vid"],
       ["Solving Linear Systems","https://www.youtube.com/watch?v=Ft2_QtXAnh8","vid"],
       ["JensenMath: Linear-Quadratic Systems Worksheet",D("1MkoIOvQqeNCJzT3JkCNBlesAKnvNJmA7"),"doc"],
@@ -294,8 +294,8 @@ const COURSE = {
     ]},
     {d:32, iso:"2026-10-19", topic:"Quadratic Applications & Modelling", flag:"pquiz",
       noteLabel:"Blank Note & Practice Problems",
-      note:D("1yc_Yaphpe-_qLZrCuzJSj3ch0DZ387zD"),
-      ans:"", /* key: D("1CORa8aG0SwxpEIReXZ-CU4h-W5ZK4fgy") */ extras:[
+      note:D("1uvhBtUCe4Pty-sS0Z9KqwDJAFTmhMLcg"),
+      ans:"", /* key: D("1jpQ4SAPsumwV7-mzfk19E3VY93A0c15Z") */ extras:[
       ["Modelling Problems",D("15nQQbG7CiecLaTs7PfTcIXTQreCeHUxy"),"doc"],
       ["Answers",D("160Id0p6LbqrqAPsZIJlOdjrP-6AomcFn"),"ans"],
       ["Extra Modelling Question",D("18tgNL0nXk_qFXyeNyHq4yaDw4HibmHu5"),"doc"],
@@ -313,8 +313,8 @@ const COURSE = {
   /* ── UNIT 4 ─────────────────────────────────────────────── */
   {name:"Exponential Functions", days:[
     {d:35, iso:"2026-10-22", topic:"Integer Exponents", num:"4.2",
-      note:D("1jGFsJbXKEJc66Lefbvzh8F_Qc_Rqp8Zy"),
-      ans:"", /* key: D("1gkHMwYhTJbtoZu_WLdX_s24FBDmVKlEk") */ extras:[
+      note:D("1debMv_rGlsySZMCJq2F5L-AGdEw2vgJo"),
+      ans:"", /* key: D("1kVQlVBiVZ5Qf9awFBhM15hWiUsBYqYhT") */ extras:[
       ["Ms Havrot 4.2: Integer Exponents","https://www.youtube.com/watch?v=FDjUeC3WJWU","vid"],
       ["Zero, Negative & Fractional Exponents","https://www.youtube.com/watch?v=tOuCdKqO6-s","vid"],
       ["Exponent Law Practice",D("1hsNHVnExBiUJ5tECuL25-6n2BRxNUTVm"),"doc"],
@@ -323,8 +323,8 @@ const COURSE = {
       ["Answers",D("1d4UAXb4V-zb5tgIx5HLHy_Dy9Mp8aFvw"),"ans"],
     ]},
     {d:36, iso:"2026-10-23", topic:"Rational Exponents", num:"4.3",
-      note:D("17N8a-I3qJeeMDvQg4nbR3qxRr53NV-KB"),
-      ans:"", /* key: D("1YTkEdT8jgD0Q0EFewdrexki5cVD2EGBw") */ extras:[
+      note:D("1mSVRt7DOKDPQqwATdmwwATKiD9sZ1-lO"),
+      ans:"", /* key: D("1zr4WHpM8IIkfgJalxWHb9HLzPEsnI2rd") */ extras:[
       ["Ms Havrot 4.3: Rational Exponents","https://www.youtube.com/watch?v=R0lhsIEBC6k","vid"],
       ["Simplifying Rational Exponents","https://www.youtube.com/watch?v=S34NM0Po0eA","vid"],
       ["Rational Exponents Practice",D("182zS4hOiXNe8B6RxQf09IoOOmXEmqjiG"),"doc"],
@@ -334,16 +334,16 @@ const COURSE = {
       ["Answers",D("1yWOf6bz6Oxj8tF3oJhFK0OOa3ELTIse0"),"ans"],
     ]},
     {d:37, iso:"2026-10-26", topic:"Simplifying Expressions with Exponents", num:"4.4",
-      note:D("1XkUsqfVwyBDeP88YI3uZKKqN9ff021wx"),
-      ans:"", /* key: D("1s7gWtmlpILRTGR6Kka6w2gM9HLSLBK2e") */ extras:[
+      note:D("1lUxGr_jL-u8A1GgyktCtzrZnXClH7FCk"),
+      ans:"", /* key: D("1H0P03PwhteSGjCq5IKqxdGY_vVbcb1zp") */ extras:[
       ["Ms Havrot 4.4: Simplifying Expressions with Exponents","https://www.youtube.com/watch?v=5xA4yb9HuvU","vid"],
       ["Exponent Worksheet",D("18OkSTlX0wHwBtbrPsPz8bW6ABk8ZgI-q"),"doc"],
       ["Challenging Exponent Law Practice",D("1i5T_lW37ljSpdkk88FAGv-Vw4QLGCreM"),"doc"],
       ["Answers",D("1hyWwmCQThFgAOUBk4B338ivEeBmKDE3s"),"ans"],
     ]},
     {d:38, iso:"2026-10-27", topic:"Properties of Exponential Functions", flag:"pquiz", num:"4.5",
-      note:D("1xPFpri-k6McH-huP3ewq8c_p19YyR_5j"),
-      ans:"", /* key: D("1NdjK4yCA4-iNrrE0Vvgu1MzC1aYAfD-H") */ extras:[
+      note:D("1jwNg2L39_9B8Q-dvTpMIt-VsOCz19iVq"),
+      ans:"", /* key: D("1iRLeHh85YyGHQvbgSuItbhXbBZdt_nDN") */ extras:[
       ["Ms Havrot 4.5: Graphing Exponential Functions","https://www.youtube.com/watch?v=C0EsktjZIxE","vid"],
       ["Analysing Exponential Graphs","https://www.youtube.com/watch?v=fe1Hsqyetzk","vid"],
       ["Exponential Graph Analysis",D("1hN_LwGeCyfv3sA9Z4_8-PLEl63bIvZ_Q"),"doc"],
@@ -352,20 +352,20 @@ const COURSE = {
       ["Answers",D("1IhNv4rdQg5FjO3lYvRRKbdF6GAxod2FC"),"ans"],
     ]},
     {d:39, iso:"2026-10-28", topic:"Transformations of Exponential Functions", num:"4.6",
-      note:D("1Va-ECeEozxg5HOER1SCRG3Le8RzhptgF"),
-      ans:"", /* key: D("1LxEVrFwZkfRmlHt3DFNUSMRKBknzgwZr") */ extras:[
+      note:D("1sISi9NWWo76FwiXG-aa5Fu4JWCZCIyes"),
+      ans:"", /* key: D("1r1vTPJiULMHrXdctrm9yBDKNezT1rtYw") */ extras:[
       ["Ms Havrot 4.6: Transformations of Exponential Functions","https://www.youtube.com/watch?v=3hafG0rPiYg","vid"],
       ["Graphing Using Transformations","https://www.youtube.com/watch?v=3sCF7c6G3Y8","vid"],
       ["JensenMath: Transformations Worksheet",D("1skYJ0XjVorYpTvrW_SncLN3Rx6tTXAFN"),"doc"],
       ["Answers",D("1jDDKWM7WgJZXqoC-NJ5AzgQnTXHtSvSP"),"ans"],
     ]},
     /* d6 handout deliberately NOT posted — group investigation, no reading ahead.
-       Handout: D("1EYNFOFAW6a8qSsYaqyyRz7tv-6aCduFS") */
+       Handout: D("16ObTGxzWqr7xAFMW3ioiZJt-l1KKcmR9") */
     {d:40, iso:"2026-10-29", topic:"Modelling Investigation", flag:"pquiz",
       noteLabel:"Investigation Handout", note:"", ans:"", extras:[]},
     {d:41, iso:"2026-10-30", topic:"Applications: Growth & Decay", num:"4.7",
-      note:D("1qF2JAHROy1_F7iGdrPPtE51Wsgv6KFKY"),
-      ans:"", /* key: D("1Yg7cNFkXrPgKrvKZwR6TvvecXbRTS7j_") */ extras:[
+      note:D("1Bltk9GFdpJMoE68tflyyxm0AbkI-JLfQ"),
+      ans:"", /* key: D("1Ag-CTCxd7JZhg_LMG0NsZAKsYcwfVrna") */ extras:[
       ["Ms Havrot 4.7: Growth, Decay & Applications","https://www.youtube.com/watch?v=K4J1N1mx1ts","vid"],
       ["Exponential Models Practice",D("1iOUDIFhIdVBoeVBCh8W5WEjZZbsAzLEw"),"doc"],
       ["Equation from a Table of Values",D("1hcaeMgf-KO6BZk2HGCZ6OFfV6alVPG0a"),"doc"],
