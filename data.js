@@ -26,6 +26,10 @@
    KEYS: where a KEY pdf already exists in Drive, its id is
    stashed in a comment right after ans:"" — after class, move
    it into the ans field.
+
+   To Save Time:
+
+   git add . && git commit -m "1.1 Key add" && git push origin main
    ═══════════════════════════════════════════════════════════ */
 
 const D = id => `https://drive.google.com/file/d/${id}/view`;
@@ -46,7 +50,7 @@ const COURSE = {
     ]},
     {d:2, iso:"2026-09-02", topic:"Relations & Functions", num:"1.1",
       note:D("1DyMx3Mt-intXnPiuuNKxSrTkiwA_JAga"),
-      ans:"", /* key: D("1hztDASoA-AkJ2ZrgK1YS-wITpXBiNf_6") */ extras:[
+      ans:D("1hztDASoA-AkJ2ZrgK1YS-wITpXBiNf_6"), /* key: D("1hztDASoA-AkJ2ZrgK1YS-wITpXBiNf_6") */ extras:[
       ["Ms Havrot 1.1: Relations & Functions","https://www.youtube.com/watch?v=8ndTq9VM6KM","vid"],
       ["Khan: What is a function?","https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/8th-functions-and-function-notation/v/what-is-a-function","vid"],
     ]},
