@@ -29,7 +29,7 @@
 
    To Save Time:
 
-   git add . && git commit -m "1.1 Key add" && git push origin main
+   git add . && git commit -m "some quizzes changed" && git push origin main
    ═══════════════════════════════════════════════════════════ */
 
 const D = id => `https://drive.google.com/file/d/${id}/view`;
@@ -81,7 +81,9 @@ const COURSE = {
       ["JensenMath: Domain & Range Worksheet",D("1YugW3BmOL5c3fpLiQG7ZiPSYdawrE0q9"),"doc"],
       ["Answers",D("1qYfXfEKLvm5toHxBe1ZoBZDfyzmSsYsp"),"ans"],
     ]},
-    {d:6, iso:"2026-09-09", topic:"Gr 10 Gaps from Diagnostic", flag:"pquiz", note:"", ans:"", extras:[
+    {d:6, iso:"2026-09-09", topic:"Current Topic + Factoring + Other Old Topic", flag:"pquiz", 
+      noteLabel:"Mid-Unit Review",
+      note:D("1Oege2mtMUyAHR1S9eaX8vQtJjrOMNpQ2"), ans:"" /* key: D("1y8H6_qm0qW80hEfmSYM21ybrq6GiTF3K") */, extras:[
       ["Solving Equations Practice",D("1r2EgNo747L2W40tlw6vGsaHWBfr8oK5o"),"doc"],
       ["Solving Equations with Fractions",D("1r5bw02uu2eHIz_rk118mip60raP2Lvop"),"doc"],
       ["Solve for x Practice",D("1r1sLdQ9atHYauiBJ9l-KKeh96aOoNPtS"),"doc"],
@@ -96,7 +98,7 @@ const COURSE = {
       ["JensenMath: Inverse of a Function Worksheet",D("12grzL9G9gl7_Putl9tJ9biKOn6FQAIrE"),"doc"],
       ["Answers",D("1hm_8DTcPQTPwWA8u4xB4VzEgqmDrLnl5"),"ans"],
     ]},
-    {d:8, iso:"2026-09-11", topic:"Exploring Transformations", num:"1.6/1.7",
+    {d:8, iso:"2026-09-11", topic:"Exploring Transformations", num:"1.6",
       note:D("1IRZAsl8DUSdtP2vXimLtTBbEXz5K5FX_"),
       ans:"", /* key: D("16MxaIbaCmrnf6ohMrUt6Hjyn-CFNLren") */ extras:[
       ["Ms Havrot 1.6: Vertical & Horizontal Translations","https://www.youtube.com/watch?v=dRIwgEtUYA0","vid"],
@@ -108,7 +110,7 @@ const COURSE = {
       ["JensenMath: Intro to Transformations Worksheet",D("1RGMEK5Tf01DPZg3LdFxo6u1KUVundQcL"),"doc"],
       ["Answers",D("10f1AOaIQIOI8CPpUtKzGiLBXU16mocGP"),"ans"],
     ]},
-    {d:9, iso:"2026-09-14", topic:"Combining Transformations", num:"1.8",
+    {d:9, iso:"2026-09-14", topic:"Combining Transformations", num:"1.7",
       note:D("12_AHWxKw9tQY2Q_pGqJNEmGMND0IKJSb"),
       ans:"", /* key: D("1mfbZjF0M7avSMRbo07FbkmVzUn04Eusi") */ extras:[
       ["Ms Havrot 1.7: Why the x-changes Feel Backwards","https://www.youtube.com/watch?v=H-IdTIi7Xr8","vid"],
@@ -122,7 +124,7 @@ const COURSE = {
       ["JensenMath: Transforming y = 1/x Worksheet",D("1lNeQQRSBkWik8APwGy-jdW3lH5BBbbwF"),"doc"],
       ["Answers",D("1-wvF71NaXvYAV4XO6LLuh8-o5XzlNVV7"),"ans"],
     ]},
-    {d:10, iso:"2026-09-15", topic:"Current Topics & Factoring + Other Old Topic", flag:"quiz",
+    {d:10, iso:"2026-09-15", topic:"Current Topics + Factoring + Other Old Topic", flag:"quiz",
       noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
       ["Ms Havrot: Determining an Equation from a Graph","https://www.youtube.com/watch?v=IW_bzVgPhJk","vid"],
       ["Check That You Get It",D("1JIfQqQd2HOrHuLZLbA8pjvSPcuCp0OD0"),"doc"],
