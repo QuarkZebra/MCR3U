@@ -63,7 +63,7 @@ const COURSE = {
     ]},
     {d:3, iso:"2026-09-03", topic:"Function Notation", num:"1.2",
       note:D("1cDt0K06FDEvX1VDqRa1Oruc6txdEbsLV"),
-      ans:"", /* key: D("1ikU0c2hfGY6TTePhBwgQreoEvs3quuGd") */ extras:[
+      ans:D("1ikU0c2hfGY6TTePhBwgQreoEvs3quuGd"), /* key: D("1ikU0c2hfGY6TTePhBwgQreoEvs3quuGd") */ extras:[
       ["Ms Havrot 1.2: Function Notation","https://www.youtube.com/watch?v=3_WTOAB4n-s","vid"],
       ["Khan: Function Notation Example","https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/8th-functions-and-function-notation/v/understanding-function-notation-example-3","vid"],
       ["Function Notation Worksheet",D("1DeWzXMrOjoYrm9eEE3GwuGi3x_E6lqyx"),"doc"],
