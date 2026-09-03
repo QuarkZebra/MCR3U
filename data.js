@@ -29,7 +29,7 @@
 
    To Save Time:
 
-   git add . && git commit -m "u1 fix note labels" && git push origin main
+   git add . && git commit -m "U2 Notes label fixes" && git push origin main
    ═══════════════════════════════════════════════════════════ */
 
 const D = id => `https://drive.google.com/file/d/${id}/view`;
@@ -143,7 +143,7 @@ const COURSE = {
 
   /* ── UNIT 2 ─────────────────────────────────────────────── */
   {name:"Equivalent Expressions", days:[
-    {d:13, iso:"2026-09-18", topic:"Operations with Polynomials", num:"2.1/2.2",
+    {d:13, iso:"2026-09-18", topic:"Operations with Polynomials", num:"2.1",
       note:D("1yp1psWtyLzOer2kV6zgv5N5dg-jpQgDo"),
       ans:"", /* key: D("1tH5DsMPuAxNX-MpFBoxbpgbTLknXJoYR") */ extras:[
       ["Ms Havrot 2.1: Adding & Subtracting Polynomials","https://www.youtube.com/watch?v=3EKx3zeC8OU","vid"],
@@ -151,8 +151,7 @@ const COURSE = {
       ["Order of Operations Practice",D("16aQAGMlrrvb-JdnI-lnbBjPpQvac1HU7"),"doc"],
       ["Simplifying Expressions Practice",D("16b7CTGGvJBBG5l60vpW7NHul2TWPfwpo"),"doc"],
     ]},
-    {d:14, iso:"2026-09-21", topic:"Factoring I", num:"2.3",
-      noteLabel:"Factoring I Blank Note & Practice Problems",
+    {d:14, iso:"2026-09-21", topic:"Factoring I", num:"2.2",
       note:D("1h-zlXBBuHL45eO588zOUL1G6cYuLWRii"),
       ans:"", /* key: D("1IJrh56tEfyb4PC3CzBJPaa94TNZ9vBHO") */ extras:[
       ["Ms Havrot 2.3: Common Factoring & Grouping","https://www.youtube.com/watch?v=a9zVcmKx-Lc","vid"],
@@ -161,7 +160,6 @@ const COURSE = {
       ["Factoring Worksheet",D("1QqmFJUPOjP8l8zZJEqO9PU6M-SNcXsNN"),"doc"],
     ]},
     {d:15, iso:"2026-09-22", topic:"Factoring II", num:"2.3",
-      noteLabel:"Factoring II Blank Note & Practice Problems",
       note:D("1-IdxYp6KOP-B2OfjyRb7B8SvUS8A0HLW"),
       ans:"", /* key: D("18BbT74x5M3yyQ3h_yhUHuWl0gCY3ngwj") */ extras:[
       ["Ms Havrot 2.3: Complex Trinomials","https://www.youtube.com/watch?v=ZyVwwCxDxt0","vid"],
@@ -171,7 +169,7 @@ const COURSE = {
       ["More Factoring Practice",D("16wBxYMkSBnxSJ7isUZbQuxvfOxisBUyy"),"doc"],
     ]},
     {d:16, iso:"2026-09-23", topic:"Operations with Radicals", flag:"pquiz",
-      noteLabel:"Radicals Blank Note & Practice Problems",
+      num:"2.4",
       note:D("1FhmUKKhbYLkpX1UpBbOI4oSXK2SSLeN7"),
       ans:"", /* key: D("1WfRDRcf8qTSD3WDLlBQjrspddgpIQ_Bc") */ extras:[
       ["Ms Havrot 3.4: Operations with Radicals","https://www.youtube.com/watch?v=bn0_s7Ug0UY","vid"],
@@ -181,7 +179,7 @@ const COURSE = {
       ["JensenMath: Radicals Worksheet",D("1WB7hModR5sU8SDJZlMh8l8S7_U4yHwOC"),"doc"],
       ["Answers",D("1ZomLLGRyjfDMXiFjdc0mL2pKlaCWBWI9"),"ans"],
     ]},
-    {d:17, iso:"2026-09-24", topic:"Simplifying Rational Expressions", num:"2.4/2.5",
+    {d:17, iso:"2026-09-24", topic:"Simplifying Rational Expressions", num:"2.5",
       note:D("1SBvNw7eNT9NcuqnubM9HyMdhC8yvt2zH"),
       ans:"", /* key: D("1Q3RlHBq-Y-TJi8u4ozhJ1dChaiW5R6qY") */ extras:[
       ["Ms Havrot 2.4: Simplifying Rational Expressions","https://www.youtube.com/watch?v=V-HXjfE2SOg","vid"],
@@ -214,12 +212,13 @@ const COURSE = {
       ["Answers",D("1guhzQCUlG45rHEq7sj_SwqCrXm60ExNf"),"ans"],
     ]},
     {d:20, iso:"2026-09-29", topic:"Current Topics & Function Notation + Other Old Topic", flag:"quiz",
-      noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
+       note:"", ans:"", extras:[
       ["Order of Operations with Rational Expressions",D("1AzD-0XfsUG8NloThMnDJrNIOD-QIBNmG"),"doc"],
       ["Answers",D("1WwmFDonBoze4TegiPoUW9kUVSMV6hANV"),"ans"],
       ["Extra Practice (answers included)",D("1BfAiNvvv4h2i9jYehHXdm7HHfhtnWP-o"),"doc"],
     ]},
-    {d:21, iso:"2026-09-30", topic:"Review", note:"", ans:"", extras:[
+    {d:21, iso:"2026-09-30", topic:"Review", 
+      noteLabel:"Practice Test", ansLabel:"Answers", note:"", ans:"", extras:[
       ["Ms Havrot: Chapter 2 Practice Test","https://www.youtube.com/watch?v=xz-uUAnH8Wk","vid"],
       ["Review Questions",D("1CwCDD87KecF4N4PrKHVar_y8MyAMqTEk"),"doc"],
       ["Answers",D("1DID_X4PiHBjTXL7MmK7vzCWc0sdG5YZT"),"ans"],
