@@ -29,7 +29,7 @@
 
    To Save Time:
 
-   git add . && git commit -m "U2 Notes label fixes" && git push origin main
+   git add . && git commit -m "Test content added" && git push origin main
    ═══════════════════════════════════════════════════════════ */
 
 const D = id => `https://drive.google.com/file/d/${id}/view`;
@@ -138,7 +138,7 @@ const COURSE = {
       ["JensenMath: Transformations Unit Review",D("1BvOVjgeC1AzvJL3Lvw1m0tEdb8ZQ8zTc"),"doc"],
       ["Answers",D("1kkV8mkGVllblqQ-c0UXt6Ui4MbxNs_hB"),"ans"],
     ]},
-    {d:12, iso:"2026-09-17", topic:"Unit Test", flag:"test", extras:[]},
+    {d:12, iso:"2026-09-17", topic:"Unit 1", flag:"test", extras:[]},
   ]},
 
   /* ── UNIT 2 ─────────────────────────────────────────────── */
@@ -225,7 +225,7 @@ const COURSE = {
       ["JensenMath: Rational Expressions Unit Review",D("113p5NHWfrg6DRo0pxPBoEqBBQPiZZbJ-"),"doc"],
       ["Answers",D("1r3F9-xob0cZ9YuRB7_c0_o6gZ2qWhNQx"),"ans"],
     ]},
-    {d:22, iso:"2026-10-01", topic:"Unit Test", flag:"test", extras:[]},
+    {d:22, iso:"2026-10-01", topic:"Unit 2 + Solving Quadratics", flag:"test", extras:[]},
   ]},
 
   /* ── UNIT 3 ─────────────────────────────────────────────── */
@@ -313,7 +313,7 @@ const COURSE = {
       ["JensenMath: Quadratics Unit Review",D("1y0dTdbIT-EJoYSFguwLSZEruKOOQj2ax"),"doc"],
       ["Answers",D("1vLJ2L5ksHGWtCqU2CeC4PVC6sxAfsR9i"),"ans"],
     ]},
-    {d:34, iso:"2026-10-21", topic:"Unit Test", flag:"test", extras:[]},
+    {d:34, iso:"2026-10-21", topic:"Unit 3 + Radicals & Exponent Laws", flag:"test", extras:[]},
   ]},
 
   /* ── UNIT 4 ─────────────────────────────────────────────── */
@@ -393,7 +393,7 @@ const COURSE = {
       ["JensenMath: Exponential Functions Unit Review",D("1uzSnbjZ-hTT543MD--tEZ3b56HmuOIHa"),"doc"],
       ["Answers",D("1IZKfrWV-SvOE2YyKHpu2N7fm4tmTp8Mi"),"ans"],
     ]},
-    {d:44, iso:"2026-11-04", topic:"Unit Test", flag:"test", extras:[]},
+    {d:44, iso:"2026-11-04", topic:"Unit 4 + Trigonometry", flag:"test", extras:[]},
   ]},
 
   /* ── UNIT 5 ─────────────────────────────────────────────── */
@@ -490,7 +490,7 @@ const COURSE = {
       ["JensenMath: Trig Geometry Unit Review",D("1e2Yfwaqq8CdB-aGG1mA1RarEB0_YMXMt"),"doc"],
       ["Answers",D("1bUOX200fks4m3DeC3dmU-dlkUbKe1TDK"),"ans"],
     ]},
-    {d:56, iso:"2026-11-20", topic:"Unit Test", flag:"test", extras:[]},
+    {d:56, iso:"2026-11-20", topic:"Unit 5 + Transformations of Functions", flag:"test", extras:[]},
   ]},
 
   /* ── UNIT 6 ─────────────────────────────────────────────── */
@@ -569,7 +569,7 @@ const COURSE = {
       ["JensenMath: Trig Functions Unit Review",D("1-_j8rmJXIIjAsNDAqK_5A_xed03M_no_"),"doc"],
       ["Answers",D("1FkyAkDFksxttmyI3zPEk-6sb_NJ9_ZEr"),"ans"],
     ]},
-    {d:68, iso:"2026-12-09", topic:"Unit Test", flag:"test", extras:[]},
+    {d:68, iso:"2026-12-09", topic:"Unit 6 + Exponential Functions", flag:"test", extras:[]},
   ]},
 
   /* ── UNIT 7 ─────────────────────────────────────────────── */
@@ -668,7 +668,7 @@ const COURSE = {
       ["JensenMath: Discrete Functions Unit Review",D("1xqNZggVu-J53CUDbkf7unqvMtKZDeb-G"),"doc"],
       ["Answers",D("12EFq4uelsxk2GsaUmAlfOxRqzWvqJJ5D"),"ans"],
     ]},
-    {d:84, iso:"2027-01-14", topic:"Unit Test", flag:"test", extras:[]},
+    {d:84, iso:"2027-01-14", topic:"Unit 7 + Quadratic Functions", flag:"test", extras:[]},
   ]},
 
   /* ── EXAM REVIEW ────────────────────────────────────────── */
