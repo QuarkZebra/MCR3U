@@ -29,7 +29,7 @@
 
    To Save Time:
 
-   git add . && git commit -m "some quizzes changed" && git push origin main
+   git add . && git commit -m "u1 fix note labels" && git push origin main
    ═══════════════════════════════════════════════════════════ */
 
 const D = id => `https://drive.google.com/file/d/${id}/view`;
@@ -99,7 +99,7 @@ const COURSE = {
       ["Answers",D("1hm_8DTcPQTPwWA8u4xB4VzEgqmDrLnl5"),"ans"],
     ]},
     {d:8, iso:"2026-09-11", topic:"Exploring Transformations", num:"1.6",
-      note:D("1IRZAsl8DUSdtP2vXimLtTBbEXz5K5FX_"),
+      note:"https://drive.google.com/file/d/1xnvNo2G8tHekZwPu_Uhm-peb_WGmlA15/view",
       ans:"", /* key: D("16MxaIbaCmrnf6ohMrUt6Hjyn-CFNLren") */ extras:[
       ["Ms Havrot 1.6: Vertical & Horizontal Translations","https://www.youtube.com/watch?v=dRIwgEtUYA0","vid"],
       ["Ms Havrot 1.6: Reflections in the x- and y-axis","https://www.youtube.com/watch?v=j4N18JHLHoo","vid"],
@@ -125,12 +125,13 @@ const COURSE = {
       ["Answers",D("1-wvF71NaXvYAV4XO6LLuh8-o5XzlNVV7"),"ans"],
     ]},
     {d:10, iso:"2026-09-15", topic:"Current Topics + Factoring + Other Old Topic", flag:"quiz",
-      noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
+      note:"", ans:"", extras:[
       ["Ms Havrot: Determining an Equation from a Graph","https://www.youtube.com/watch?v=IW_bzVgPhJk","vid"],
       ["Check That You Get It",D("1JIfQqQd2HOrHuLZLbA8pjvSPcuCp0OD0"),"doc"],
       ["Answers",D("1JLWAg8PsAWuiwFzyF22xJccLtZ334R_O"),"ans"],
     ]},
-    {d:11, iso:"2026-09-16", topic:"Review", note:"", ans:"", extras:[
+    {d:11, iso:"2026-09-16", topic:"Review", 
+      noteLabel:"Practice Test", ansLabel:"Answers", note:"", ans:"", extras:[
       ["Ms Havrot: Chapter 1 Practice Test","https://www.youtube.com/watch?v=pJPaVZTtiGE","vid"],
       ["Transforming Domain & Range Practice",D("1Ke1I4WAOhmPcGB51oyfMLzMELB-BwZg9"),"doc"],
       ["Answers",D("1KeNWvjLYCUn0dkP7uMbBigagw8xYzFn-"),"ans"],
