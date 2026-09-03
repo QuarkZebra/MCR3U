@@ -30,7 +30,15 @@ Everything you edit lives in **`data.js`**. Find the day, paste the URL:
 - Days with no note (tests, work periods) simply have no `num` field.
 - `noteLabel` overrides the whole link label for days without a clean section
   number (Factoring I/II, Radicals, investigations, practice quizzes).
-- `flag: "quiz" | "review" | "test"` tints the row.
+- `flag: "pquiz" | "quiz" | "test"` tints the row and puts a flag at the top of
+  the day: **PRACTICE QUIZ** / **QUIZ** / **TEST**.
+- `covers` is the text written inside that flag, after the colon —
+  `covers:"Current Topic + Factoring + Other Old Topic"` renders as
+  *PRACTICE QUIZ: Current Topic + Factoring + Other Old Topic*. Leave it `""`
+  and the flag is just the word.
+- `topic` is the lesson taught that day. On a flagged day it sits below the flag
+  with a little space; leave it `""` when nothing new is taught after the
+  quiz/test (the flag then stands in as the day's title on the Today card).
 
 The site works out the rest from the real date: the **Today** card, the
 current-unit highlight, the progress bar, and which units show

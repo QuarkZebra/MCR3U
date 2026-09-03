@@ -20,6 +20,7 @@
   --ans:#cc3344;--vid:#a8498f;--done:#1f8a63;
   --warn-bg:#fff0f2;--warn-fg:#b32642;--warn-bdr:rgba(204,51,68,.3);
   --test-bg:rgba(176,72,84,.06);--quiz-bg:rgba(139,92,246,.05);--pquiz-bg:rgba(139,92,246,.05);
+  --test-fg:#b04854;--test-dim:rgba(176,72,84,.09);--test-bdr:rgba(176,72,84,.35);
   --r:10px;--sh:0 1px 2px rgba(42,35,66,.05);--sh2:0 1px 3px rgba(42,35,66,.05),0 6px 20px rgba(42,35,66,.06);
   --topbar:rgba(248,246,252,.9);
   --curve:139,92,246;--curve-a:.1;
@@ -35,6 +36,7 @@
   --ans:#ff8f9d;--vid:#d576c0;--done:#43c79f;
   --warn-bg:#351c26;--warn-fg:#ff9fae;--warn-bdr:rgba(255,143,157,.3);
   --test-bg:rgba(224,122,140,.07);--quiz-bg:rgba(167,139,250,.07);--pquiz-bg:rgba(167,139,250,.07);
+  --test-fg:#e07a8c;--test-dim:rgba(224,122,140,.12);--test-bdr:rgba(224,122,140,.4);
   --sh:0 1px 3px rgba(0,0,0,.25);--sh2:0 2px 8px rgba(0,0,0,.25),0 8px 24px rgba(0,0,0,.2);
   --topbar:rgba(23,18,38,.92);
   --curve:167,139,250;--curve-a:.14;
@@ -144,12 +146,17 @@ header .sub{color:var(--t3);font-size:.88rem;margin-top:.35rem}
 .td-date{font-family:var(--mono);font-size:.68rem;color:var(--t2);font-weight:500;white-space:nowrap;font-variant-numeric:tabular-nums}
 .today-pill{display:inline-block;margin-top:.2rem;font-family:var(--mono);font-size:.52rem;letter-spacing:.08em;text-transform:uppercase;
   color:var(--accent);border:1px solid var(--accent-bdr);background:var(--accent-dim);border-radius:100px;padding:.05rem .4rem;font-weight:600}
-.topic{font-weight:600;font-size:.98rem;letter-spacing:-.01em}
-.badge{display:inline-block;font-family:var(--mono);font-size:.56rem;letter-spacing:.06em;text-transform:uppercase;
-  padding:.1rem .45rem;border-radius:4px;font-weight:600;margin-left:.4rem;vertical-align:1px}
-.badge.test{background:#b04854;color:#fff}
-.badge.quiz{background:var(--accent-dim);color:var(--accent);border:1px solid var(--accent-bdr)}
-.badge.pquiz{background:var(--accent-dim);color:var(--accent);border:1px solid var(--accent-bdr)}
+.topic{display:block;font-weight:600;font-size:.98rem;letter-spacing:-.01em}
+/* Assessment flag — top of the cell: "PRACTICE QUIZ: topics", then a gap, then the day's topic */
+.flag{display:flex;width:fit-content;max-width:100%;align-items:baseline;flex-wrap:wrap;gap:.1rem .4rem;
+  padding:.24rem .6rem;border-radius:6px;line-height:1.35;margin-bottom:.45rem;
+  background:var(--accent-dim);border:1px solid var(--accent-bdr);color:var(--accent)}
+.flag .fk{font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;white-space:nowrap}
+.flag .fc{font-size:.8rem;font-weight:400}
+.flag.test{background:var(--test-dim);border-color:var(--test-bdr);color:var(--test-fg)}
+.flag+.lgroup{margin-top:0}
+.hero .flag{margin:.5rem 0 .55rem;padding:.3rem .7rem}
+.hero .flag .fk{font-size:.64rem}.hero .flag .fc{font-size:.95rem}
 .lgroup{display:flex;flex-direction:column;gap:.22rem;margin-top:.25rem}
 .dlink{display:inline-flex;align-items:center;gap:.3rem;font-size:.76rem;line-height:1.35;transition:opacity .15s}
 .dlink:hover{opacity:.75;text-decoration:underline}
@@ -303,20 +310,31 @@ function noteLinks(day){
 }
 
 /* ══════════ Render units ══════════ */
+const FLAGS={test:"Test",quiz:"Quiz",pquiz:"Practice Quiz"};
+/* The flag sits at the top of a day: "PRACTICE QUIZ: Current Topic + …". covers is optional. */
+function flagHTML(day){
+  const k=FLAGS[day.flag];
+  if(!k)return "";
+  const c=(day.covers||"").trim();
+  return `<div class="flag ${day.flag}"><span class="fk">${k}${c?":":""}</span>${c?`<span class="fc">${c}</span>`:""}</div>`;
+}
+/* What to call a day that has no topic of its own (a pure quiz/test day) */
+function dayName(day){
+  if(day.topic)return day.topic;
+  const k=FLAGS[day.flag]||"";
+  const c=(day.covers||"").trim();
+  return k+(c?": "+c:"");
+}
 function dayRow(day){
   const st=stateOf(day);
-  const cls=[day.flag==="test"?"is-test":"",day.flag==="quiz"?"is-quiz":"",day.flag==="pquiz"?"is-pquiz":"",st==="today"?"is-today":""].join(" ");
-  let badge="";
-  if(day.flag==="test")badge='<span class="badge test">Test</span>';
-  if(day.flag==="quiz")badge='<span class="badge quiz">Quiz</span>';
-   if(day.flag==="pquiz")badge='<span class="badge pquiz">Practice Quiz</span>';
+  const cls=[FLAGS[day.flag]?"is-"+day.flag:"",st==="today"?"is-today":""].join(" ");
   const links=noteLinks(day);
   const extras=(day.extras||[]).map(extraLink).join("");
   const heroId=heroEntry&&day===heroEntry.day?' id="heroDayRow"':"";
   return `<tr class="${cls}"${heroId}>
     <td class="td-num">${day.d}</td>
     <td class="td-date">${fmtDate(day.iso)}${st==="today"?'<br><span class="today-pill">Today</span>':""}</td>
-    <td><span class="topic">${day.topic}</span>${badge}<div class="lgroup">${links.join("")}</div></td>
+    <td>${flagHTML(day)}${day.topic?`<span class="topic">${day.topic}</span>`:""}<div class="lgroup">${links.join("")}</div></td>
     <td><div class="lgroup">${extras}</div></td>
   </tr>`;
 }
@@ -377,10 +395,10 @@ function renderHero(){
   h.hidden=false;
   h.setAttribute("role","link");
   h.setAttribute("tabindex","0");
-  h.setAttribute("aria-label",`Jump to ${day.topic} in the course table`);
+  h.setAttribute("aria-label",`Jump to ${dayName(day)} in the course table`);
   h.innerHTML=`
     <div class="eyebrow"><span class="live"></span>${label} · ${fmtDate(day.iso)} · ${unitLabel(COURSE.units[u],u)}, Day ${day.d}</div>
-    <h2>${day.topic}</h2>
+    ${flagHTML(day)}${day.topic?`<h2>${day.topic}</h2>`:""}
     ${btns.length?`<div class="acts">${btns.join("")}</div>`:""}`;
   function jump(){
     const unit=document.getElementById("u"+u);
