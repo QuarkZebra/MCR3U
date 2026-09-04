@@ -73,7 +73,7 @@ const COURSE = {
     ]},
     {d:4, iso:"2026-09-04", topic:"Parent Functions", num:"1.3",
       note:D("1prh3eBXvZvt4QO2iygWBxcufkqQSWqRb"),
-      ans:"", /* key: D("1OhwWe7hZC7jNiv0PMsm2jwel_mRaa1qB") */ extras:[
+      ans:D("1OhwWe7hZC7jNiv0PMsm2jwel_mRaa1qB"), /* key: D("1OhwWe7hZC7jNiv0PMsm2jwel_mRaa1qB") */ extras:[
       ["Ms Havrot 1.3: Parent Functions","https://www.youtube.com/watch?v=A2Xp6aaFYnw","vid"],
       ["Ms Havrot 1.3: Finite Differences, Increasing & Decreasing","https://www.youtube.com/watch?v=ov9jc09ynuA","vid"],
     ]},
