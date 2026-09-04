@@ -56,14 +56,14 @@ const COURSE = {
       ["TVO Mathify (Resources & Free Tutoring)","https://mathify.tvolearn.com/","doc"],
     ]},
     {d:2, iso:"2026-09-02", topic:"Relations & Functions", num:"1.1",
-      note:D("1DyMx3Mt-intXnPiuuNKxSrTkiwA_JAga"),
-      ans:D("1hztDASoA-AkJ2ZrgK1YS-wITpXBiNf_6"), /* key: D("1hztDASoA-AkJ2ZrgK1YS-wITpXBiNf_6") */ extras:[
+      note:D("1cm7gMlmC3AAc08ZOjtO0N6gf2xYkh40J"),
+      ans:D("1veD3azsZ6Td-OuGXUx-3cC45RZ-zpOPS"), /* key: D("1veD3azsZ6Td-OuGXUx-3cC45RZ-zpOPS") */ extras:[
       ["Ms Havrot 1.1: Relations & Functions","https://www.youtube.com/watch?v=8ndTq9VM6KM","vid"],
       ["Khan: What is a function?","https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/8th-functions-and-function-notation/v/what-is-a-function","vid"],
     ]},
     {d:3, iso:"2026-09-03", topic:"Function Notation", num:"1.2",
-      note:D("1cDt0K06FDEvX1VDqRa1Oruc6txdEbsLV"),
-      ans:D("1ikU0c2hfGY6TTePhBwgQreoEvs3quuGd"), /* key: D("1ikU0c2hfGY6TTePhBwgQreoEvs3quuGd") */ extras:[
+      note:D("1QCVnUcj1qgG5yQglLbfxrMw3Y12nyQU6"),
+      ans:D("1gRDwyoVyPltoFprg9FLEn07IVOo0YTPY"), /* key: D("1gRDwyoVyPltoFprg9FLEn07IVOo0YTPY") */ extras:[
       ["Ms Havrot 1.2: Function Notation","https://www.youtube.com/watch?v=3_WTOAB4n-s","vid"],
       ["Khan: Function Notation Example","https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/8th-functions-and-function-notation/v/understanding-function-notation-example-3","vid"],
       ["Function Notation Worksheet",D("1DeWzXMrOjoYrm9eEE3GwuGi3x_E6lqyx"),"doc"],
@@ -72,14 +72,14 @@ const COURSE = {
       ["Answers",D("1Zw-elTXJiayXJHbO8IRtlTkNSHD7U3VK"),"ans"],
     ]},
     {d:4, iso:"2026-09-04", topic:"Parent Functions", num:"1.3",
-      note:D("1aeMN_K8e478CCmjmkObs7n6gaKrU2Qzj"),
-      ans:"", /* key: D("15KItU9C_wm5Al7u5v2M-hQyjTlxmpsuY") */ extras:[
+      note:D("1prh3eBXvZvt4QO2iygWBxcufkqQSWqRb"),
+      ans:"", /* key: D("1OhwWe7hZC7jNiv0PMsm2jwel_mRaa1qB") */ extras:[
       ["Ms Havrot 1.3: Parent Functions","https://www.youtube.com/watch?v=A2Xp6aaFYnw","vid"],
       ["Ms Havrot 1.3: Finite Differences, Increasing & Decreasing","https://www.youtube.com/watch?v=ov9jc09ynuA","vid"],
     ]},
     {d:5, iso:"2026-09-08", topic:"Domain & Range", num:"1.4",
-      note:D("1Dxq-RRiKrkftTmvw73PfY0Jnklxr7UqV"),
-      ans:"", /* key: D("1oH-sSyLUw1qVIvMA227dcY4egS8z8l5k") */ extras:[
+      note:D("1gB6iFHYbFXsEPxCj2aaQSFVRfAvjGYNe"),
+      ans:"", /* key: D("1cO1C4TuJxH7vyddn1Y3UvWX0C7v4tr8r") */ extras:[
       ["Ms Havrot 1.4: Domain and Range","https://www.youtube.com/watch?v=FLGpA8QFYBw","vid"],
       ["Domain & Range in Set Notation","https://www.youtube.com/watch?v=vNqhnWrkPyY","vid"],
       ["Domain & Range from Graphs","https://www.youtube.com/watch?v=YjVc9ookvRs","vid"],
@@ -91,15 +91,15 @@ const COURSE = {
     {d:6, iso:"2026-09-09", flag:"pquiz", covers:"Current Topics + Factoring + Other Old Topic",
       topic:"",
       noteLabel:"Mid-Unit Review",
-      note:D("1Oege2mtMUyAHR1S9eaX8vQtJjrOMNpQ2"), ans:"" /* key: D("1y8H6_qm0qW80hEfmSYM21ybrq6GiTF3K") */, extras:[
+      note:D("1opYONPznIH7o9R7l07v4LpHTEZoZDD0T"), ans:"" /* key: D("1pJNjw21xCYITWD8sLOxDxvfUiCmpYTaQ") */, extras:[
       ["Solving Equations Practice",D("1r2EgNo747L2W40tlw6vGsaHWBfr8oK5o"),"doc"],
       ["Solving Equations with Fractions",D("1r5bw02uu2eHIz_rk118mip60raP2Lvop"),"doc"],
       ["Solve for x Practice",D("1r1sLdQ9atHYauiBJ9l-KKeh96aOoNPtS"),"doc"],
       ["Answers",D("1uMdptSAiTKu9ZUAxwaymfHeH9WH5STfb"),"ans"],
     ]},
     {d:7, iso:"2026-09-10", topic:"Inverse Functions", num:"1.5",
-      note:D("14W1OuG_C-1YT4xoB4zJiqLpC2Rrv-xw9"),
-      ans:"", /* key: D("1M2WyLKfQI-Oo0NyZ5Mq2sh__40hgRz1A") */ extras:[
+      note:D("1VEfMQq_T1WsP_zZKvdzcvUjWatQCR4W4"),
+      ans:"", /* key: D("1m1HwDyosbMYSc-9X7vfgx4ZzcypiGYMd") */ extras:[
       ["Ms Havrot 1.5: Inverse Functions","https://www.youtube.com/watch?v=vfxoaiCaqk8","vid"],
       ["Inverse Functions Worksheet",D("1MIxluvaZYlVKiLwB7e7pTI-dZvCUj-SA"),"doc"],
       ["Answers",D("1MIvL0ozQ1bDWve90b7VXskJS9qKIB-HT"),"ans"],
@@ -107,8 +107,8 @@ const COURSE = {
       ["Answers",D("1hm_8DTcPQTPwWA8u4xB4VzEgqmDrLnl5"),"ans"],
     ]},
     {d:8, iso:"2026-09-11", topic:"Exploring Transformations", num:"1.6",
-      note:"https://drive.google.com/file/d/1xnvNo2G8tHekZwPu_Uhm-peb_WGmlA15/view",
-      ans:"", /* key: D("16MxaIbaCmrnf6ohMrUt6Hjyn-CFNLren") */ extras:[
+      note:"https://drive.google.com/file/d/1WrbAp_2-EcZA4UPD-gqcsbvzGO1Es6yX/view",
+      ans:"", /* key: D("1gG_lg0EmqX-gTrDrghi_E07SFYbZ0su_") */ extras:[
       ["Ms Havrot 1.6: Vertical & Horizontal Translations","https://www.youtube.com/watch?v=dRIwgEtUYA0","vid"],
       ["Ms Havrot 1.6: Reflections in the x- and y-axis","https://www.youtube.com/watch?v=j4N18JHLHoo","vid"],
       ["Ms Havrot 1.7: Stretches & Compressions","https://www.youtube.com/watch?v=tF4P2Y47Odk","vid"],
@@ -119,8 +119,8 @@ const COURSE = {
       ["Answers",D("10f1AOaIQIOI8CPpUtKzGiLBXU16mocGP"),"ans"],
     ]},
     {d:9, iso:"2026-09-14", topic:"Combining Transformations", num:"1.7",
-      note:D("12_AHWxKw9tQY2Q_pGqJNEmGMND0IKJSb"),
-      ans:"", /* key: D("1mfbZjF0M7avSMRbo07FbkmVzUn04Eusi") */ extras:[
+      note:D("1akxaxRixo1Xi_iayhrdsI0b5RN1PU472"),
+      ans:"", /* key: D("1DlXJ1psygp4pWBPQ0ybJPA4gdIczVuEY") */ extras:[
       ["Ms Havrot 1.7: Why the x-changes Feel Backwards","https://www.youtube.com/watch?v=H-IdTIi7Xr8","vid"],
       ["Ms Havrot 1.8: Mapping Rules","https://www.youtube.com/watch?v=Wkf24MjBC-U","vid"],
       ["All Types of Horizontal Transformations",D("1IRSqmlv38BnELA7tpwDTrk7rl6acdEwi"),"doc"],
