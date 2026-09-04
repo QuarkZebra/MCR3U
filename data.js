@@ -36,7 +36,7 @@
 
    To Save Time:
 
-   git add . && git commit -m "pquiz content & symbol removed" && git push origin main
+   git add . && git commit -m "quiz title fixes SAVED" && git push origin main
    ═══════════════════════════════════════════════════════════ */
 
 const D = id => `https://drive.google.com/file/d/${id}/view`;
@@ -88,7 +88,7 @@ const COURSE = {
       ["JensenMath: Domain & Range Worksheet",D("1YugW3BmOL5c3fpLiQG7ZiPSYdawrE0q9"),"doc"],
       ["Answers",D("1qYfXfEKLvm5toHxBe1ZoBZDfyzmSsYsp"),"ans"],
     ]},
-    {d:6, iso:"2026-09-09", flag:"pquiz", covers:"Current Topic + Factoring + Other Old Topic",
+    {d:6, iso:"2026-09-09", flag:"pquiz", covers:"Current Topics + Factoring + Other Old Topic",
       topic:"",
       noteLabel:"Mid-Unit Review",
       note:D("1Oege2mtMUyAHR1S9eaX8vQtJjrOMNpQ2"), ans:"" /* key: D("1y8H6_qm0qW80hEfmSYM21ybrq6GiTF3K") */, extras:[
@@ -132,7 +132,7 @@ const COURSE = {
       ["JensenMath: Transforming y = 1/x Worksheet",D("1lNeQQRSBkWik8APwGy-jdW3lH5BBbbwF"),"doc"],
       ["Answers",D("1-wvF71NaXvYAV4XO6LLuh8-o5XzlNVV7"),"ans"],
     ]},
-    {d:10, iso:"2026-09-15", flag:"quiz", covers:"Current Topics + Factoring + Other Old Topic",
+    {d:10, iso:"2026-09-15", flag:"quiz", covers:"Current Topics + Factoring",
       topic:"",
       note:"", ans:"", extras:[
       ["Ms Havrot: Determining an Equation from a Graph","https://www.youtube.com/watch?v=IW_bzVgPhJk","vid"],
@@ -178,7 +178,7 @@ const COURSE = {
       ["Worksheet for the Video Above",D("11wPHf6NJ0i8p5KgBgOhujANNeS-zQJIj"),"doc"],
       ["More Factoring Practice",D("16wBxYMkSBnxSJ7isUZbQuxvfOxisBUyy"),"doc"],
     ]},
-    {d:16, iso:"2026-09-23", flag:"pquiz", covers:"Current Topic + Transformations + Other Old Topic",
+    {d:16, iso:"2026-09-23", flag:"pquiz", covers:"Current Topics + Transformations + Other Old Topic",
       topic:"Operations with Radicals",
       num:"2.4",
       note:D("1FhmUKKhbYLkpX1UpBbOI4oSXK2SSLeN7"),
@@ -201,7 +201,7 @@ const COURSE = {
       ["JensenMath: Simplifying Rational Expressions Worksheet",D("15AFsmbrSRCM7_0lM4IjSE24I3Yki91O9"),"doc"],
       ["Answers",D("1fbQbUmtVi4HzWQ0cwvwPyPyGf75OEr9Y"),"ans"],
     ]},
-    {d:18, iso:"2026-09-25", flag:"pquiz", covers:"Current Topic + Domain & Range + Other Old Topic",
+    {d:18, iso:"2026-09-25", flag:"pquiz", covers:"Current Topics + Domain & Range + Other Old Topic",
       topic:"Multiplying & Dividing Rational Expressions", num:"2.6",
       note:D("1eC8nybUa_MxNJJNBs1Hiovpn2Q7SZ2mx"),
       ans:"", /* key: D("18FDCj062GFTFuJqIMzz0bcAmI0fvz_UF") */ extras:[
@@ -223,7 +223,7 @@ const COURSE = {
       ["JensenMath: Adding & Subtracting Worksheet",D("1dOCRkzseYiV3I_cujmbPsRWYuhlXOYGH"),"doc"],
       ["Answers",D("1guhzQCUlG45rHEq7sj_SwqCrXm60ExNf"),"ans"],
     ]},
-    {d:20, iso:"2026-09-29", flag:"quiz", covers:"Current Topics + Function Notation + Other Old Topic",
+    {d:20, iso:"2026-09-29", flag:"quiz", covers:"Current Topics + Function Notation",
       topic:"",
        note:"", ans:"", extras:[
       ["Order of Operations with Rational Expressions",D("1AzD-0XfsUG8NloThMnDJrNIOD-QIBNmG"),"doc"],
@@ -269,7 +269,7 @@ const COURSE = {
       ["Ms Havrot 3.2: Max & Min Values, the Easiest Way","https://www.youtube.com/watch?v=7m3J7vmmD3o","vid"],
       ["How to Solve Quadratics (reference note)",D("1370rile9QT6u63jms7Brm9L1Edhqu-JM"),"doc"],
     ]},
-    {d:26, iso:"2026-10-08", flag:"pquiz", covers:"Current Topic + Inverses + Other Old Topic",
+    {d:26, iso:"2026-10-08", flag:"pquiz", covers:"Current Topics + Rational Expressions + Other Old Topic",
       topic:"Inverse of a Quadratic", num:"3.3",
       note:D("1WCtkSfdTdUAJ7ndtTTFe3oreiBkw9I_s"),
       ans:"", /* key: D("1kRk65_YpM98tuqaa0nAxevu4ETJnTWdA") */ extras:[
@@ -280,7 +280,7 @@ const COURSE = {
       ["JensenMath: Transforming y = root x Worksheet",D("1_icrizhj22813JwDbCSHEnTzl32QOKcG"),"doc"],
       ["Answers",D("13Y7ZOpE4FTmzFMwv-npfmuL6XeA1KzgN"),"ans"],
     ]},
-    {d:27, iso:"2026-10-09", flag:"pquiz", covers:"",
+    {d:27, iso:"2026-10-09",
       topic:"Solving Quadratic Equations", num:"3.5",
       note:D("1mZonA8_Qjh2etiS0DxprxcPa6NDQGohf"),
       ans:"", /* key: D("1Fc98G0ZRBU2WBVVHSN5YPmobF7LAjOw8") */ extras:[
@@ -296,7 +296,7 @@ const COURSE = {
       ["JensenMath: Quadratic Formula Worksheet",D("1DUALyVJcSZYkwXj8_cKKGUpsSEUMTw6y"),"doc"],
       ["Answers",D("18wT6cU2qcO4T4KzGW1GjU08p2_MfVeKl"),"ans"],
     ]},
-    {d:29, iso:"2026-10-14", flag:"quiz", covers:"Current Topics + Factoring + Other Old Topic",
+    {d:29, iso:"2026-10-14", flag:"quiz", covers:"Current Topics + Factoring",
       topic:"",
       noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
       ["Extra Practice Quiz",D("13zU8Yv85XPAI0zFf0DOiLvWKYfnHku-U"),"doc"],
@@ -315,7 +315,7 @@ const COURSE = {
       ["JensenMath: Linear-Quadratic Systems Worksheet",D("1MkoIOvQqeNCJzT3JkCNBlesAKnvNJmA7"),"doc"],
       ["Answers",D("1TYd848WgUU9Tf0Vb4T4DlF9kgMK3_FhI"),"ans"],
     ]},
-    {d:32, iso:"2026-10-19", flag:"pquiz", covers:"Current Topic + Transformations + Other Old Topic",
+    {d:32, iso:"2026-10-19", flag:"pquiz", covers:"Current Topics + Transformations + Other Old Topic",
       topic:"Quadratic Applications & Modelling",
       noteLabel:"Blank Note & Practice Problems",
       note:D("1uvhBtUCe4Pty-sS0Z9KqwDJAFTmhMLcg"),
@@ -366,7 +366,7 @@ const COURSE = {
       ["Challenging Exponent Law Practice",D("1i5T_lW37ljSpdkk88FAGv-Vw4QLGCreM"),"doc"],
       ["Answers",D("1hyWwmCQThFgAOUBk4B338ivEeBmKDE3s"),"ans"],
     ]},
-    {d:38, iso:"2026-10-27", flag:"pquiz", covers:"Current Topic + Radicals + Other Old Topic",
+    {d:38, iso:"2026-10-27", flag:"pquiz", covers:"Current Topics + Radicals + Other Old Topic",
       topic:"Properties of Exponential Functions", num:"4.5",
       note:D("1jwNg2L39_9B8Q-dvTpMIt-VsOCz19iVq"),
       ans:"", /* key: D("1iRLeHh85YyGHQvbgSuItbhXbBZdt_nDN") */ extras:[
@@ -387,7 +387,7 @@ const COURSE = {
     ]},
     /* d6 handout deliberately NOT posted — group investigation, no reading ahead.
        Handout: D("16ObTGxzWqr7xAFMW3ioiZJt-l1KKcmR9") */
-    {d:40, iso:"2026-10-29", flag:"pquiz", covers:"Current Topic + Solving Quadratics + Other Old Topic",
+    {d:40, iso:"2026-10-29", flag:"pquiz", covers:"Current Topics + Solving Quadratics + Other Old Topic",
       topic:"Modelling Investigation",
       noteLabel:"Investigation Handout", note:"", ans:"", extras:[]},
     {d:41, iso:"2026-10-30", topic:"Applications: Growth & Decay", num:"4.7",
@@ -402,7 +402,7 @@ const COURSE = {
       ["JensenMath: Exponential Decay Worksheet",D("1Rxw6F3_sDKqrS5hvbKlLgcLs_elmXjNK"),"doc"],
       ["Answers",D("1foRlhzQe9ZpzgYBf2N2HFR94NPVdKWzI"),"ans"],
     ]},
-    {d:42, iso:"2026-11-02", flag:"quiz", covers:"Current Topics + Transformations + Other Old Topic",
+    {d:42, iso:"2026-11-02", flag:"quiz", covers:"Current Topics + Transformations",
       topic:"",
       noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
       ["Ms Havrot: Chapter 4 Practice Test (Part A)","https://www.youtube.com/watch?v=ydSEGYXAD3s","vid"],
@@ -451,7 +451,7 @@ const COURSE = {
       ["JensenMath: Ratios for Angles Greater than 90 Worksheet",D("1_-Z0DccKoK22iTFf8-WlQZTjlbjpnYLd"),"doc"],
       ["Answers",D("10zQR6nvkG8WVnqNYHbLB3A208-5cbM5W"),"ans"],
     ]},
-    {d:48, iso:"2026-11-10", flag:"pquiz", covers:"Current Topic + Radicals + Other Old Topic",
+    {d:48, iso:"2026-11-10", flag:"pquiz", covers:"Current Topics + Radicals + Other Old Topic",
       topic:"Trig Ratios for Any Angle", num:"5.4",
       note:D("1-luPpRhDQNfP91DofFLVBB5YVCSSMe-S"),
       ans:"", /* key: D("15ICBZzKaFyF035RTsFO44EQ9u-vX4EKv") */ extras:[
@@ -471,7 +471,7 @@ const COURSE = {
       ["JensenMath: Trig Identities Worksheet 1",D("1btkUk39OIRFrLasp7nY-lx5O39eQFfDP"),"doc"],
       ["Answers",D("11t3dZDTblw1j75Go67FRoU2iXrcU_itJ"),"ans"],
     ]},
-    {d:50, iso:"2026-11-12", flag:"quiz", covers:"Current Topics + Solving Quadratics + Other Old Topic",
+    {d:50, iso:"2026-11-12", flag:"quiz", covers:"Current Topics + Solving Quadratics",
       topic:"", note:"", ans:"", extras:[
       ["Trig Ratio Problems",D("1UtuXf8SIydqxyEhRXWh8gJYygxAFJq9u"),"doc"],
       ["Answers",D("1V23DG9-vyNdrYrbfM0w_eU7Gr0e5-gDj"),"ans"],
@@ -545,7 +545,7 @@ const COURSE = {
       ["Analysing Graphs Worksheet",D("1a9Gpby6yNzrEUGZKUvFp2Wwsc_H7sKaJ"),"doc"],
       ["Answers",D("1aTt5_xunUNjKr-ILTwixvnvUvjclNjNO"),"ans"],
     ]},
-    {d:60, iso:"2026-11-27", flag:"pquiz", covers:"Current Topic + Exact Trig Values + Other Old Topic",
+    {d:60, iso:"2026-11-27", flag:"pquiz", covers:"Current Topics + Exact Trig Values + Other Old Topic",
       topic:"Exploring Transformations", num:"6.4",
       note:D("12BLJg_twdcynJa3b9xpwdl3FrkwfKYHz"),
       ans:"", /* key: D("1bsIGdWRx54oJf4lNkBjqp9eHaJmS7tgH") */ extras:[
@@ -571,7 +571,7 @@ const COURSE = {
       ["JensenMath: Equation from Graph Worksheet",D("1L5_Cz5vFBBT_mAa-zbr3Z7U7JhWSBLJ1"),"doc"],
       ["Answers",D("1uh6FFljvAUX30YPq5eLtsV9Ka7roVs08"),"ans"],
     ]},
-    {d:63, iso:"2026-12-02", flag:"quiz", covers:"Current Topics + Sine or Cosine Law + Other Old Topic",
+    {d:63, iso:"2026-12-02", flag:"quiz", covers:"Current Topics + Exponential Growth/Decay",
       topic:"",
       noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
       ["Ms Havrot: Trig Function Practice Quiz","https://www.youtube.com/watch?v=DGqkffa6RCM","vid"],
@@ -588,7 +588,7 @@ const COURSE = {
       ["JensenMath: Trig Applications Worksheet 1",D("1J5xuTVE4qdpKep6bDSgwEQ3mAW2Mz9rv"),"doc"],
       ["Answers",D("1bvdRZ3Z2L3KMNY7qmdFkj7SOcnuE7wLn"),"ans"],
     ]},
-    {d:66, iso:"2026-12-07", flag:"quiz", covers:"Current Topics + Rational Expressions + Other Old Topic",
+    {d:66, iso:"2026-12-07", flag:"quiz", covers:"Current Topics + Rational Expressions",
       topic:"", note:"", ans:"", extras:[
       ["Modelling with Sinusoidal Functions",D("1bNktPuqTz_ZMoB5D84iQevnASJgFrRnL"),"doc"],
       ["JensenMath: Trig Applications Worksheet 2",D("1mF_QuMU8CEMOyFf3CJJf37AXcqT2evMg"),"doc"],
@@ -620,7 +620,7 @@ const COURSE = {
       ["JensenMath: Arithmetic & Geometric Series Worksheet",D("1FVM6766JKS5ZX5J_k1GOj6gDWjqFyriB"),"doc"],
       ["Answers",D("19yQ4rDIM2rRuP0cBmkg4rtIdHDxRbr0L"),"ans"],
     ]},
-    {d:71, iso:"2026-12-14", flag:"pquiz", covers:"Current Topic + Domain & Range + Other Old Topic",
+    {d:71, iso:"2026-12-14", flag:"pquiz", covers:"Current Topics + Domain & Range + Other Old Topic",
       topic:"Geometric Sequences", num:"7.3",
       note:D("1Oj210nWTLwvlxo0PkwJpD2aeIRfxqiLo"),
       ans:"", /* key: D("1ewN626og8EpmQRHj-9CDJFsYdpwDDCkO") */ extras:[
@@ -635,7 +635,7 @@ const COURSE = {
       ["JensenMath: More Series Problems Worksheet",D("1fS3v_LVXp_DZe0k_FZlxt1ux2pzKJ9fN"),"doc"],
       ["Answers",D("1Kb6TISnZuDFQ8Q71lkZtcjLRqdrTTbz5"),"ans"],
     ]},
-    {d:73, iso:"2026-12-16", flag:"quiz", covers:"Current Topic + Exponential Growth/Decay + Other Old Topic",
+    {d:73, iso:"2026-12-16", flag:"quiz", covers:"Current Topics + Exponential Growth/Decay",
       topic:"Recursive Sequences",
       noteLabel:"Blank Note & Practice Problems",
       note:D("1bG1c7fbVWSXhw7akwLuPzughdj3hlFxD"),
@@ -675,7 +675,7 @@ const COURSE = {
       ans:"", /* key: D("1dhL3HwqvwIPkQguZbkPxZZMUJHU0dVoq") */ extras:[
       ["Ms Havrot: Compound Interest, Present Value","https://www.youtube.com/watch?v=r5Ko2URqAI0","vid"],
     ]},
-    {d:79, iso:"2027-01-07", flag:"pquiz", covers:"Current Topic + Geometric Series + Other Old Topic",
+    {d:79, iso:"2027-01-07", flag:"pquiz", covers:"Current Topics + Geometric Series + Other Old Topic",
       topic:"Annuities: Future Value", num:"7.8",
       note:D("1CFMqYpLy6iYnb0F8CkB1OmtSs5Iuyr2b"),
       ans:"", /* key: D("1_uhOql_Xs1QiJ57CKCYxdRDasxTineeD") */ extras:[
@@ -692,7 +692,7 @@ const COURSE = {
       ans:"", /* key: D("125g8tCSJfB-7EwnLGvoh2Nmzd4rJjW6h") */ extras:[
       ["Ms Havrot: Using the TVM Solver","https://www.youtube.com/watch?v=6YnxWi-lGfE","vid"],
     ]},
-    {d:82, iso:"2027-01-12", flag:"quiz", covers:"Current Topics + Geometric Series + Other Old Topic",
+    {d:82, iso:"2027-01-12", flag:"quiz", covers:"Current Topics + Transformations",
       topic:"",
       noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
       ["Khan: Word Problems on Compound Interest","https://www.khanacademy.org/math/algebra-2-fl-best/x727ff003d4fc3b92:exponential-functions/x727ff003d4fc3b92:compound-interest/e/word-problems-on-compound-interest","doc"],
