@@ -48,7 +48,7 @@ body{font-family:var(--sans);color:var(--ink);line-height:1.6;min-height:100vh;
   background-image:radial-gradient(1000px 520px at 82% -8%,var(--accent-dim),transparent 70%);
   background-repeat:no-repeat;background-attachment:fixed;transition:background .3s,color .3s}
 a{color:inherit;text-decoration:none}
-#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;animation:fadein 1.4s both}
 .page{max-width:1080px;margin:0 auto;padding:2.5rem 1.5rem 4rem;position:relative;z-index:1}
 
 /* Today hero — click it to jump to that day in the table */
@@ -56,13 +56,15 @@ a{color:inherit;text-decoration:none}
   border:1px solid var(--accent-bdr);border-radius:var(--r);padding:.9rem 1.35rem;margin-bottom:1.4rem;
   position:relative;overflow:hidden;box-shadow:var(--sh2);cursor:pointer;
   transition:transform .2s ease,box-shadow .2s ease}
-.hero:hover{transform:scale(1.013);box-shadow:0 0 0 3px var(--accent-dim),var(--sh2)}
+@media(hover:hover){.hero:hover{transform:scale(1.013);box-shadow:0 0 0 3px var(--accent-dim),var(--sh2)}}
 .hero:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .hero::after{content:"ƒ";position:absolute;right:1rem;bottom:-1.3rem;font-size:5.5rem;font-weight:700;font-style:italic;
   color:var(--accent);opacity:.07;font-family:Georgia,serif;pointer-events:none;transition:opacity .2s}
 .hero:hover::after{opacity:.13}
 .hero .eyebrow{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;display:flex;align-items:center;gap:.5rem}
-.hero .eyebrow .live{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--accent-dim)}
+.hero .eyebrow .live{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--accent-dim);position:relative}
+.hero .eyebrow .live::after{content:"";position:absolute;inset:-2px;border-radius:50%;border:1.5px solid var(--accent);opacity:0;animation:livepulse 2.6s ease-out infinite}
+@keyframes livepulse{0%{transform:scale(.7);opacity:.7}70%{transform:scale(2.4);opacity:0}100%{transform:scale(2.4);opacity:0}}
 .hero h2{font-size:1.45rem;font-weight:700;letter-spacing:-.02em;margin:.25rem 0 .6rem;text-wrap:balance;transition:color .2s,letter-spacing .2s}
 .hero:hover h2{color:var(--accent);letter-spacing:0}
 .hero .acts{display:flex;flex-wrap:wrap;gap:.5rem}
@@ -88,7 +90,16 @@ header{margin-bottom:1.8rem}
 .htop{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:.6rem;flex-wrap:wrap}
 .chip{font-family:var(--mono);font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);
   padding:.22rem .65rem;border:1px solid var(--accent-bdr);border-radius:100px;background:var(--accent-dim);font-weight:600}
-.hacts{display:flex;gap:.4rem}
+.hacts{display:flex;gap:.4rem;position:relative}
+.help{position:absolute;right:0;top:calc(100% + 8px);z-index:150;width:min(320px,calc(100vw - 2rem));background:var(--surface);border:1px solid var(--bdr2);
+  border-radius:var(--r);box-shadow:var(--sh2);padding:.85rem 1rem;display:flex;flex-direction:column;gap:.55rem;font-size:.78rem;color:var(--t2);text-align:left;
+  opacity:0;visibility:hidden;transform:translateY(-6px) scale(.98);transform-origin:top right;transition:opacity .15s,transform .15s,visibility 0s .15s}
+.help.open{opacity:1;visibility:visible;transform:none;transition:opacity .15s,transform .15s}
+.help .ht{font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);font-weight:600;margin-bottom:.1rem}
+.help .hi{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.help .hi .dlink,.help .hi .newp,.help .hi .xans{pointer-events:none}
+.help .hi small{color:var(--t3);font-size:.72rem}
+.help .swatch{width:14px;height:14px;border-radius:4px;background:var(--accent-dim);box-shadow:inset 3px 0 0 var(--accent);flex-shrink:0}
 .hbtn{font-family:var(--mono);font-size:.65rem;color:var(--t3);cursor:pointer;background:var(--surface);
   border:1px solid var(--bdr);padding:.24rem .7rem;border-radius:100px;transition:all .2s}
 .hbtn:hover{color:var(--t2);border-color:var(--bdr2);background:var(--hover)}
@@ -103,31 +114,42 @@ header .sub{color:var(--t3);font-size:.88rem;margin-top:.35rem}
 .sbar .si{color:var(--t4);font-size:.9rem}
 .sbar input{flex:1;background:none;border:none;outline:none;color:var(--ink);font-family:var(--sans);font-size:.85rem}
 .sbar input::placeholder{color:var(--t4)}
+.sbar .sc{font-family:var(--mono);font-size:.62rem;color:var(--t3);white-space:nowrap}
+.sbar .sc:empty{display:none}
+.nomatch-msg{text-align:center;color:var(--t3);font-size:.85rem;padding:2rem 1rem;border:1px dashed var(--bdr2);border-radius:var(--r);margin-bottom:.55rem}
+.unit.nomatch{display:none}
 
 .unit{margin-bottom:.55rem;border:1px solid var(--bdr);border-radius:var(--r);background:var(--surface);
-  box-shadow:var(--sh);overflow:hidden;transition:border-color .25s,box-shadow .25s}
+  box-shadow:var(--sh);transition:border-color .25s,box-shadow .25s}
 .unit:hover{border-color:var(--bdr2);box-shadow:var(--sh2)}
 .unit.current{border-color:var(--accent-bdr);box-shadow:0 0 0 3px var(--accent-dim),var(--sh2)}
-.uhead{display:flex;align-items:center;gap:.8rem;padding:.9rem 1.15rem;cursor:pointer;user-select:none;transition:background .15s;width:100%;background:none;border:none;text-align:left;font-family:inherit;color:inherit}
+.uhead{display:flex;align-items:center;gap:.8rem;padding:.9rem 1.15rem;cursor:pointer;user-select:none;transition:background .15s,box-shadow .2s;width:100%;background:var(--surface);border:none;text-align:left;font-family:inherit;color:inherit;
+  border-radius:var(--r);position:sticky;top:var(--tbh,44px);z-index:5}
+.unit.open .uhead{border-radius:var(--r) var(--r) 0 0}
+.uhead.stuck{box-shadow:inset 0 -1px 0 var(--bdr),0 8px 16px -10px rgba(0,0,0,.3)}
 .uhead:hover{background:var(--hover)}
 .uhead:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 .unum{font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--t4);font-weight:600;white-space:nowrap}
 .current .unum{color:var(--accent)}
 .utitle{flex:1;font-size:1.02rem;font-weight:600;letter-spacing:-.01em}
 .urange{font-family:var(--mono);font-size:.6rem;color:var(--t4);white-space:nowrap}
+.umeta{font-family:var(--mono);font-size:.6rem;color:var(--t4);white-space:nowrap}
+.unit.current .umeta{color:var(--t3)}
 .utag{font-family:var(--mono);font-size:.56rem;letter-spacing:.06em;text-transform:uppercase;padding:.16rem .5rem;border-radius:100px;font-weight:600;white-space:nowrap}
 .utag.active{background:var(--accent-dim);color:var(--accent);border:1px solid var(--accent-bdr)}
 .utag.next{background:var(--bg);color:var(--t2);border:1px solid var(--bdr)}
 .utag.planned{background:var(--bg);color:var(--t4)}
 .utag.done{background:var(--review-bg);color:var(--done)}
+.utag.fresh{background:var(--accent);color:var(--accent-fg,#fff);border:1px solid transparent}
 .chev{width:16px;height:16px;color:var(--t4);transition:transform .35s cubic-bezier(.34,1.56,.64,1);flex-shrink:0}
 .unit.open .chev{transform:rotate(180deg);color:var(--t3)}
 .ubody{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s cubic-bezier(.4,0,.2,1)}
 .unit.open .ubody{grid-template-rows:1fr}
-.ubody-inner{overflow:hidden}
+.ubody-inner{overflow:hidden;border-radius:0 0 var(--r) var(--r);opacity:0;transform:translateY(-6px);transition:opacity .25s,transform .3s}
+.unit.open .ubody-inner{opacity:1;transform:none;transition-delay:.06s}
 .ucontent{border-top:1px solid var(--bdr);overflow-x:auto;-webkit-overflow-scrolling:touch}
 
-.ltable{width:100%;border-collapse:collapse;font-size:.84rem}
+.ltable{width:100%;border-collapse:collapse;font-size:.88rem}
 .ltable th{font-family:var(--mono);font-size:.6rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;
   color:var(--t3);padding:.55rem 1rem;text-align:left;border-bottom:1px solid var(--bdr);white-space:nowrap;background:var(--bg)}
 .ltable th:first-child{width:2.6rem;text-align:center}
@@ -140,10 +162,14 @@ header .sub{color:var(--t3);font-size:.88rem;margin-top:.35rem}
 .ltable tr.is-quiz{background:var(--quiz-bg)}
 .ltable tr.is-pquiz{background:var(--pquiz-bg)}
 .ltable tr.is-review{background:var(--review-bg)}
-.ltable tr.is-today{box-shadow:inset 3px 0 0 var(--accent)}
+.ltable tr.is-today td{background:var(--accent-dim)}
+.ltable tr.is-today td:first-child{box-shadow:inset 3px 0 0 var(--accent);border-radius:8px 0 0 8px}
+.ltable tr.is-today td:last-child{border-radius:0 8px 8px 0}
 .td-num{font-family:var(--mono);font-size:.72rem;color:var(--t4);text-align:center;font-variant-numeric:tabular-nums}
 .is-today .td-num{color:var(--accent);font-weight:600}
-.td-date{font-family:var(--mono);font-size:.68rem;color:var(--t2);font-weight:500;white-space:nowrap;font-variant-numeric:tabular-nums}
+.td-date{font-family:var(--mono);font-size:.7rem;color:var(--t2);font-weight:500;white-space:nowrap;font-variant-numeric:tabular-nums}
+.td-date .dow{display:block;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(--t4);line-height:1.3}
+.td-date .dt{display:block}
 .today-pill{display:inline-block;margin-top:.2rem;font-family:var(--mono);font-size:.52rem;letter-spacing:.08em;text-transform:uppercase;
   color:var(--accent);border:1px solid var(--accent-bdr);background:var(--accent-dim);border-radius:100px;padding:.05rem .4rem;font-weight:600}
 .topic{display:block;font-weight:600;font-size:.98rem;letter-spacing:-.01em}
@@ -158,46 +184,102 @@ header .sub{color:var(--t3);font-size:.88rem;margin-top:.35rem}
 .hero .flag{margin:.5rem 0 .55rem;padding:.3rem .7rem}
 .hero .flag .fk{font-size:.64rem}.hero .flag .fc{font-size:.95rem}
 .lgroup{display:flex;flex-direction:column;gap:.22rem;margin-top:.25rem}
-.dlink{display:inline-flex;align-items:center;gap:.3rem;font-size:.76rem;line-height:1.35;transition:opacity .15s}
-.dlink:hover{opacity:.75;text-decoration:underline}
+.ico{width:.95em;height:.95em;flex-shrink:0;display:inline-block;vertical-align:-.12em;transition:transform .15s}
+.dlink{display:inline-flex;align-items:center;gap:.3rem;font-size:.8rem;line-height:1.35;transition:opacity .15s}
+.dlink .lt{background:linear-gradient(currentColor,currentColor) no-repeat 0 100%/0 1px;transition:background-size .2s;padding-bottom:1px}
+.dlink:hover{opacity:.85}
+.dlink:hover .lt{background-size:100% 1px}
+.dlink:hover .ico.arrow{transform:translate(1px,-1px)}
+.dlink:hover .ico.play{transform:scale(1.15)}
+.dlink:hover .ico.pencil{transform:rotate(-8deg)}
+.dlink.ans:hover{opacity:1;color:var(--warn-fg)}
+.lrow{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
+.newp{display:inline-flex;align-items:center;font-family:var(--mono);font-size:.52rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;
+  color:var(--accent-fg,#fff);background:var(--accent);border-radius:100px;padding:.1rem .45rem;line-height:1.4}
+.xitem{display:flex;flex-wrap:wrap;align-items:center;gap:.15rem .45rem}
+.xans{display:inline-flex;align-items:center;gap:.25rem;font-size:.64rem;font-weight:600;color:var(--ans);padding:.06rem .5rem .06rem .4rem;
+  border:1px solid var(--warn-bdr);border-radius:100px;background:var(--warn-bg);line-height:1.5;transition:transform .15s,box-shadow .15s}
+.xans:hover{transform:translateY(-1px);box-shadow:0 2px 6px rgba(0,0,0,.08)}
+.xans:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .dlink:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
 .dlink.note{color:var(--accent);font-weight:600}
-.dlink.ans{color:var(--ans);font-size:.72rem;font-weight:500}
-.dlink.pend{color:var(--t4);cursor:default;font-size:.72rem}
-.dlink.pend:hover{opacity:1;text-decoration:none}
-.dlink.vid{color:var(--vid);font-size:.72rem}
-.dlink.doc{color:var(--t2);font-size:.72rem}
+.dlink.ans{color:var(--ans);font-size:.76rem;font-weight:500}
+.dlink.pend{color:var(--t4);cursor:default;font-size:.76rem}
+.dlink.pend:hover{opacity:1}
+.dlink.pend .lt{background:none}
+.dlink.vid{color:var(--vid);font-size:.78rem}
+.dlink.doc{color:var(--t2);font-size:.78rem}
 
 /* Hover tooltips */
 .tipwrap{position:relative;display:inline-flex}
-.tip{display:none;position:absolute;top:calc(100% + 6px);left:0;z-index:30;white-space:nowrap;
+.tip{display:flex;position:absolute;top:calc(100% + 6px);left:0;z-index:30;white-space:nowrap;
   padding:.28rem .6rem;border-radius:6px;font-size:.64rem;font-weight:500;font-family:var(--sans);
-  pointer-events:none;box-shadow:0 4px 14px rgba(0,0,0,.12);align-items:center;gap:.35rem}
+  pointer-events:none;box-shadow:0 4px 14px rgba(0,0,0,.12);align-items:center;gap:.35rem;
+  opacity:0;visibility:hidden;transform:translateY(-4px) scale(.96);transform-origin:top left;transition:opacity .12s,transform .12s,visibility 0s .12s}
 .tip.info{background:var(--ink);color:var(--bg)}
 .tip.warn{background:var(--warn-bg);color:var(--warn-fg);border:1px solid var(--warn-bdr)}
-.tip .skull{font-size:.95rem;line-height:1}
-.tip.up{top:auto;bottom:calc(100% + 6px)}
-.tipwrap:hover .tip,.tipwrap:focus-within .tip{display:flex}
+.tip .skull{width:1rem;height:1rem;flex-shrink:0}
+.tip.up{top:auto;bottom:calc(100% + 6px);transform:translateY(4px) scale(.96);transform-origin:bottom left}
+.tip .tgo{display:none;font:inherit;font-weight:700;font-size:.7rem;background:var(--warn-fg);color:#fff;border:none;border-radius:6px;padding:.3rem .7rem;cursor:pointer;white-space:nowrap}
+@media(hover:hover){.tipwrap:hover .tip{opacity:1;visibility:visible;transform:none;transition:opacity .12s,transform .12s}}
+.tipwrap:focus-within .tip{opacity:1;visibility:visible;transform:none;transition:opacity .12s,transform .12s}
+/* Armed on touch: the warning becomes a fixed sheet at the bottom with a Continue button */
+.tipwrap.armed .tip{opacity:1;visibility:visible;pointer-events:auto;position:fixed;left:.75rem;right:.75rem;top:auto;bottom:1rem;z-index:400;
+  transform:none;white-space:normal;max-width:none;padding:.75rem .9rem;font-size:.82rem;gap:.6rem;box-shadow:0 12px 32px rgba(0,0,0,.25);border-radius:12px;
+  animation:sheetup .22s cubic-bezier(.2,.7,.2,1) backwards}
+.tipwrap.armed .tip .tgo{display:inline-block;margin-left:auto}
+body.armed .fab{opacity:0;visibility:hidden;pointer-events:none;transform:translateY(14px)}
+@keyframes sheetup{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 
 @keyframes rowflash{0%{background:var(--accent-dim)}100%{background:transparent}}
-tr.flash{animation:rowflash 1.8s ease-out}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes rowin{from{opacity:0;transform:translateX(-6px)}to{opacity:1;transform:none}}
+.top-bar,header,.hero,.sbar,.unit{animation:rise .45s cubic-bezier(.2,.7,.2,1) backwards;animation-delay:calc(var(--i,0)*45ms)}
+.unit.open tbody tr{animation:rowin .3s ease-out backwards;animation-delay:calc(min(var(--i,0),16)*22ms + .08s)}
+.unit.open tbody tr.fin{animation:fadein .25s both}
+.unit.open tbody tr.flash{animation:rowflash 1.8s ease-out}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.35s}
 
-.legend{margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid var(--bdr);display:flex;flex-wrap:wrap;gap:1.4rem;font-size:.75rem;color:var(--t3)}
-.legend-item{display:flex;align-items:center;gap:.4rem}
 
 .fab{position:fixed;bottom:1.5rem;right:1.5rem;z-index:200;background:var(--accent);color:#fff;border:none;border-radius:100px;
   padding:.55rem 1rem;font-family:var(--mono);font-size:.68rem;font-weight:600;cursor:pointer;
-  box-shadow:0 4px 20px rgba(139,92,246,.3);transition:transform .25s,box-shadow .25s;display:none;align-items:center;gap:.35rem}
-.fab:hover{transform:translateY(-2px)}
-.fab.visible{display:flex}
+  box-shadow:0 4px 20px rgba(0,0,0,.25);display:flex;align-items:center;gap:.35rem;
+  opacity:0;visibility:hidden;transform:translateY(14px);pointer-events:none;transition:transform .3s cubic-bezier(.2,.7,.2,1),opacity .25s,visibility 0s .3s}
+.fab.visible{opacity:1;visibility:visible;transform:none;pointer-events:auto;transition:transform .3s cubic-bezier(.2,.7,.2,1),opacity .25s}
+.fab.visible:hover{transform:translateY(-2px)}
 .fab:focus-visible{outline:2px solid var(--accent-2);outline-offset:2px}
 
 @media(max-width:768px){
   .page{padding:2rem .75rem}header h1{font-size:1.9rem}
   .top-bar{margin:-2rem -.75rem 1.5rem;padding:.5rem .75rem}
-  .ltable{min-width:640px}
+  #bg{opacity:.55}
   .urange{display:none}
   .fab{bottom:1rem;right:1rem}
+  .uhead{padding:.8rem .9rem;gap:.5rem;flex-wrap:wrap}
+  .umeta{flex-basis:100%;order:10;margin-top:-.2rem}
+  .ucontent{overflow:visible}
+  .ltable,.ltable tbody{display:block}
+  .ltable thead{display:none}
+  .ltable tr{display:grid;grid-template-columns:auto 1fr;column-gap:.55rem;row-gap:.1rem;align-items:center;padding:.85rem .9rem .95rem;border-bottom:1px solid var(--bdr)}
+  .ltable tr:last-child{border-bottom:none}
+  .ltable td{display:block;padding:0;border:none}
+  .td-num{grid-row:1;grid-column:1;width:auto;text-align:left;font-size:.62rem;padding:.08rem .5rem;border:1px solid var(--bdr);border-radius:100px;color:var(--t3)}
+  .td-num::before{content:"Day "}
+  .td-date{grid-row:1;grid-column:2;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
+  .td-date br{display:none}
+  .td-date .dow,.td-date .dt{display:inline;font-size:.7rem;color:var(--t2);text-transform:none;letter-spacing:0}
+  .td-date .dow::after{content:", "}
+  .today-pill{margin:0 0 0 .15rem}
+  .td-topic{grid-column:1/-1;margin-top:.4rem}
+  .td-extra{grid-column:1/-1;margin-top:.5rem;padding-top:.5rem;border-top:1px dashed var(--bdr)}
+  .td-extra.empty{display:none}
+  .ltable tr.is-today{background:var(--accent-dim);box-shadow:inset 3px 0 0 var(--accent)}
+  .ltable tr.is-today td,.ltable tr.is-today td:first-child,.ltable tr.is-today td:last-child{background:none;box-shadow:none;border-radius:0}
+  .ltable tr.is-today .td-num{border-color:var(--accent-bdr);color:var(--accent)}
+  .dlink{font-size:.86rem}.dlink.ans,.dlink.pend{font-size:.8rem}.dlink.vid,.dlink.doc,.dlink.eqao{font-size:.82rem}
+  .xans{font-size:.68rem}
+  .hero .acts .btn{flex:1 1 auto;justify-content:center}
 }
 @media (prefers-reduced-motion: reduce){
   *{transition:none!important;animation:none!important}
@@ -207,42 +289,40 @@ tr.flash{animation:rowflash 1.8s ease-out}
 <body>
 <canvas id="bg" aria-hidden="true"></canvas>
 <div class="page">
-  <div class="top-bar">
+  <div class="top-bar" style="--i:0">
     <span class="lbl">Course</span>
     <div class="ptrack"><div class="pfill" id="pf"></div></div>
     <span class="ptxt" id="pt"></span>
   </div>
 
-  <header>
+  <header style="--i:1">
     <div class="htop">
       <span class="chip">MCR3U</span>
       <div class="hacts">
-        <button class="hbtn" id="dmBtn">☾ Dark</button>
+        <button class="hbtn" id="dmBtn"></button>
         <button class="hbtn" id="expBtn">Expand All</button>
+        <button class="hbtn" id="helpBtn" aria-expanded="false" aria-controls="help" aria-label="What the links and colours mean">?</button>
+        <div class="help" id="help" role="dialog" aria-label="Legend"></div>
       </div>
     </div>
     <h1><em>Functions</em></h1>
     <div class="sub" id="subTitle"></div>
   </header>
 
-  <section class="hero" id="hero" hidden></section>
+  <section class="hero" id="hero" hidden style="--i:2"></section>
 
-  <div class="sbar">
-    <span class="si">⌕</span>
+  <div class="sbar" style="--i:3">
+    <span class="si" id="siIco"></span>
     <input type="text" placeholder="Filter lessons…" id="si">
+    <span class="sc" id="sc"></span>
   </div>
 
   <div id="units"></div>
+  <div class="nomatch-msg" id="nomatch" hidden>No lessons match. Try a topic word.</div>
 
-  <div class="legend">
-    <div class="legend-item"><span class="dlink note" style="pointer-events:none;font-size:.72rem">↗ Blank Note &amp; Practice Problems</span></div>
-    <div class="legend-item"><span class="dlink ans" style="pointer-events:none">✓ Answers</span><span>posted after class</span></div>
-    <div class="legend-item"><span class="dlink vid" style="pointer-events:none">▶ Video</span></div>
-    <div class="legend-item"><span class="dlink pend" style="pointer-events:none">Greyed out</span><span>coming soon</span></div>
-  </div>
 </div>
 
-<button class="fab" id="fab">↑ Current Unit</button>
+<button class="fab" id="fab"></button>
 
 <script src="data.js"></script>
 <script>
@@ -262,6 +342,11 @@ function fmtDate(iso){
   if(!iso)return "—";
   return new Date(iso+"T12:00:00").toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"});
 }
+function fmtDate2(iso){
+  if(!iso)return "—";
+  const d=new Date(iso+"T12:00:00");
+  return `<span class="dow">${d.toLocaleDateString("en-US",{weekday:"short"})}</span><span class="dt">${d.toLocaleDateString("en-US",{month:"short",day:"numeric"})}</span>`;
+}
 function fmtShort(iso){
   return new Date(iso+"T12:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric"});
 }
@@ -280,31 +365,75 @@ const currentUnit=heroEntry?heroEntry.u:COURSE.units.length-1;
 const daysDone=allDated.filter(e=>e.iso<=TODAY).length;
 const daysTotal=COURSE.units.reduce((n,u)=>n+u.days.length,0);
 
+
+/* ══════════ Icons (inline SVG so they look the same on every phone) ══════════ */
+const ICONS={
+  arrow:'<path d="M7 17L17 7M9 7h8v8"/>',
+  check:'<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+  play:'<path d="M7 5.5v13l11-6.5z" fill="currentColor" stroke="none"/>',
+  pencil:'<path d="M4 20l4-1L18.5 8.5a2.1 2.1 0 0 0-3-3L5 16l-1 4z"/>',
+  search:'<circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/>',
+  sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  moon:'<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/>',
+  up:'<path d="M12 19V5M5 12l7-7 7 7"/>',
+  skull:'<path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 2a8 8 0 0 0-8 8c0 2.6 1.2 4.6 3 6v3a1 1 0 0 0 1 1h1v-2h2v2h2v-2h2v2h1a1 1 0 0 0 1-1v-3c1.8-1.4 3-3.4 3-6a8 8 0 0 0-8-8zM8.5 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>',
+};
+function ico(name,cls){
+  return `<svg class="ico ${name}${cls?" "+cls:""}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name]}</svg>`;
+}
+
 /* ══════════ Link rendering ══════════ */
-const WARN='<span class="skull">☠︎</span><span>Do not look if you haven’t done the practice</span>';
+const WARN=ico("skull","skull")+'<span>Do not look if you haven’t done the practice</span><button class="tgo" type="button">Continue</button>';
 function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;")}
 function live(t,url,cls,icon,warn){
-  const a=`<a class="dlink ${cls}" href="${esc(url)}" target="_blank" rel="noopener">${icon} ${t}</a>`;
+  const a=`<a class="dlink ${cls}" href="${esc(url)}" target="_blank" rel="noopener"${warn?' data-warn':''}>${ico(icon)}<span class="lt">${t}</span></a>`;
   return warn?`<span class="tipwrap">${a}<span class="tip warn">${WARN}</span></span>`:a;
 }
 function pend(t,icon){
-  return `<span class="tipwrap"><span class="dlink pend" tabindex="0">${icon} ${t}</span><span class="tip info">Coming soon</span></span>`;
+  return `<span class="tipwrap"><span class="dlink pend" tabindex="0">${ico(icon)}<span class="lt">${t}</span></span><span class="tip info">Coming soon</span></span>`;
 }
 function extraLink(e){
   const[t,url,kind]=e;
-  if(kind==="vid")return live(t,url,"vid","▶",false);
-  if(kind==="ans")return live(t,url,"ans","✓",true);
-  return live(t,url,"doc","↗",false);
+  if(kind==="vid")return live(t,url,"vid","play",false);
+  if(kind==="ans")return live(t,url,"ans","check",true);
+  return live(t,url,"doc","arrow",false);
+}
+/* A worksheet's answers ride along as a chip on the same line instead of a stray "Answers" row */
+function extrasHTML(list){
+  const items=[];
+  list.forEach(e=>{
+    if(!e)return;
+    const kind=e[2];
+    if(kind==="ans"&&items.length&&items[items.length-1].kind!=="ans"){items[items.length-1].ans.push(e);return}
+    items.push({kind,e,ans:[]});
+  });
+  return items.map(it=>{
+    const main=extraLink(it.e);
+    if(!it.ans.length)return main;
+    const chips=it.ans.map(a=>`<span class="tipwrap"><a class="xans" data-warn href="${esc(a[1])}" target="_blank" rel="noopener">${ico("check")}${a[0]}</a><span class="tip warn">${WARN}</span></span>`).join("");
+    return `<div class="xitem">${main}${chips}</div>`;
+  }).join("");
+}
+/* Keys released today or in the last few days get a pill so students can see what is new */
+function daysAgo(iso){return Math.round((new Date(TODAY+"T12:00:00")-new Date(iso+"T12:00:00"))/864e5)}
+function ansState(day){
+  if(!day.ans||!day.iso)return "";
+  const n=daysAgo(day.iso);
+  return n===0?"today":(n>0&&n<=3)?"new":"";
+}
+function newPill(day){
+  const s=ansState(day);
+  return s==="today"?'<span class="newp">Posted today</span>':s==="new"?'<span class="newp">New</span>':"";
 }
 function noteLinks(day){
   const links=[];
   const hasNote=day.num||day.noteLabel;
   if(hasNote){
     const label=day.noteLabel||`${day.num} Blank Note & Practice Problems`;
-    links.push(day.note?live(label,day.note,"note","↗",false):pend(label,"↗"));
+    links.push(day.note?live(label,day.note,"note","arrow",false):pend(label,"arrow"));
     const ansLabel=day.ansLabel||"Answers";
-    if(day.ans)links.push(live(ansLabel,day.ans,"ans","✓",true));
-    else links.push(pend(ansLabel,"✓"));
+    if(day.ans)links.push(`<span class="lrow">${live(ansLabel,day.ans,"ans","check",true)}${newPill(day)}</span>`);
+    else links.push(pend(ansLabel,"check"));
   }
   return links;
 }
@@ -325,18 +454,28 @@ function dayName(day){
   const c=(day.covers||"").trim();
   return k+(c?": "+c:"");
 }
-function dayRow(day){
+function dayRow(day,i){
   const st=stateOf(day);
   const cls=[FLAGS[day.flag]?"is-"+day.flag:"",st==="today"?"is-today":""].join(" ");
   const links=noteLinks(day);
-  const extras=(day.extras||[]).map(extraLink).join("");
+  const extras=extrasHTML(day.extras||[]);
   const heroId=heroEntry&&day===heroEntry.day?' id="heroDayRow"':"";
-  return `<tr class="${cls}"${heroId}>
+  return `<tr class="${cls}"${heroId} style="--i:${i}">
     <td class="td-num">${day.d}</td>
-    <td class="td-date">${fmtDate(day.iso)}${st==="today"?'<br><span class="today-pill">Today</span>':""}</td>
-    <td>${flagHTML(day)}${day.topic?`<span class="topic">${day.topic}</span>`:""}<div class="lgroup">${links.join("")}</div></td>
-    <td><div class="lgroup">${extras}</div></td>
+    <td class="td-date">${fmtDate2(day.iso)}${st==="today"?'<br><span class="today-pill">Today</span>':""}</td>
+    <td class="td-topic">${flagHTML(day)}${day.topic?`<span class="topic">${day.topic}</span>`:""}<div class="lgroup">${links.join("")}</div></td>
+    <td class="td-extra${extras?"":" empty"}"><div class="lgroup">${extras}</div></td>
   </tr>`;
+}
+function unitMeta(u){
+  const dated=u.days.filter(d=>d.iso);
+  const done=dated.filter(d=>d.iso<=TODAY).length;
+  const res=u.days.reduce((n,d)=>n+(d.note?1:0)+(d.ans?1:0)+(d.extras||[]).filter(Boolean).length,0);
+  return `${done} / ${u.days.length} days · ${res} resource${res===1?"":"s"}`;
+}
+function freshTag(u){
+  const n=u.days.filter(ansState).length;
+  return n?`<span class="utag fresh">${n} new</span>`:"";
 }
 function unitTag(u,i){
   const lastIso=u.days.filter(d=>d.iso).map(d=>d.iso).pop();
@@ -350,12 +489,13 @@ function render(){
   document.getElementById("units").innerHTML=COURSE.units.map((u,i)=>{
     const open=i===currentUnit?"open":"";
     const cur=i===currentUnit?"current":"";
-    return `<section class="unit ${open} ${cur}" id="u${i}">
+    return `<section class="unit ${open} ${cur}" id="u${i}" style="--i:${i+4}">
       <button class="uhead" aria-expanded="${i===currentUnit}" onclick="toggleU(this)">
         ${u.noNumber?"":`<span class="unum">Unit ${i+1}</span>`}
         <span class="utitle">${u.name}</span>
         <span class="urange">${unitRange(u)}</span>
-        ${unitTag(u,i)}
+        <span class="umeta">${unitMeta(u)}</span>
+        ${freshTag(u)}${unitTag(u,i)}
         <svg class="chev" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </button>
       <div class="ubody"><div class="ubody-inner">
@@ -384,12 +524,20 @@ function renderHero(){
   if(hasNote){
     const nl=day.noteLabel||`${day.num} Blank Note & Practice Problems`;
     btns.push(day.note
-      ?`<a class="btn pri" href="${esc(day.note)}" target="_blank" rel="noopener">↗ ${nl}</a>`
-      :`<span class="tipwrap"><span class="btn dis">↗ ${nl}</span><span class="tip info up">Coming soon</span></span>`);
+      ?`<a class="btn pri" href="${esc(day.note)}" target="_blank" rel="noopener">${ico("arrow")} ${nl}</a>`
+      :`<span class="tipwrap"><span class="btn dis">${ico("arrow")} ${nl}</span><span class="tip info up">Coming soon</span></span>`);
     // Answers only appears here once it's actually linked
     if(day.ans){
       const al=day.ansLabel||"Answers";
-      btns.push(`<span class="tipwrap"><a class="btn ansb" href="${esc(day.ans)}" target="_blank" rel="noopener">✓ ${al}</a><span class="tip warn up">${WARN}</span></span>`);
+      btns.push(`<span class="tipwrap"><a class="btn ansb" data-warn href="${esc(day.ans)}" target="_blank" rel="noopener">${ico("check")} ${al}</a><span class="tip warn up">${WARN}</span></span>`);
+    }
+  }
+  // Until today's key is up, the most recently released key is one tap away
+  if(!day.ans){
+    const latest=[...allDated].reverse().find(e=>e.iso<=TODAY&&e.day.ans);
+    if(latest){
+      const ll=latest.day.num?`Latest answers · ${latest.day.num}`:`Latest answers · ${latest.day.ansLabel||latest.day.topic}`;
+      btns.push(`<span class="tipwrap"><a class="btn ghost" data-warn href="${esc(latest.day.ans)}" target="_blank" rel="noopener">${ico("check")} ${ll}</a><span class="tip warn up">${WARN}</span></span>`);
     }
   }
   h.hidden=false;
@@ -417,6 +565,7 @@ function renderHero(){
   h.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();jump()}});
 }
 
+const LEGEND_HTML=`<div class="ht">What the links mean</div><div class="hi"><span class="dlink note">${ico("arrow")}<span class="lt">1.4 Blank Note &amp; Practice Problems</span></span><small>the day's note</small></div><div class="hi"><span class="dlink ans">${ico("check")}<span class="lt">Answers</span></span><small>posted after class · do the practice first</small></div><div class="hi"><span class="dlink vid">${ico("play")}<span class="lt">Video</span></span></div><div class="hi"><span class="dlink doc">${ico("arrow")}<span class="lt">Worksheet</span></span><span class="xans">${ico("check")}Answers</span><small>a resource with its own answers</small></div><div class="hi"><span class="dlink pend">${ico("arrow")}<span class="lt">Greyed out</span></span><small>coming soon</small></div><div class="hi"><span class="newp">New</span><small>answers released in the last few days</small></div><div class="hi"><span class="swatch"></span><small>today's lesson</small></div>`;
 /* ══════════ Controls ══════════ */
 document.getElementById("expBtn").addEventListener("click",function(){
   const units=[...document.querySelectorAll(".unit")];
@@ -424,20 +573,93 @@ document.getElementById("expBtn").addEventListener("click",function(){
   units.forEach(u=>{u.classList.toggle("open",anyClosed);u.querySelector(".uhead").setAttribute("aria-expanded",anyClosed)});
   this.textContent=anyClosed?"Collapse All":"Expand All";
 });
+const sc=document.getElementById("sc"),nomatch=document.getElementById("nomatch");
 document.getElementById("si").addEventListener("input",function(){
   const q=this.value.trim().toLowerCase();
-  document.querySelectorAll(".ltable tbody tr").forEach(tr=>{
-    tr.style.display=!q||tr.textContent.toLowerCase().includes(q)?"":"none";
+  let n=0;
+  document.querySelectorAll(".unit").forEach(u=>{
+    let hits=0;
+    u.querySelectorAll(".ltable tbody tr").forEach(tr=>{
+      const show=!q||tr.textContent.toLowerCase().includes(q);
+      tr.style.display=show?"":"none";
+      tr.classList.remove("fin");
+      if(q&&show){void tr.offsetWidth;tr.classList.add("fin");hits++}
+    });
+    n+=hits;
+    u.classList.toggle("nomatch",!!q&&hits===0);
+    if(q&&hits){u.classList.add("open");u.querySelector(".uhead").setAttribute("aria-expanded","true")}
   });
-  if(q)document.querySelectorAll(".unit").forEach(u=>{u.classList.add("open")});
+  sc.textContent=q&&n?`${n} lesson${n===1?"":"s"}`:"";
+  nomatch.hidden=!(q&&n===0);
 });
 const pfill=document.getElementById("pf"),ptxt=document.getElementById("pt");
-pfill.style.width=(daysDone/daysTotal*100)+"%";
-ptxt.textContent=daysDone===0?`Starts ${fmtShort(allDated[0].iso)}`:
-  daysDone>=daysTotal?"Course complete":
-  `Day ${daysDone} / ${daysTotal} · ${unitLabel(COURSE.units[currentUnit],currentUnit)}`;
+const REDUCE=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+requestAnimationFrame(()=>{pfill.style.width=(daysDone/daysTotal*100)+"%"});
+function setProg(n){ptxt.textContent=`Day ${n} / ${daysTotal} · ${unitLabel(COURSE.units[currentUnit],currentUnit)}`}
+if(daysDone===0)ptxt.textContent=`Starts ${fmtShort(allDated[0].iso)}`;
+else if(daysDone>=daysTotal)ptxt.textContent="Course complete";
+else if(REDUCE)setProg(daysDone);
+else{
+  const t0=performance.now(),dur=700;
+  (function tick(now){
+    const k=Math.min((now-t0)/dur,1);
+    setProg(Math.round(daysDone*(1-Math.pow(1-k,3))));
+    if(k<1)requestAnimationFrame(tick);
+  })(t0);
+}
 const fab=document.getElementById("fab");
-window.addEventListener("scroll",()=>{fab.classList.toggle("visible",window.scrollY>400)});
+fab.innerHTML=ico("up")+"Current Unit";
+const topbar=document.querySelector(".top-bar");
+function setTbh(){document.documentElement.style.setProperty("--tbh",topbar.offsetHeight+"px")}
+setTbh();window.addEventListener("resize",setTbh);
+/* Unit headers stick under the top bar while their unit scrolls; a soft shadow says "stuck" */
+function stuckCheck(){
+  const tb=topbar.offsetHeight;
+  document.querySelectorAll(".unit").forEach(u=>{
+    const h=u.querySelector(".uhead");
+    if(!u.classList.contains("open")){h.classList.remove("stuck");return}
+    const r=u.getBoundingClientRect();
+    h.classList.toggle("stuck",r.top<tb-1&&r.bottom>tb+h.offsetHeight+24);
+  });
+}
+let scrollTick=false;
+window.addEventListener("scroll",()=>{
+  if(scrollTick)return;scrollTick=true;
+  requestAnimationFrame(()=>{fab.classList.toggle("visible",window.scrollY>400);stuckCheck();scrollTick=false});
+},{passive:true});
+document.getElementById("units").addEventListener("click",()=>requestAnimationFrame(stuckCheck));
+
+/* ══════════ Legend popover ══════════ */
+const helpBtn=document.getElementById("helpBtn"),help=document.getElementById("help");
+help.innerHTML=LEGEND_HTML;
+function setHelp(o){help.classList.toggle("open",o);helpBtn.setAttribute("aria-expanded",o)}
+helpBtn.addEventListener("click",e=>{e.stopPropagation();setHelp(!help.classList.contains("open"))});
+document.addEventListener("click",e=>{if(!e.target.closest("#help"))setHelp(false)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){setHelp(false);disarm()}});
+
+/* ══════════ Touch: answers need a second tap ══════════
+   No hover on a phone, so the first tap on any Answers link raises the
+   warning as a sheet with a Continue button. Continue (or a second tap
+   on the link) opens it. */
+const TOUCH=window.matchMedia("(hover: none)").matches;
+function disarm(){document.querySelectorAll(".tipwrap.armed").forEach(w=>w.classList.remove("armed"));document.body.classList.remove("armed")}
+document.addEventListener("click",e=>{
+  const go=e.target.closest(".tgo");
+  if(go){
+    e.preventDefault();e.stopPropagation();
+    const a=go.closest(".tipwrap")?.querySelector("a[data-warn]");
+    disarm();
+    if(a)window.open(a.href,"_blank","noopener");
+    return;
+  }
+  const a=e.target.closest("a[data-warn]");
+  if(a&&TOUCH){
+    const w=a.closest(".tipwrap");
+    if(w&&!w.classList.contains("armed")){e.preventDefault();e.stopPropagation();disarm();w.classList.add("armed");document.body.classList.add("armed");return}
+    disarm();return;
+  }
+  if(!e.target.closest(".tipwrap.armed"))disarm();
+},true);
 fab.addEventListener("click",()=>{document.getElementById("u"+currentUnit).scrollIntoView({behavior:"smooth"})});
 
 /* theme (persisted) */
@@ -446,12 +668,16 @@ const stored=localStorage.getItem("mcr3u-theme");
 const startDark=stored?stored==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;
 document.documentElement.setAttribute("data-theme",startDark?"dark":"light");
 function isDark(){return document.documentElement.getAttribute("data-theme")==="dark"}
-function syncBtn(){dmBtn.textContent=isDark()?"☀︎ Light":"☾ Dark"}
+function syncBtn(){dmBtn.innerHTML=isDark()?ico("sun")+" Light":ico("moon")+" Dark"}
+document.getElementById("siIco").innerHTML=ico("search");
 dmBtn.addEventListener("click",()=>{
   const next=isDark()?"light":"dark";
-  document.documentElement.setAttribute("data-theme",next);
-  localStorage.setItem("mcr3u-theme",next);
-  syncBtn();bgColors();
+  const apply=()=>{
+    document.documentElement.setAttribute("data-theme",next);
+    localStorage.setItem("mcr3u-theme",next);
+    syncBtn();bgColors();
+  };
+  if(document.startViewTransition&&!REDUCE)document.startViewTransition(apply);else apply();
 });
 render();renderHero();syncBtn();
 
@@ -559,7 +785,13 @@ function draw(t){
     if(!drawCurve(curves[i],t))curves[i]=spawn(i,t,800+Math.random()*2500);
   }
 }
-function loop(now){draw(now);requestAnimationFrame(loop)}
+let bgRaf=0;
+function loop(now){draw(now);bgRaf=requestAnimationFrame(loop)}
+document.addEventListener("visibilitychange",()=>{
+  if(reduce)return;
+  if(document.hidden){cancelAnimationFrame(bgRaf);bgRaf=0}
+  else if(!bgRaf)bgRaf=requestAnimationFrame(loop);
+});
 sizeBg();bgColors();
 /* open mid-show: curves already at staggered life stages */
 for(let i=0;i<N_CURVES;i++){
@@ -572,7 +804,7 @@ function drawStatic(){
   curves.forEach(c=>{c.born=0;c.fixed=true});
   draw(1);
 }
-if(reduce)drawStatic();else requestAnimationFrame(loop);
+if(reduce)drawStatic();else bgRaf=requestAnimationFrame(loop);
 </script>
 </body>
 </html>
