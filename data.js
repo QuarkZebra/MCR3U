@@ -79,7 +79,7 @@ const COURSE = {
     ]},
     {d:5, iso:"2026-09-08", topic:"Domain & Range", num:"1.4",
       note:D("1gB6iFHYbFXsEPxCj2aaQSFVRfAvjGYNe"),
-      ans:"", /* key: D("1cO1C4TuJxH7vyddn1Y3UvWX0C7v4tr8r") */ extras:[
+      ans:D("1cO1C4TuJxH7vyddn1Y3UvWX0C7v4tr8r"), /* key: D("1cO1C4TuJxH7vyddn1Y3UvWX0C7v4tr8r") */ extras:[
       ["Ms Havrot 1.4: Domain and Range","https://www.youtube.com/watch?v=FLGpA8QFYBw","vid"],
       ["Domain & Range in Set Notation","https://www.youtube.com/watch?v=vNqhnWrkPyY","vid"],
       ["Domain & Range from Graphs","https://www.youtube.com/watch?v=YjVc9ookvRs","vid"],
