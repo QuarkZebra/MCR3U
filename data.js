@@ -91,7 +91,7 @@ const COURSE = {
     {d:6, iso:"2026-09-09", flag:"pquiz", covers:"Current Topics + Factoring + Other Old Topic",
       topic:"",
       noteLabel:"Mid-Unit Review",
-      note:D("1opYONPznIH7o9R7l07v4LpHTEZoZDD0T"), ans:"" /* key: D("1pJNjw21xCYITWD8sLOxDxvfUiCmpYTaQ") */, extras:[
+      note:D("1opYONPznIH7o9R7l07v4LpHTEZoZDD0T"), ans:D("1pJNjw21xCYITWD8sLOxDxvfUiCmpYTaQ") /* key: D("1pJNjw21xCYITWD8sLOxDxvfUiCmpYTaQ") */, extras:[
       ["Solving Equations Practice",D("1r2EgNo747L2W40tlw6vGsaHWBfr8oK5o"),"doc"],
       ["Solving Equations with Fractions",D("1r5bw02uu2eHIz_rk118mip60raP2Lvop"),"doc"],
       ["Solve for x Practice",D("1r1sLdQ9atHYauiBJ9l-KKeh96aOoNPtS"),"doc"],
