@@ -99,7 +99,7 @@ const COURSE = {
     ]},
     {d:7, iso:"2026-09-10", topic:"Inverse Functions", num:"1.5",
       note:D("1VEfMQq_T1WsP_zZKvdzcvUjWatQCR4W4"),
-      ans:"", /* key: D("1m1HwDyosbMYSc-9X7vfgx4ZzcypiGYMd") */ extras:[
+      ans:D("1m1HwDyosbMYSc-9X7vfgx4ZzcypiGYMd"), /* key: D("1m1HwDyosbMYSc-9X7vfgx4ZzcypiGYMd") */ extras:[
       ["Ms Havrot 1.5: Inverse Functions","https://www.youtube.com/watch?v=vfxoaiCaqk8","vid"],
       ["Inverse Functions Worksheet",D("1MIxluvaZYlVKiLwB7e7pTI-dZvCUj-SA"),"doc"],
       ["Answers",D("1MIvL0ozQ1bDWve90b7VXskJS9qKIB-HT"),"ans"],
