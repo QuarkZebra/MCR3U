@@ -108,7 +108,7 @@ const COURSE = {
     ]},
     {d:8, iso:"2026-09-11", topic:"Exploring Transformations", num:"1.6",
       note:"https://drive.google.com/file/d/1WrbAp_2-EcZA4UPD-gqcsbvzGO1Es6yX/view",
-      ans:"", /* key: D("1gG_lg0EmqX-gTrDrghi_E07SFYbZ0su_") */ extras:[
+      ans:D("1gG_lg0EmqX-gTrDrghi_E07SFYbZ0su_"), /* key: D("1gG_lg0EmqX-gTrDrghi_E07SFYbZ0su_") */ extras:[
       ["Ms Havrot 1.6: Vertical & Horizontal Translations","https://www.youtube.com/watch?v=dRIwgEtUYA0","vid"],
       ["Ms Havrot 1.6: Reflections in the x- and y-axis","https://www.youtube.com/watch?v=j4N18JHLHoo","vid"],
       ["Ms Havrot 1.7: Stretches & Compressions","https://www.youtube.com/watch?v=tF4P2Y47Odk","vid"],
