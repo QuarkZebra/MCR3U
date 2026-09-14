@@ -166,6 +166,7 @@ const COURSE = {
     {d:13, iso:"2026-09-18", topic:"Operations with Polynomials", num:"2.1",
       note:D("1yp1psWtyLzOer2kV6zgv5N5dg-jpQgDo"),
       ans:"", /* key: D("1tH5DsMPuAxNX-MpFBoxbpgbTLknXJoYR") */ extras:[
+      ["Unit 2 Prerequisite Skills (answers included)",D("1gemQgxRklB0fPrQ0kG2d_N8T-ZLRP-wW"),"skills"],
       ["Ms Havrot 2.1: Adding & Subtracting Polynomials","https://www.youtube.com/watch?v=3EKx3zeC8OU","vid"],
       ["Ms Havrot 2.2: Multiplying Polynomials","https://www.youtube.com/watch?v=dGQ6a3jiLbI","vid"],
       ["Order of Operations Practice",D("16aQAGMlrrvb-JdnI-lnbBjPpQvac1HU7"),"doc"],
@@ -257,6 +258,7 @@ const COURSE = {
     {d:23, iso:"2026-10-05", topic:"Properties of Quadratic Functions", num:"3.1",
       note:D("1ec0lsmRI1tGqCPd-cfLCEigshD4x349j"),
       ans:"", /* key: D("1NoyP-5JafrlV9q8LkWrYQcBtbjTd4PJl") */ extras:[
+      ["Unit 3 Prerequisite Skills (answers included)",D("1ezirQeeryJlb3S5mLTcovi4Y2QpneOgw"),"skills"],
       ["Ms Havrot 3.1: Properties of Quadratic Functions","https://www.youtube.com/watch?v=MOT2XGonThs","vid"],
       ["Ms Havrot 3.1: Homework Examples","https://www.youtube.com/watch?v=pvAfEvuikTM","vid"],
       ["Properties Worksheet",D("1RepawH2pm059Xdi_AkO5_pThhxCON4ZO"),"doc"],
