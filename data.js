@@ -130,7 +130,7 @@ const COURSE = {
     ]},
     {d:9, iso:"2026-09-14", topic:"Combining Transformations", num:"1.7",
       note:D("1akxaxRixo1Xi_iayhrdsI0b5RN1PU472"),
-      ans:"", /* key: D("1DlXJ1psygp4pWBPQ0ybJPA4gdIczVuEY") */ extras:[
+      ans:D("1DlXJ1psygp4pWBPQ0ybJPA4gdIczVuEY"), /* key: D("1DlXJ1psygp4pWBPQ0ybJPA4gdIczVuEY") */ extras:[
       ["Ms Havrot 1.7: Why the x-changes Feel Backwards","https://www.youtube.com/watch?v=H-IdTIi7Xr8","vid"],
       ["Ms Havrot 1.8: Mapping Rules","https://www.youtube.com/watch?v=Wkf24MjBC-U","vid"],
       ["All Types of Horizontal Transformations",D("1IRSqmlv38BnELA7tpwDTrk7rl6acdEwi"),"doc"],
