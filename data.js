@@ -352,6 +352,7 @@ const COURSE = {
     {d:35, iso:"2026-10-22", topic:"Integer Exponents", num:"4.2",
       note:D("1debMv_rGlsySZMCJq2F5L-AGdEw2vgJo"),
       ans:"", /* key: D("1kVQlVBiVZ5Qf9awFBhM15hWiUsBYqYhT") */ extras:[
+      ["Unit 4 Prerequisite Skills (answers included)",D("1Xtx248GDqRVTtbMYa0Q3qy-fTfwactUm"),"skills"],
       ["Ms Havrot 4.2: Integer Exponents","https://www.youtube.com/watch?v=FDjUeC3WJWU","vid"],
       ["Zero, Negative & Fractional Exponents","https://www.youtube.com/watch?v=tOuCdKqO6-s","vid"],
       ["Exponent Law Practice",D("1hsNHVnExBiUJ5tECuL25-6n2BRxNUTVm"),"doc"],
@@ -436,6 +437,7 @@ const COURSE = {
     {d:45, iso:"2026-11-05", topic:"Trig Ratios of Acute Angles", num:"5.1",
       note:D("1_vWtR_Uz2jkG6hU4XVw7xPhdutM4tZhp"),
       ans:"", /* key: D("1tZVW8AoyRSDMEUeXbh8RQ3__Os77W6fj") */ extras:[
+      ["Unit 5 Prerequisite Skills (answers included)",D("1Jy0yY2PcGE4QAfkfB6Z1Za7YYSe05EDK"),"skills"],
       ["Ms Havrot 5.1: Primary & Reciprocal Trig Ratios","https://www.youtube.com/watch?v=YM2TLmh4QAE","vid"],
       ["SOH CAH TOA Explained","https://www.youtube.com/watch?v=5tp74g4N8EY","vid"],
       ["Trig Ratios Practice",D("1TGppnz1JBxMeghzxpxnU-gJTYQTVD5--"),"doc"],
