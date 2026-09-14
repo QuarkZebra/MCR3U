@@ -539,6 +539,7 @@ const COURSE = {
     {d:57, iso:"2026-11-24", topic:"Periodic Functions & Their Properties", num:"6.1",
       note:D("1hhz84UQgPyBifCy6oGUGOrPbrCsRlsHo"),
       ans:"", /* key: D("1Wkixpm1SsP6160sgRJvKm9OKsLQpqoMY") */ extras:[
+      ["Unit 6 Prerequisite Skills (answers included)",D("1KQb59eHXBgw3rdH-Aveqs-eMiB80SLve"),"skills"],
       ["Ms Havrot 6.1: Periodic Functions","https://www.youtube.com/watch?v=xDSoGT-PESk","vid"],
       ["JensenMath: Periodic Behaviour Worksheet",D("1FGd-zFEkhf1Hi1AUOi8PXPeTMV2xprwc"),"doc"],
       ["Answers",D("18TMmbexjshqO8bC2gFQ1Ep0JYArikrK6"),"ans"],
@@ -622,6 +623,7 @@ const COURSE = {
     {d:69, iso:"2026-12-10", topic:"Arithmetic Sequences", num:"7.1",
       note:D("1YRvgX_8miXnuAUNfoMJ2QvBDmi3hKfj1"),
       ans:"", /* key: D("1Np4YU7KA5zRcmqI3R_HvN2smgjdrRvfA") */ extras:[
+      ["Unit 7 Prerequisite Skills (answers included)",D("1yWx_m8uvFlSvPdh32lRa_AOOhTRqXXxk"),"skills"],
       ["Ms Havrot 7.1: Arithmetic Sequences","https://www.youtube.com/watch?v=Kywsd6LKXKg","vid"],
       ["JensenMath: Sequences Worksheet",D("1wLUlIfZJCEIHCRd4TFASrN9_Q71W8TJb"),"doc"],
       ["Answers",D("1qT6npurfV2M4f8fzLQ0lXJcDm9UapJ2W"),"ans"],
