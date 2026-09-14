@@ -662,7 +662,10 @@ const COURSE = {
       ["JensenMath: Recursive Functions Worksheet",D("1MwdS_46NGbwplJvcDKunhiYPuEMEQQ9v"),"doc"],
       ["Answers",D("1DpjetkH8Dy9W4w_sNfuSV4Ym9764ncRl"),"ans"],
     ]},
-    {d:75, iso:"2026-12-18", topic:"Pascal's Triangle & Binomial Expansions",
+    {d:75, iso:"2026-12-18", topic:"Work Period", note:"", ans:"", extras:[
+      ["Ms Havrot: Extending Question on Geometric Series","https://www.youtube.com/watch?v=pJSkyvtnyYk","vid"],
+    ]},
+    {d:76, iso:"2027-01-04", topic:"Pascal's Triangle & Binomial Expansions",
       noteLabel:"Blank Note & Practice Problems",
       note:D("1DrXK8dmMwVsw-0NfTsiA9S1kw6IGo2ws"),
       ans:"", /* key: D("1OI_Zacdg3hA_9cE5fOR-eCPNqAQRQLx3") */ extras:[
@@ -671,9 +674,6 @@ const COURSE = {
       ["Answers",D("1yjHoXmyqCIwm_rbnJoCEVUcXaWvHgIhO"),"ans"],
       ["JensenMath: Pascal's Triangle Worksheet 2",D("1msPNmLfdKHLGSp4mECsChHs6seIJPMdU"),"doc"],
       ["Answers",D("1gLJN116yneuvct-7Cdocqon-ZvgBzDqn"),"ans"],
-    ]},
-    {d:76, iso:"2027-01-04", topic:"Work Period", note:"", ans:"", extras:[
-      ["Ms Havrot: Extending Question on Geometric Series","https://www.youtube.com/watch?v=pJSkyvtnyYk","vid"],
     ]},
     {d:77, iso:"2027-01-05", topic:"Simple Interest", num:"7.5",
       note:D("1ZZvOMYCneIXDd-70z4eEvYSk80ziA5EE"),
