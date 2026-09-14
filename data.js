@@ -45,12 +45,22 @@ const COURSE = {
   code: "MCR3U",
   title: "Functions",
   sub: "Grade 11 · University Preparation",
+
+  /* Pinned under the title, above the units: [label, url, kind, warn].
+     kind = "outline" | "routine" | "calc". A warn string shows as a hazard
+     note on hover (desktop) or first tap (phone). */
+  essentials: [
+    ["Course Outline",D("1cotZCPNESk-bsFnpl-cMMrAOMaO-fh63"),"outline"],   /* LaTeX rebuild, 14 Sep 2026; old Google Doc: 1Cm6Lv9G2oagRwM2XqHnEbIvHnvqNS621GmoQ6gVOZgw */
+    ["A Homework Routine",D("1lA1ndpAaCGpI98dg_oID546mWmeL7dnI"),"routine"],
+    ["Approved Calculators",D("1Hq2HE1EzSy2frKT0pfDUSWshgf0GB7A1"),"calc","Must be one of these exact models"],
+  ],
+
   units: [
 
   /* ── UNIT 1 ─────────────────────────────────────────────── */
   {name:"Intro to Functions", days:[
     {d:1, iso:"2026-09-01", topic:"Course Intro & Diagnostic", note:"", ans:"", extras:[
-      ["Course Outline","https://docs.google.com/document/d/1Cm6Lv9G2oagRwM2XqHnEbIvHnvqNS621GmoQ6gVOZgw/edit?usp=sharing","doc"],
+      ["First-Day Self-Diagnostic (answers included)",D("1ZDpxwwHx0rDGZlsQzDLS8G_eZplXslYS"),"skills"],
       ["Textbook","http://mrkennedy.pbworks.com/w/file/fetch/139473597/Nelson%20Functions%2011%20Textbook%281%29%281%29.pdf","doc"],
       ["Textbook Solutions","http://mrkennedy.pbworks.com/w/page/73303748/MCR3U%20Textbook%20Solutions","doc"],
       ["TVO Mathify (Resources & Free Tutoring)","https://mathify.tvolearn.com/","doc"],

@@ -17,7 +17,8 @@
   --bdr:#e8e3f2;--bdr2:#d6cee6;
   --accent:#8b5cf6;--accent-2:#a78bfa;
   --accent-dim:rgba(139,92,246,.08);--accent-bdr:rgba(139,92,246,.3);
-  --ans:#cc3344;--vid:#a8498f;--done:#1f8a63;
+  --ans:#cc3344;--vid:#a8498f;--done:#1f8a63;--skills:#0f8577;
+  --haz-bg:#fff6e5;--haz-fg:#9a5a00;--haz-bdr:rgba(190,120,0,.35);
   --warn-bg:#fff0f2;--warn-fg:#b32642;--warn-bdr:rgba(204,51,68,.3);
   --test-bg:rgba(176,72,84,.06);--quiz-bg:rgba(139,92,246,.05);--pquiz-bg:rgba(139,92,246,.05);
   --test-fg:#b04854;--test-dim:rgba(176,72,84,.09);--test-bdr:rgba(176,72,84,.35);
@@ -33,7 +34,8 @@
   --bdr:#2d2444;--bdr2:#3d3258;
   --accent:#a78bfa;--accent-2:#c4b5fd;
   --accent-dim:rgba(167,139,250,.12);--accent-bdr:rgba(167,139,250,.34);
-  --ans:#ff8f9d;--vid:#d576c0;--done:#43c79f;
+  --ans:#ff8f9d;--vid:#d576c0;--done:#43c79f;--skills:#3fd2bd;
+  --haz-bg:#33260f;--haz-fg:#ffc65c;--haz-bdr:rgba(255,198,92,.35);
   --warn-bg:#351c26;--warn-fg:#ff9fae;--warn-bdr:rgba(255,143,157,.3);
   --test-bg:rgba(224,122,140,.07);--quiz-bg:rgba(167,139,250,.07);--pquiz-bg:rgba(167,139,250,.07);
   --test-fg:#e07a8c;--test-dim:rgba(224,122,140,.12);--test-bdr:rgba(224,122,140,.4);
@@ -107,6 +109,14 @@ header{margin-bottom:1.8rem}
 header h1{font-size:2.5rem;font-weight:700;letter-spacing:-.03em;line-height:1.1;color:var(--ink);text-wrap:balance}
 header h1 em{font-style:normal;color:var(--accent)}
 header .sub{color:var(--t3);font-size:.88rem;margin-top:.35rem}
+/* Course essentials: the outline, the homework routine and the calculator list, pinned under the title */
+.ess{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.95rem}
+.ess a{display:inline-flex;align-items:center;gap:.42rem;font-size:.78rem;font-weight:600;padding:.42rem .9rem;border-radius:100px;
+  background:var(--surface);border:1px solid var(--bdr2);color:var(--t2);box-shadow:var(--sh);
+  transition:transform .15s,border-color .15s,color .15s,box-shadow .15s}
+.ess a:hover{transform:translateY(-1px);border-color:var(--accent-bdr);color:var(--accent);box-shadow:var(--sh2)}
+.ess a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.ess .ico{width:1.05em;height:1.05em}
 
 .sbar{display:flex;align-items:center;gap:.6rem;margin-bottom:1.2rem;padding:.55rem .9rem;background:var(--surface);
   border:1px solid var(--bdr);border-radius:var(--r);box-shadow:var(--sh);transition:border-color .2s,box-shadow .2s}
@@ -209,6 +219,8 @@ header .sub{color:var(--t3);font-size:.88rem;margin-top:.35rem}
 .dlink.pend .lt{background:none}
 .dlink.vid{color:var(--vid);font-size:.78rem}
 .dlink.doc{color:var(--t2);font-size:.78rem}
+.dlink.skills{color:var(--skills);font-size:.78rem;font-weight:600}
+.dlink:hover .ico.layers{transform:translateY(-1px)}
 
 /* Hover tooltips */
 .tipwrap{position:relative;display:inline-flex}
@@ -218,6 +230,9 @@ header .sub{color:var(--t3);font-size:.88rem;margin-top:.35rem}
   opacity:0;visibility:hidden;transform:translateY(-4px) scale(.96);transform-origin:top left;transition:opacity .12s,transform .12s,visibility 0s .12s}
 .tip.info{background:var(--ink);color:var(--bg)}
 .tip.warn{background:var(--warn-bg);color:var(--warn-fg);border:1px solid var(--warn-bdr)}
+.tip.hazard{background:var(--haz-bg);color:var(--haz-fg);border:1px solid var(--haz-bdr)}
+.tip.hazard .ico.haz{width:1rem;height:1rem;flex-shrink:0}
+.tip.hazard .tgo{background:var(--haz-fg)}
 .tip .skull{width:1rem;height:1rem;flex-shrink:0}
 .tip.up{top:auto;bottom:calc(100% + 6px);transform:translateY(4px) scale(.96);transform-origin:bottom left}
 .tip .tgo{display:none;font:inherit;font-weight:700;font-size:.7rem;background:var(--warn-fg);color:#fff;border:none;border-radius:6px;padding:.3rem .7rem;cursor:pointer;white-space:nowrap}
@@ -280,6 +295,7 @@ body.armed .fab{opacity:0;visibility:hidden;pointer-events:none;transform:transl
   .dlink{font-size:.86rem}.dlink.ans,.dlink.pend{font-size:.8rem}.dlink.vid,.dlink.doc,.dlink.eqao{font-size:.82rem}
   .xans{font-size:.68rem}
   .hero .acts .btn{flex:1 1 auto;justify-content:center}
+  .ess a{flex:1 1 auto;justify-content:center}
 }
 @media (prefers-reduced-motion: reduce){
   *{transition:none!important;animation:none!important}
@@ -307,6 +323,7 @@ body.armed .fab{opacity:0;visibility:hidden;pointer-events:none;transform:transl
     </div>
     <h1><em>Functions</em></h1>
     <div class="sub" id="subTitle"></div>
+    <nav class="ess" id="ess" aria-label="Course essentials"></nav>
   </header>
 
   <section class="hero" id="hero" hidden style="--i:2"></section>
@@ -377,6 +394,11 @@ const ICONS={
   moon:'<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/>',
   up:'<path d="M12 19V5M5 12l7-7 7 7"/>',
   skull:'<path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 2a8 8 0 0 0-8 8c0 2.6 1.2 4.6 3 6v3a1 1 0 0 0 1 1h1v-2h2v2h2v-2h2v2h1a1 1 0 0 0 1-1v-3c1.8-1.4 3-3.4 3-6a8 8 0 0 0-8-8zM8.5 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>',
+  layers:'<path d="M12 3.5l9 4.5-9 4.5-9-4.5z"/><path d="M3 12.5l9 4.5 9-4.5"/><path d="M3 16.5l9 4.5 9-4.5"/>',
+  doc:'<path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5M9.5 13h6M9.5 17h6"/>',
+  list:'<path d="M10 6.5h10M10 12h10M10 17.5h10"/><path d="M4 6.5l1.2 1.2 2.3-2.4M4 12l1.2 1.2 2.3-2.4M4 17.5l1.2 1.2 2.3-2.4"/>',
+  calc:'<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8.5 7.5h7M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01"/>',
+  haz:'<path d="M12 3.5L2.5 20h19z"/><path d="M12 9.5v4.5M12 17h.01"/>',
 };
 function ico(name,cls){
   return `<svg class="ico ${name}${cls?" "+cls:""}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name]}</svg>`;
@@ -396,6 +418,7 @@ function extraLink(e){
   const[t,url,kind]=e;
   if(kind==="vid")return live(t,url,"vid","play",false);
   if(kind==="ans")return live(t,url,"ans","check",true);
+  if(kind==="skills")return live(t,url,"skills","layers",false);
   return live(t,url,"doc","arrow",false);
 }
 /* A worksheet's answers ride along as a chip on the same line instead of a stray "Answers" row */
@@ -512,6 +535,24 @@ function toggleU(btn){
   btn.setAttribute("aria-expanded",u.classList.contains("open"));
 }
 
+/* ══════════ Course essentials ══════════
+   COURSE.essentials = [[label, url, kind, warn?], ...]; kind is "outline",
+   "routine" or "calc". A warn string rides on the link as a hazard tip (the
+   pill itself stays plain): hover on desktop, and on a phone the first tap
+   raises it as a sheet with Continue (the same data-warn mechanism the answer
+   keys use). */
+function renderEssentials(){
+  const el=document.getElementById("ess");
+  const list=(COURSE.essentials||[]).filter(Boolean);
+  if(!list.length){el.hidden=true;return}
+  const ICO={outline:"doc",routine:"list",calc:"calc"};
+  el.innerHTML=list.map(e=>{
+    const[t,url,kind,warn]=e;
+    const a=`<a href="${esc(url)}" target="_blank" rel="noopener"${warn?' data-warn':''}>${ico(ICO[kind]||"arrow")}<span>${t}</span></a>`;
+    return warn?`<span class="tipwrap">${a}<span class="tip hazard">${ico("haz","haz")}<span>${esc(warn)}</span><button class="tgo" type="button">Continue</button></span></span>`:a;
+  }).join("");
+}
+
 /* ══════════ Hero ══════════ */
 function renderHero(){
   const h=document.getElementById("hero");
@@ -565,7 +606,7 @@ function renderHero(){
   h.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();jump()}});
 }
 
-const LEGEND_HTML=`<div class="ht">What the links mean</div><div class="hi"><span class="dlink note">${ico("arrow")}<span class="lt">1.4 Blank Note &amp; Practice Problems</span></span><small>the day's note</small></div><div class="hi"><span class="dlink ans">${ico("check")}<span class="lt">Answers</span></span><small>posted after class · do the practice first</small></div><div class="hi"><span class="dlink vid">${ico("play")}<span class="lt">Video</span></span></div><div class="hi"><span class="dlink doc">${ico("arrow")}<span class="lt">Worksheet</span></span><span class="xans">${ico("check")}Answers</span><small>a resource with its own answers</small></div><div class="hi"><span class="dlink pend">${ico("arrow")}<span class="lt">Greyed out</span></span><small>coming soon</small></div><div class="hi"><span class="newp">New</span><small>answers released in the last few days</small></div><div class="hi"><span class="swatch"></span><small>today's lesson</small></div>`;
+const LEGEND_HTML=`<div class="ht">What the links mean</div><div class="hi"><span class="dlink note">${ico("arrow")}<span class="lt">1.4 Blank Note &amp; Practice Problems</span></span><small>the day's note</small></div><div class="hi"><span class="dlink ans">${ico("check")}<span class="lt">Answers</span></span><small>posted after class · do the practice first</small></div><div class="hi"><span class="dlink vid">${ico("play")}<span class="lt">Video</span></span></div><div class="hi"><span class="dlink doc">${ico("arrow")}<span class="lt">Worksheet</span></span><span class="xans">${ico("check")}Answers</span><small>a resource with its own answers</small></div><div class="hi"><span class="dlink skills">${ico("layers")}<span class="lt">Prerequisite Skills</span></span><small>earlier-course skills a unit leans on · answers on the sheet</small></div><div class="hi"><span class="dlink pend">${ico("arrow")}<span class="lt">Greyed out</span></span><small>coming soon</small></div><div class="hi"><span class="newp">New</span><small>answers released in the last few days</small></div><div class="hi"><span class="swatch"></span><small>today's lesson</small></div>`;
 /* ══════════ Controls ══════════ */
 document.getElementById("expBtn").addEventListener("click",function(){
   const units=[...document.querySelectorAll(".unit")];
@@ -679,7 +720,7 @@ dmBtn.addEventListener("click",()=>{
   };
   if(document.startViewTransition&&!REDUCE)document.startViewTransition(apply);else apply();
 });
-render();renderHero();syncBtn();
+render();renderEssentials();renderHero();syncBtn();
 
 /* ══════════ Animated background: baby functions growing ══════════
    One idea, done calmly: a tiny parent function fades in and grows at

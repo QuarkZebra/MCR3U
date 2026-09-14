@@ -23,8 +23,13 @@ Everything you edit lives in **`data.js`**. Find the day, paste the URL:
 - Where a KEY pdf already exists in Drive, its id is stashed in a comment right
   after `ans:""` — after class, move it into the `ans` field.
 - **`extras`** — `["Title", "url", "kind"]` where kind is `"doc"` (worksheet /
-  handout / anything), `"ans"` (solutions — red with the ☠︎ warning), or
-  `"vid"` (video).
+  handout / anything), `"ans"` (solutions — red with the ☠︎ warning),
+  `"vid"` (video), or `"skills"` (a Prerequisite Skills sheet — teal, with
+  its answers on the sheet).
+- **`essentials`** (top of `COURSE`, above `units`) — the links pinned under
+  the site title: `["Label", "url", "kind", "warn"]` with kind `"outline"`,
+  `"routine"` or `"calc"`. A `warn` string becomes a ⚠ note on hover, or on
+  the first tap on a phone (a second tap or Continue opens the link).
 - `D("fileId")` is shorthand for a Google Drive link; pasting the full URL
   works just as well.
 - Days with no note (tests, work periods) simply have no `num` field.
