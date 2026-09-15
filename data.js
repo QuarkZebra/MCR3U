@@ -36,7 +36,7 @@
 
    To Save Time:
 
-   git add . && git commit -m "quiz title fixes SAVED" && git push origin main
+   git add . && git commit -m "d10 practice quiz" && git push origin main
    ═══════════════════════════════════════════════════════════ */
 
 const D = id => `https://drive.google.com/file/d/${id}/view`;
@@ -142,7 +142,8 @@ const COURSE = {
       ["JensenMath: Transforming y = 1/x Worksheet",D("1lNeQQRSBkWik8APwGy-jdW3lH5BBbbwF"),"doc"],
       ["Answers",D("1-wvF71NaXvYAV4XO6LLuh8-o5XzlNVV7"),"ans"],
     ]},
-    {d:10, iso:"2026-09-15", topic:"Transformations Practice", note:"", ans:"", extras:[]},
+    {d:10, iso:"2026-09-15", topic:"Transformations Practice", 
+      noteLabel:"Practice Quiz", ansLabel:"Answers", note: D("1YRDqxsp5zRaZA4K7lXXvSU2Yed7SDgw6"), ans:D("1hXatDA233-TTd2pBXtfm5nnI_I0ExfxW"), extras:[]},
     {d:11, iso:"2026-09-16", flag:"quiz", covers:"Current Topics + Factoring",
       topic:"",
       note:"", ans:"", extras:[
