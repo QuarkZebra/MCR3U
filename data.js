@@ -36,7 +36,7 @@
 
    To Save Time:
 
-   git add . && git commit -m "d10 practice quiz" && git push origin main
+   git add . && git commit -m "u1 practice quiz and key" && git push origin main
    ═══════════════════════════════════════════════════════════ */
 
 const D = id => `https://drive.google.com/file/d/${id}/view`;
@@ -152,7 +152,7 @@ const COURSE = {
       ["Answers",D("1JLWAg8PsAWuiwFzyF22xJccLtZ334R_O"),"ans"],
     ]},
     {d:12, iso:"2026-09-17", topic:"Review", 
-      noteLabel:"Practice Test", ansLabel:"Answers", note:"", ans:"", extras:[
+      noteLabel:"Practice Test", ansLabel:"Answers", note:D("1I_8eD2RqIKQxYa5IiBFse8QcwZU_glzy"), ans:D("1q86jo86PfKqo4g-iuqSss1qB9bbSEWYQ"), extras:[
       ["Ms Havrot: Chapter 1 Practice Test","https://www.youtube.com/watch?v=pJPaVZTtiGE","vid"],
       ["Transforming Domain & Range Practice",D("1Ke1I4WAOhmPcGB51oyfMLzMELB-BwZg9"),"doc"],
       ["Answers",D("1KeNWvjLYCUn0dkP7uMbBigagw8xYzFn-"),"ans"],
