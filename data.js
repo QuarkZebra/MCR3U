@@ -446,7 +446,7 @@ const COURSE = {
       "num": "2.6",
       "noteLabel": "Sheet 2.6 · Notes & Practice",
       "flag": "quiz",
-      "covers": "25 minutes"
+      "covers": "Lessons 2.1–2.5 · 25 minutes"
     },
     {
       "d": 20,
