@@ -164,95 +164,376 @@ const COURSE = {
   ]},
 
   /* ── UNIT 2 ─────────────────────────────────────────────── */
-  {name:"Equivalent Expressions", days:[
-    {d:14, iso:"2026-09-21", topic:"Operations with Polynomials", num:"2.1",
-      note:D("1yp1psWtyLzOer2kV6zgv5N5dg-jpQgDo"),
-      ans:"", /* key: D("1tH5DsMPuAxNX-MpFBoxbpgbTLknXJoYR") */ extras:[
-      ["Unit 2 Prerequisite Skills (answers included)",D("1gemQgxRklB0fPrQ0kG2d_N8T-ZLRP-wW"),"skills"],
-      ["Ms Havrot 2.1: Adding & Subtracting Polynomials","https://www.youtube.com/watch?v=3EKx3zeC8OU","vid"],
-      ["Ms Havrot 2.2: Multiplying Polynomials","https://www.youtube.com/watch?v=dGQ6a3jiLbI","vid"],
-      ["Order of Operations Practice",D("16aQAGMlrrvb-JdnI-lnbBjPpQvac1HU7"),"doc"],
-      ["Simplifying Expressions Practice",D("16b7CTGGvJBBG5l60vpW7NHul2TWPfwpo"),"doc"],
-    ]},
-    {d:15, iso:"2026-09-22", topic:"Factoring I", num:"2.2",
-      note:D("1h-zlXBBuHL45eO588zOUL1G6cYuLWRii"),
-      ans:"", /* key: D("1IJrh56tEfyb4PC3CzBJPaa94TNZ9vBHO") */ extras:[
-      ["Ms Havrot 2.3: Common Factoring & Grouping","https://www.youtube.com/watch?v=a9zVcmKx-Lc","vid"],
-      ["Ms Havrot 2.3: Simple Trinomials","https://www.youtube.com/watch?v=a_B_Fbck5l8","vid"],
-      ["Khan: Taking Common Factors","https://www.khanacademy.org/gclassroom/math/algebra2/x2ec2f6f830c9fb89:poly-factor/x2ec2f6f830c9fb89:common-factor/a/taking-common-factors","vid"],
-      ["Factoring Worksheet",D("1QqmFJUPOjP8l8zZJEqO9PU6M-SNcXsNN"),"doc"],
-    ]},
-    {d:16, iso:"2026-09-23", topic:"Factoring II", num:"2.3",
-      note:D("1-IdxYp6KOP-B2OfjyRb7B8SvUS8A0HLW"),
-      ans:"", /* key: D("18BbT74x5M3yyQ3h_yhUHuWl0gCY3ngwj") */ extras:[
-      ["Ms Havrot 2.3: Complex Trinomials","https://www.youtube.com/watch?v=ZyVwwCxDxt0","vid"],
-      ["Ms Havrot 2.3: Difference of Squares & Perfect Squares","https://www.youtube.com/watch?v=NVo_jE2LawY","vid"],
-      ["Every Factoring Type, Worked","https://www.youtube.com/watch?v=blIh776gVsQ","vid"],
-      ["Worksheet for the Video Above",D("11wPHf6NJ0i8p5KgBgOhujANNeS-zQJIj"),"doc"],
-      ["More Factoring Practice",D("16wBxYMkSBnxSJ7isUZbQuxvfOxisBUyy"),"doc"],
-    ]},
-    {d:17, iso:"2026-09-24", flag:"pquiz", covers:"Current Topics + Transformations + Other Old Topic",
-      topic:"Operations with Radicals",
-      num:"2.4",
-      note:D("1FhmUKKhbYLkpX1UpBbOI4oSXK2SSLeN7"),
-      ans:"", /* key: D("1WfRDRcf8qTSD3WDLlBQjrspddgpIQ_Bc") */ extras:[
-      ["Ms Havrot 3.4: Operations with Radicals","https://www.youtube.com/watch?v=bn0_s7Ug0UY","vid"],
-      ["Simplifying Square Roots","https://www.youtube.com/watch?v=74iuGIaBgRc","vid"],
-      ["Adding Radicals, Quick and Simple","https://www.youtube.com/watch?v=o9onBMWckDc","vid"],
-      ["Operations with Radicals Worksheet",D("17wzwWrpp3LLB8Tr0wW7yHVHvK_8NuqgM"),"doc"],
-      ["JensenMath: Radicals Worksheet",D("1WB7hModR5sU8SDJZlMh8l8S7_U4yHwOC"),"doc"],
-      ["Answers",D("1ZomLLGRyjfDMXiFjdc0mL2pKlaCWBWI9"),"ans"],
-    ]},
-    {d:18, iso:"2026-09-25", topic:"Simplifying Rational Expressions", num:"2.5",
-      note:D("1SBvNw7eNT9NcuqnubM9HyMdhC8yvt2zH"),
-      ans:"", /* key: D("1Q3RlHBq-Y-TJi8u4ozhJ1dChaiW5R6qY") */ extras:[
-      ["Ms Havrot 2.4: Simplifying Rational Expressions","https://www.youtube.com/watch?v=V-HXjfE2SOg","vid"],
-      ["Ms Havrot 2.5: There is a Hole in the Graph","https://www.youtube.com/watch?v=HG1CBlGMFuc","vid"],
-      ["Khan: Simplifying Rational Expressions","https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:rational/x2ec2f6f830c9fb89:cancel-common-factor/v/simplifying-rational-expressions-introduction","vid"],
-      ["Simplify & State Restrictions",D("19n3xokMaxMtq6kpZBkaUgVeeiK3wQWQ0"),"doc"],
-      ["Answers",D("1AoleyL3muRxdmbd2JeJ6L_GSTNtGQS3C"),"ans"],
-      ["JensenMath: Simplifying Rational Expressions Worksheet",D("15AFsmbrSRCM7_0lM4IjSE24I3Yki91O9"),"doc"],
-      ["Answers",D("1fbQbUmtVi4HzWQ0cwvwPyPyGf75OEr9Y"),"ans"],
-    ]},
-    {d:19, iso:"2026-09-28", flag:"pquiz", covers:"Current Topics + Domain & Range + Other Old Topic",
-      topic:"Multiplying & Dividing Rational Expressions", num:"2.6",
-      note:D("1eC8nybUa_MxNJJNBs1Hiovpn2Q7SZ2mx"),
-      ans:"", /* key: D("18FDCj062GFTFuJqIMzz0bcAmI0fvz_UF") */ extras:[
-      ["Ms Havrot 2.6: Multiplying & Dividing Rational Expressions","https://www.youtube.com/watch?v=Znsdg2NXOfQ","vid"],
-      ["Multiply & Divide Worksheet",D("19vmowHQjkmaGZ-D4hmK84-ugEdDIYE4R"),"doc"],
-      ["Answers",D("1AA4cWKRnuoVkFbi1nebq2cxiUusmhVil"),"ans"],
-      ["More Multiplying & Dividing",D("1A-5ZsyAOz_QxrcN6k23zQxBb_T1q-pWm"),"doc"],
-      ["Even More Practice (answers included)",D("1Ae_mSPO3XJtH-A9vXsD3pH_JERvgjaw6"),"doc"],
-      ["JensenMath: Multiplying & Dividing Worksheet",D("1wMBUhE0P5PbH0B5nfCAzb5O6u1Ruv21t"),"doc"],
-      ["Answers",D("1sMx9RTyvqWXTQ1L2GECGW-swx2HUZB11"),"ans"],
-    ]},
-    {d:20, iso:"2026-09-29", topic:"Adding & Subtracting Rational Expressions", num:"2.7",
-      note:D("1WF9YkAGvvwMwVKauJcaWzQzDz10H-FTU"),
-      ans:"", /* key: D("10SlQXpVxVsXiPdViOdBRZV5uQyQvxLRp") */ extras:[
-      ["Ms Havrot 2.7: Adding & Subtracting Rational Expressions","https://www.youtube.com/watch?v=TGdEY0DPmnI","vid"],
-      ["Adding Rational Expressions","https://www.youtube.com/watch?v=Wk8ZZhE9ZjI","vid"],
-      ["Subtracting Rational Expressions","https://www.youtube.com/watch?v=c-8xQyU0ch0","vid"],
-      ["Add & Subtract Worksheet (answers included)",D("1BMGiEEP3kWE-QUUFTvx602OPmioA9WD-"),"doc"],
-      ["JensenMath: Adding & Subtracting Worksheet",D("1dOCRkzseYiV3I_cujmbPsRWYuhlXOYGH"),"doc"],
-      ["Answers",D("1guhzQCUlG45rHEq7sj_SwqCrXm60ExNf"),"ans"],
-    ]},
-    {d:21, iso:"2026-09-30", flag:"quiz", covers:"Current Topics + Function Notation",
-      topic:"",
-       note:"", ans:"", extras:[
-      ["Order of Operations with Rational Expressions",D("1AzD-0XfsUG8NloThMnDJrNIOD-QIBNmG"),"doc"],
-      ["Answers",D("1WwmFDonBoze4TegiPoUW9kUVSMV6hANV"),"ans"],
-      ["Extra Practice (answers included)",D("1BfAiNvvv4h2i9jYehHXdm7HHfhtnWP-o"),"doc"],
-    ]},
-    {d:22, iso:"2026-10-01", topic:"Review", 
-      noteLabel:"Practice Test", ansLabel:"Answers", note:"", ans:"", extras:[
-      ["Ms Havrot: Chapter 2 Practice Test","https://www.youtube.com/watch?v=xz-uUAnH8Wk","vid"],
-      ["Review Questions",D("1CwCDD87KecF4N4PrKHVar_y8MyAMqTEk"),"doc"],
-      ["Answers",D("1DID_X4PiHBjTXL7MmK7vzCWc0sdG5YZT"),"ans"],
-      ["JensenMath: Rational Expressions Unit Review",D("113p5NHWfrg6DRo0pxPBoEqBBQPiZZbJ-"),"doc"],
-      ["Answers",D("1r3F9-xob0cZ9YuRB7_c0_o6gZ2qWhNQx"),"ans"],
-    ]},
-    {d:23, iso:"2026-10-05", flag:"test", covers:"Unit 2 + Solving Quadratics",
-      topic:"", extras:[]},
+  {name:"Algebraic Expressions, Radicals & Rational Functions", days:[
+    {
+      "d": 14,
+      "iso": "2026-09-21",
+      "topic": "Operations with Radicals",
+      "note": "https://drive.google.com/file/d/1FhmUKKhbYLkpX1UpBbOI4oSXK2SSLeN7/view",
+      "ans": "", /* key: D("1WfRDRcf8qTSD3WDLlBQjrspddgpIQ_Bc") */
+      "extras": [
+        [
+          "Unit 2 Prerequisite Skills (answers included)",
+          "https://drive.google.com/file/d/1gemQgxRklB0fPrQ0kG2d_N8T-ZLRP-wW/view",
+          "skills"
+        ],
+        [
+          "Polynomial Review (optional)",
+          "https://drive.google.com/file/d/1yp1psWtyLzOer2kV6zgv5N5dg-jpQgDo/view",
+          "doc"
+        ],
+        [
+          "Ms Havrot: Operations with Radicals",
+          "https://www.youtube.com/watch?v=bn0_s7Ug0UY",
+          "vid"
+        ],
+        [
+          "Simplifying Square Roots",
+          "https://www.youtube.com/watch?v=74iuGIaBgRc",
+          "vid"
+        ],
+        [
+          "Adding Radicals, Quick and Simple",
+          "https://www.youtube.com/watch?v=o9onBMWckDc",
+          "vid"
+        ],
+        [
+          "Operations with Radicals Worksheet",
+          "https://drive.google.com/file/d/17wzwWrpp3LLB8Tr0wW7yHVHvK_8NuqgM/view",
+          "doc"
+        ],
+        [
+          "JensenMath: Radicals Worksheet",
+          "https://drive.google.com/file/d/1WB7hModR5sU8SDJZlMh8l8S7_U4yHwOC/view",
+          "doc"
+        ],
+        [
+          "Answers",
+          "https://drive.google.com/file/d/1ZomLLGRyjfDMXiFjdc0mL2pKlaCWBWI9/view",
+          "ans"
+        ]
+      ],
+      "num": "2.1",
+      "noteLabel": "Sheet 2.1 · Notes & Practice"
+    },
+    {
+      "d": 15,
+      "iso": "2026-09-22",
+      "topic": "Factoring Complex & Mixed Polynomials",
+      "note": "https://drive.google.com/file/d/1-IdxYp6KOP-B2OfjyRb7B8SvUS8A0HLW/view",
+      "ans": "", /* key: D("18BbT74x5M3yyQ3h_yhUHuWl0gCY3ngwj") */
+      "extras": [
+        [
+          "Basic Factoring Review (optional)",
+          "https://drive.google.com/file/d/1h-zlXBBuHL45eO588zOUL1G6cYuLWRii/view",
+          "doc"
+        ],
+        [
+          "Ms Havrot: Common Factoring & Grouping",
+          "https://www.youtube.com/watch?v=a9zVcmKx-Lc",
+          "vid"
+        ],
+        [
+          "Ms Havrot: Simple Trinomials",
+          "https://www.youtube.com/watch?v=a_B_Fbck5l8",
+          "vid"
+        ],
+        [
+          "Khan: Taking Common Factors",
+          "https://www.khanacademy.org/gclassroom/math/algebra2/x2ec2f6f830c9fb89:poly-factor/x2ec2f6f830c9fb89:common-factor/a/taking-common-factors",
+          "vid"
+        ],
+        [
+          "Factoring Worksheet",
+          "https://drive.google.com/file/d/1QqmFJUPOjP8l8zZJEqO9PU6M-SNcXsNN/view",
+          "doc"
+        ],
+        [
+          "Ms Havrot: Complex Trinomials",
+          "https://www.youtube.com/watch?v=ZyVwwCxDxt0",
+          "vid"
+        ],
+        [
+          "Ms Havrot: Difference of Squares & Perfect Squares",
+          "https://www.youtube.com/watch?v=NVo_jE2LawY",
+          "vid"
+        ],
+        [
+          "Every Factoring Type, Worked",
+          "https://www.youtube.com/watch?v=blIh776gVsQ",
+          "vid"
+        ],
+        [
+          "Worksheet for the Video Above",
+          "https://drive.google.com/file/d/11wPHf6NJ0i8p5KgBgOhujANNeS-zQJIj/view",
+          "doc"
+        ],
+        [
+          "More Factoring Practice",
+          "https://drive.google.com/file/d/16wBxYMkSBnxSJ7isUZbQuxvfOxisBUyy/view",
+          "doc"
+        ]
+      ],
+      "num": "2.2",
+      "noteLabel": "Sheet 2.2 · Notes & Practice"
+    },
+    {
+      "d": 16,
+      "iso": "2026-09-23",
+      "topic": "Simplifying Rational Expressions",
+      "note": "https://drive.google.com/file/d/1SBvNw7eNT9NcuqnubM9HyMdhC8yvt2zH/view",
+      "ans": "", /* key: D("1Q3RlHBq-Y-TJi8u4ozhJ1dChaiW5R6qY") */
+      "extras": [
+        [
+          "Ms Havrot: Simplifying Rational Expressions",
+          "https://www.youtube.com/watch?v=V-HXjfE2SOg",
+          "vid"
+        ],
+        [
+          "Khan: Simplifying Rational Expressions",
+          "https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:rational/x2ec2f6f830c9fb89:cancel-common-factor/v/simplifying-rational-expressions-introduction",
+          "vid"
+        ],
+        [
+          "Simplify & State Restrictions",
+          "https://drive.google.com/file/d/19n3xokMaxMtq6kpZBkaUgVeeiK3wQWQ0/view",
+          "doc"
+        ],
+        [
+          "Answers",
+          "https://drive.google.com/file/d/1AoleyL3muRxdmbd2JeJ6L_GSTNtGQS3C/view",
+          "ans"
+        ],
+        [
+          "JensenMath: Simplifying Rational Expressions Worksheet",
+          "https://drive.google.com/file/d/15AFsmbrSRCM7_0lM4IjSE24I3Yki91O9/view",
+          "doc"
+        ],
+        [
+          "Answers",
+          "https://drive.google.com/file/d/1fbQbUmtVi4HzWQ0cwvwPyPyGf75OEr9Y/view",
+          "ans"
+        ]
+      ],
+      "num": "2.3",
+      "noteLabel": "Sheet 2.3 · Notes & Practice"
+    },
+    {
+      "d": 17,
+      "iso": "2026-09-24",
+      "topic": "Multiplying & Dividing Rational Expressions",
+      "note": "https://drive.google.com/file/d/1eC8nybUa_MxNJJNBs1Hiovpn2Q7SZ2mx/view",
+      "ans": "", /* key: D("18FDCj062GFTFuJqIMzz0bcAmI0fvz_UF") */
+      "extras": [
+        [
+          "Ms Havrot: Multiplying & Dividing Rational Expressions",
+          "https://www.youtube.com/watch?v=Znsdg2NXOfQ",
+          "vid"
+        ],
+        [
+          "Multiply & Divide Worksheet",
+          "https://drive.google.com/file/d/19vmowHQjkmaGZ-D4hmK84-ugEdDIYE4R/view",
+          "doc"
+        ],
+        [
+          "Answers",
+          "https://drive.google.com/file/d/1AA4cWKRnuoVkFbi1nebq2cxiUusmhVil/view",
+          "ans"
+        ],
+        [
+          "More Multiplying & Dividing",
+          "https://drive.google.com/file/d/1A-5ZsyAOz_QxrcN6k23zQxBb_T1q-pWm/view",
+          "doc"
+        ],
+        [
+          "Even More Practice (answers included)",
+          "https://drive.google.com/file/d/1Ae_mSPO3XJtH-A9vXsD3pH_JERvgjaw6/view",
+          "doc"
+        ],
+        [
+          "JensenMath: Multiplying & Dividing Worksheet",
+          "https://drive.google.com/file/d/1wMBUhE0P5PbH0B5nfCAzb5O6u1Ruv21t/view",
+          "doc"
+        ],
+        [
+          "Answers",
+          "https://drive.google.com/file/d/1sMx9RTyvqWXTQ1L2GECGW-swx2HUZB11/view",
+          "ans"
+        ]
+      ],
+      "num": "2.4",
+      "noteLabel": "Sheet 2.4 · Notes & Practice"
+    },
+    {
+      "d": 18,
+      "iso": "2026-09-25",
+      "topic": "Adding & Subtracting Rational Expressions (Part 1)",
+      "note": "https://drive.google.com/file/d/1WF9YkAGvvwMwVKauJcaWzQzDz10H-FTU/view",
+      "ans": "", /* key: D("10SlQXpVxVsXiPdViOdBRZV5uQyQvxLRp") */
+      "extras": [
+        [
+          "Ms Havrot: Adding & Subtracting Rational Expressions",
+          "https://www.youtube.com/watch?v=TGdEY0DPmnI",
+          "vid"
+        ],
+        [
+          "Adding Rational Expressions",
+          "https://www.youtube.com/watch?v=Wk8ZZhE9ZjI",
+          "vid"
+        ],
+        [
+          "Subtracting Rational Expressions",
+          "https://www.youtube.com/watch?v=c-8xQyU0ch0",
+          "vid"
+        ],
+        [
+          "Add & Subtract Worksheet (answers included)",
+          "https://drive.google.com/file/d/1BMGiEEP3kWE-QUUFTvx602OPmioA9WD-/view",
+          "doc"
+        ],
+        [
+          "JensenMath: Adding & Subtracting Worksheet",
+          "https://drive.google.com/file/d/1dOCRkzseYiV3I_cujmbPsRWYuhlXOYGH/view",
+          "doc"
+        ],
+        [
+          "Answers",
+          "https://drive.google.com/file/d/1guhzQCUlG45rHEq7sj_SwqCrXm60ExNf/view",
+          "ans"
+        ]
+      ],
+      "num": "2.5",
+      "noteLabel": "Sheet 2.5 · Notes & Practice"
+    },
+    {
+      "d": 19,
+      "iso": "2026-09-28",
+      "topic": "Adding & Subtracting Rational Expressions (Part 2)",
+      "note": "https://drive.google.com/file/d/1Fd-xq2miRxvQDU_jmtk2WmjHpA-mcM2O/view",
+      "ans": "", /* key: D("1if-Bd6yVnT4Anvt9wmqGB5XwiH22cu82") */
+      "extras": [
+        [
+          "Ms Havrot: Adding & Subtracting Rational Expressions",
+          "https://www.youtube.com/watch?v=TGdEY0DPmnI",
+          "vid"
+        ],
+        [
+          "Adding Rational Expressions",
+          "https://www.youtube.com/watch?v=Wk8ZZhE9ZjI",
+          "vid"
+        ],
+        [
+          "Subtracting Rational Expressions",
+          "https://www.youtube.com/watch?v=c-8xQyU0ch0",
+          "vid"
+        ],
+        [
+          "Add & Subtract Worksheet (answers included)",
+          "https://drive.google.com/file/d/1BMGiEEP3kWE-QUUFTvx602OPmioA9WD-/view",
+          "doc"
+        ],
+        [
+          "JensenMath: Adding & Subtracting Worksheet",
+          "https://drive.google.com/file/d/1dOCRkzseYiV3I_cujmbPsRWYuhlXOYGH/view",
+          "doc"
+        ],
+        [
+          "Answers",
+          "https://drive.google.com/file/d/1guhzQCUlG45rHEq7sj_SwqCrXm60ExNf/view",
+          "ans"
+        ]
+      ],
+      "num": "2.6",
+      "noteLabel": "Sheet 2.6 · Notes & Practice",
+      "flag": "quiz",
+      "covers": "25 minutes"
+    },
+    {
+      "d": 20,
+      "iso": "2026-09-29",
+      "topic": "BEDMAS with Rational Expressions & Work Period",
+      "note": "https://drive.google.com/file/d/1l36tcwlK6Cb37Yt3MAKWMRUM3tNkr_Gh/view",
+      "ans": "", /* key: D("1TfpLtTBB30SfynBg_8gvEw417acoi9xt") */
+      "extras": [
+        [
+          "Order of Operations with Rational Expressions",
+          "https://drive.google.com/file/d/1AzD-0XfsUG8NloThMnDJrNIOD-QIBNmG/view",
+          "doc"
+        ],
+        [
+          "Answers",
+          "https://drive.google.com/file/d/1WwmFDonBoze4TegiPoUW9kUVSMV6hANV/view",
+          "ans"
+        ],
+        [
+          "Extra Practice (answers included)",
+          "https://drive.google.com/file/d/1BfAiNvvv4h2i9jYehHXdm7HHfhtnWP-o/view",
+          "doc"
+        ]
+      ],
+      "num": "2.7",
+      "noteLabel": "Sheet 2.7 · Notes & Practice"
+    },
+    {
+      "d": 21,
+      "iso": "2026-09-30",
+      "topic": "Graphing Rational Expressions",
+      "note": "https://drive.google.com/file/d/1Zo8ueVEUrJuhNeVM734WOPG-ZTlS9oxd/view",
+      "ans": "", /* key: D("1txA1v5ToO8KS3ZLHV6Wbnn-5uRivcm6t") */
+      "extras": [
+        [
+          "Ms Havrot: There is a Hole in the Graph",
+          "https://www.youtube.com/watch?v=HG1CBlGMFuc",
+          "vid"
+        ]
+      ],
+      "num": "2.8",
+      "noteLabel": "Sheet 2.8 · Notes & Practice"
+    },
+    {
+      "d": 22,
+      "iso": "2026-10-01",
+      "topic": "Unit 2 Review",
+      "note": "https://drive.google.com/file/d/1v6eRnFTu7NBisPQbwTL7YXMF6waETfHQ/view",
+      "ans": "", /* key: D("1b-RrPEKibWzg6PZCzFUefARgD2GXH0vX") */
+      "extras": [
+        [
+          "Ms Havrot: Chapter 2 Practice Test",
+          "https://www.youtube.com/watch?v=xz-uUAnH8Wk",
+          "vid"
+        ],
+        [
+          "Review Questions",
+          "https://drive.google.com/file/d/1CwCDD87KecF4N4PrKHVar_y8MyAMqTEk/view",
+          "doc"
+        ],
+        [
+          "Answers",
+          "https://drive.google.com/file/d/1DID_X4PiHBjTXL7MmK7vzCWc0sdG5YZT/view",
+          "ans"
+        ],
+        [
+          "JensenMath: Rational Expressions Unit Review",
+          "https://drive.google.com/file/d/113p5NHWfrg6DRo0pxPBoEqBBQPiZZbJ-/view",
+          "doc"
+        ],
+        [
+          "Answers",
+          "https://drive.google.com/file/d/1r3F9-xob0cZ9YuRB7_c0_o6gZ2qWhNQx/view",
+          "ans"
+        ]
+      ],
+      "noteLabel": "Unit 2 Review Package",
+      "ansLabel": "Answers"
+    },
+    {
+      "d": 23,
+      "iso": "2026-10-05",
+      "flag": "test",
+      "covers": "Unit 2 + Solving Quadratics",
+      "topic": "",
+      "extras": []
+    },
   ]},
 
   /* ── UNIT 3 ─────────────────────────────────────────────── */
