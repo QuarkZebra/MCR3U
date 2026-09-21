@@ -170,7 +170,7 @@ const COURSE = {
       "iso": "2026-09-21",
       "topic": "Operations with Radicals",
       "note": "https://drive.google.com/file/d/1FhmUKKhbYLkpX1UpBbOI4oSXK2SSLeN7/view",
-      "ans": "", /* key: D("1WfRDRcf8qTSD3WDLlBQjrspddgpIQ_Bc") */
+      "ans": D("1WfRDRcf8qTSD3WDLlBQjrspddgpIQ_Bc"), /* key: D("1WfRDRcf8qTSD3WDLlBQjrspddgpIQ_Bc") */
       "extras": [
         [
           "Unit 2 Prerequisite Skills (answers included)",
