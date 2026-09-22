@@ -36,7 +36,7 @@
 
    To Save Time:
 
-   git add . && git commit -m "u1 practice quiz and key" && git push origin main
+   git add . && git commit -m "d15 key added" && git push origin main
    ═══════════════════════════════════════════════════════════ */
 
 const D = id => `https://drive.google.com/file/d/${id}/view`;
@@ -221,7 +221,7 @@ const COURSE = {
       "iso": "2026-09-22",
       "topic": "Factoring Complex & Mixed Polynomials",
       "note": "https://drive.google.com/file/d/1-IdxYp6KOP-B2OfjyRb7B8SvUS8A0HLW/view",
-      "ans": "", /* key: D("18BbT74x5M3yyQ3h_yhUHuWl0gCY3ngwj") */
+      "ans":D("18BbT74x5M3yyQ3h_yhUHuWl0gCY3ngwj"), /* key: D("18BbT74x5M3yyQ3h_yhUHuWl0gCY3ngwj") */
       "extras": [
         [
           "Basic Factoring Review (optional)",
