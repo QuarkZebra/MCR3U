@@ -282,7 +282,7 @@ const COURSE = {
       "iso": "2026-09-23",
       "topic": "Simplifying Rational Expressions",
       "note": "https://drive.google.com/file/d/1SBvNw7eNT9NcuqnubM9HyMdhC8yvt2zH/view",
-      "ans": "", /* key: D("1Q3RlHBq-Y-TJi8u4ozhJ1dChaiW5R6qY") */
+      "ans": D("1Q3RlHBq-Y-TJi8u4ozhJ1dChaiW5R6qY"), /* key: D("1Q3RlHBq-Y-TJi8u4ozhJ1dChaiW5R6qY") */
       "extras": [
         [
           "Ms Havrot: Simplifying Rational Expressions",
