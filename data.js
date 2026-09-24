@@ -323,7 +323,7 @@ const COURSE = {
       "iso": "2026-09-24",
       "topic": "Multiplying & Dividing Rational Expressions",
       "note": "https://drive.google.com/file/d/1eC8nybUa_MxNJJNBs1Hiovpn2Q7SZ2mx/view",
-      "ans": "", /* key: D("18FDCj062GFTFuJqIMzz0bcAmI0fvz_UF") */
+      "ans": D("18FDCj062GFTFuJqIMzz0bcAmI0fvz_UF"), /* key: D("18FDCj062GFTFuJqIMzz0bcAmI0fvz_UF") */
       "extras": [
         [
           "Ms Havrot: Multiplying & Dividing Rational Expressions",
