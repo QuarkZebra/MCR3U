@@ -369,7 +369,7 @@ const COURSE = {
       "iso": "2026-09-25",
       "topic": "Adding & Subtracting Rational Expressions (Part 1)",
       "note": "https://drive.google.com/file/d/1WF9YkAGvvwMwVKauJcaWzQzDz10H-FTU/view",
-      "ans": "", /* key: D("10SlQXpVxVsXiPdViOdBRZV5uQyQvxLRp") */
+      "ans": D("10SlQXpVxVsXiPdViOdBRZV5uQyQvxLRp"), /* key: D("10SlQXpVxVsXiPdViOdBRZV5uQyQvxLRp") */
       "extras": [
         [
           "Ms Havrot: Adding & Subtracting Rational Expressions",
