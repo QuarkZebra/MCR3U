@@ -453,7 +453,7 @@ const COURSE = {
       "iso": "2026-09-29",
       "topic": "BEDMAS with Rational Expressions & Work Period",
       "note": "https://drive.google.com/file/d/1l36tcwlK6Cb37Yt3MAKWMRUM3tNkr_Gh/view",
-      "ans": "", /* key: D("1TfpLtTBB30SfynBg_8gvEw417acoi9xt") */
+      "ans": D("1TfpLtTBB30SfynBg_8gvEw417acoi9xt"), /* key: D("1TfpLtTBB30SfynBg_8gvEw417acoi9xt") */
       "extras": [
         [
           "Order of Operations with Rational Expressions",
