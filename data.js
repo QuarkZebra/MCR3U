@@ -479,7 +479,7 @@ const COURSE = {
       "iso": "2026-09-30",
       "topic": "Graphing Rational Expressions",
       "note": "https://drive.google.com/file/d/1Zo8ueVEUrJuhNeVM734WOPG-ZTlS9oxd/view",
-      "ans": "", /* key: D("1txA1v5ToO8KS3ZLHV6Wbnn-5uRivcm6t") */
+      "ans": D("1txA1v5ToO8KS3ZLHV6Wbnn-5uRivcm6t"), /* key: D("1txA1v5ToO8KS3ZLHV6Wbnn-5uRivcm6t") */
       "extras": [
         [
           "Ms Havrot: There is a Hole in the Graph",
