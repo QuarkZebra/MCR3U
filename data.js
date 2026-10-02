@@ -466,8 +466,8 @@ const COURSE = {
           "ans"
         ],
         [
-          "Extra Practice (answers included)",
-          "https://drive.google.com/file/d/1BfAiNvvv4h2i9jYehHXdm7HHfhtnWP-o/view",
+          "Extra Practice (step-by-step solutions)",
+          D("1g67FUfGN0QAP9BmSoCAVEROtFD7nUlZ7"),
           "doc"
         ]
       ],
