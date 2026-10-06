@@ -540,7 +540,7 @@ const COURSE = {
   {name:"Quadratic Functions", days:[
     {d:24, iso:"2026-10-06", topic:"Properties of Quadratic Functions", num:"3.1",
       note:D("1GcFhLF7mfzFutD3VevfFcFZPCDXfIjED"),
-      ans:"", /* key: D("1NoyP-5JafrlV9q8LkWrYQcBtbjTd4PJl") */ extras:[
+      ans:D("1NoyP-5JafrlV9q8LkWrYQcBtbjTd4PJl"), /* key: D("1NoyP-5JafrlV9q8LkWrYQcBtbjTd4PJl") */ extras:[
       ["Unit 3 Prerequisite Skills (answers included)",D("1ezirQeeryJlb3S5mLTcovi4Y2QpneOgw"),"skills"],
       ["Ms Havrot 3.1: Properties of Quadratic Functions","https://www.youtube.com/watch?v=MOT2XGonThs","vid"],
       ["Ms Havrot 3.1: Homework Examples","https://www.youtube.com/watch?v=pvAfEvuikTM","vid"],
