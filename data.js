@@ -550,7 +550,7 @@ const COURSE = {
     {d:25, iso:"2026-10-07", topic:"Max/Min I: Completing the Square", num:"3.2",
       noteLabel:"Max/Min I Blank Note & Practice Problems",
       note:D("1HK-9OBuf6DsBtG5RX31HxsxlPEoHfzTH"),
-      ans:"", /* key: D("1CTpoyug75BFjRGNpoiCaV6xdY02ACB_J") */ extras:[
+      ans:D("1CTpoyug75BFjRGNpoiCaV6xdY02ACB_J"), /* key: D("1CTpoyug75BFjRGNpoiCaV6xdY02ACB_J") */ extras:[
       ["Ms Havrot 3.2: Max & Min Values, the Easiest Way","https://www.youtube.com/watch?v=7m3J7vmmD3o","vid"],
       ["Standard to Vertex Form Practice",D("13EysFDIUFt251ktqcsLzGxCd8E4nB7nz"),"doc"],
       ["How to Solve Quadratics (reference note)",D("1370rile9QT6u63jms7Brm9L1Edhqu-JM"),"doc"],
