@@ -560,7 +560,7 @@ const COURSE = {
     {d:26, iso:"2026-10-08", topic:"Max/Min II: Partial Factoring & Choosing a Method", num:"3.2",
       noteLabel:"Max/Min II Blank Note & Practice Problems",
       note:D("1-BD-OM_KRYaeDQaAWUN6KQjVIhTyY7zx"),
-      ans:"", /* key: D("1vzodBY8YKrRzsgO86C934KEJN3p3dEQ3") */ extras:[
+      ans:D("1vzodBY8YKrRzsgO86C934KEJN3p3dEQ3"), /* key: D("1vzodBY8YKrRzsgO86C934KEJN3p3dEQ3") */ extras:[
       ["Ms Havrot 3.2: Max & Min Values, the Easiest Way","https://www.youtube.com/watch?v=7m3J7vmmD3o","vid"],
       ["How to Solve Quadratics (reference note)",D("1370rile9QT6u63jms7Brm9L1Edhqu-JM"),"doc"],
     ]},
