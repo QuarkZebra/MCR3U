@@ -36,7 +36,7 @@
 
    To Save Time:
 
-   git add . && git commit -m "d22 unit review key" && git push origin main
+   git add . && git commit -m "u3 practice after quiz" && git push origin main
    ═══════════════════════════════════════════════════════════ */
 
 const D = id => `https://drive.google.com/file/d/${id}/view`;
@@ -323,9 +323,9 @@ const COURSE = {
     ]},
     {d:29, iso:"2026-10-14", flag:"quiz", covers:"Current Topics + Factoring",
       topic:"",
-      noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
-      ["Solving Equations Practice",D("1nAxo2PSpHTUkEmi0Yuto4i3rsbF6iJP8"),"doc"],
-      ["Answers",D("1gogaYEDKdB_ZZJjN4jJk4l9G2EcxpGU0"),"ans"],
+      noteLabel:"Practice", ansLabel:"Answers", 
+      note:D("1nAxo2PSpHTUkEmi0Yuto4i3rsbF6iJP8"), 
+      ans:"", /* key: D("1gogaYEDKdB_ZZJjN4jJk4l9G2EcxpGU0") */ extras:[
     ]},
     {d:30, iso:"2026-10-15", topic:"Families of Quadratic Functions", num:"3.6",
       note:D("1BqFevvF_iH4EHJ74reSfkF-0SK81ZvEp"),
