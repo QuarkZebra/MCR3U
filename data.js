@@ -326,6 +326,8 @@ const COURSE = {
       noteLabel:"Practice", ansLabel:"Answers", 
       note:D("1nAxo2PSpHTUkEmi0Yuto4i3rsbF6iJP8"), 
       ans:"", /* key: D("1gogaYEDKdB_ZZJjN4jJk4l9G2EcxpGU0") */ extras:[
+      ["Review: Radicals & Exponent Laws (on Test 3)",D("1p3qU7psslcSBbA7ZffT_6VGnOd5HQ-RA"),"doc"],
+      ["Answers",D("1TWL_yyiCwAGPlZLfOk4X-qd2rJ1pLIFW"),"ans"],
     ]},
     {d:30, iso:"2026-10-15", topic:"Families of Quadratic Functions", num:"3.6",
       note:D("1BqFevvF_iH4EHJ74reSfkF-0SK81ZvEp"),
