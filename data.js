@@ -304,7 +304,7 @@ const COURSE = {
     {d:27, iso:"2026-10-09", flag:"pquiz", covers:"Current Topics + Rational Expressions + Other Old Topic",
       topic:"Inverse of a Quadratic", num:"3.4",
       note:D("1WCtkSfdTdUAJ7ndtTTFe3oreiBkw9I_s"),
-      ans:"", /* key: D("1kRk65_YpM98tuqaa0nAxevu4ETJnTWdA") */ extras:[
+      ans:D("1kRk65_YpM98tuqaa0nAxevu4ETJnTWdA"), /* key: D("1kRk65_YpM98tuqaa0nAxevu4ETJnTWdA") */ extras:[
       ["Ms Havrot 3.3: Inverse of a Quadratic Function","https://www.youtube.com/watch?v=9ras8m0rNmY","vid"],
       ["Khan: Flipping & Shifting Radical Functions","https://www.khanacademy.org/math/algebra-home/alg-radical-eq-func/alg-graphs-of-radical-functions/v/flipping-shifting-radical-functions","vid"],
       ["Square Root Function Practice",D("1MJEsyIZUyOq1L6Y6yOrwHPDn9qciOTJh"),"doc"],
