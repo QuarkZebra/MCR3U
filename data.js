@@ -576,7 +576,7 @@ const COURSE = {
       ["Answers",D("13Y7ZOpE4FTmzFMwv-npfmuL6XeA1KzgN"),"ans"],
     ]},
     {d:28, iso:"2026-10-13",
-      topic:"Solving Quadratic Equations", num:"3.5",
+      topic:"Solving Quadratics & the Discriminant", num:"3.5",
       note:D("1mZonA8_Qjh2etiS0DxprxcPa6NDQGohf"),
       ans:"", /* key: D("1Fc98G0ZRBU2WBVVHSN5YPmobF7LAjOw8") */ extras:[
       ["Ms Havrot 3.5: Solving Quadratic Equations","https://www.youtube.com/watch?v=gFnXJaS93mY","vid"],
