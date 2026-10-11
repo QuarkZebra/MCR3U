@@ -351,7 +351,8 @@ const COURSE = {
       ["Extra Modelling Question",D("18tgNL0nXk_qFXyeNyHq4yaDw4HibmHu5"),"doc"],
       ["Answers",D("18u6p95YNoy5yr_h3NmPJblB2CZTLe66w"),"ans"],
     ]},
-    {d:33, iso:"2026-10-20", topic:"Review", note:"", ans:"", extras:[
+    {d:33, iso:"2026-10-20", topic:"Review",
+      noteLabel:"Practice Test", ansLabel:"Answers", note:D("1vJKXlLkFEhADUpaadr_1DPjDeODkT8yM"), ans:"", /* key: D("1LTuQgIFojaJk802fuNQTtCgXKPNsGlxX") */ extras:[
       ["Ms Havrot: Chapter 3 Practice Test (Part 1)","https://www.youtube.com/watch?v=Php2E7O9tAQ","vid"],
       ["Ms Havrot: Chapter 3 Practice Test (Part 2)","https://www.youtube.com/watch?v=XHgoHFdrp2k","vid"],
       ["JensenMath: Quadratics Unit Review",D("1y0dTdbIT-EJoYSFguwLSZEruKOOQj2ax"),"doc"],
@@ -435,7 +436,8 @@ const COURSE = {
       ["Ms Havrot: Chapter 4 Practice Test (Part A)","https://www.youtube.com/watch?v=ydSEGYXAD3s","vid"],
       ["More Graphs & Table of Values Practice",D("1iI86VKLlfMICXCVHyUf4LuErZT7c3SMZ"),"doc"],
     ]},
-    {d:43, iso:"2026-11-03", topic:"Review", note:"", ans:"", extras:[
+    {d:43, iso:"2026-11-03", topic:"Review",
+      noteLabel:"Practice Test", ansLabel:"Answers", note:D("1szeU8lZZNA6vErQ59f0zuupeLfIhfSFH"), ans:"", /* key: D("1LlGbt85NeAnPE7d_ek-xsxpvtRJHArJB") */ extras:[
       ["Ms Havrot: Chapter 4 Practice Test (Part B)","https://www.youtube.com/watch?v=hNfJdisuCaQ","vid"],
       ["Review Questions",D("1iHVFMs2eDE0w-e4U_vxM1yoODDl7wuMx"),"doc"],
       ["Answers",D("1i7mrSmWO20Ers4DjTypBjGM9Iszyr6-s"),"ans"],
@@ -540,7 +542,8 @@ const COURSE = {
       ["Answers",D("14arJWRhR5WsXbhaYvXNw9IvVRTTyN-x0"),"ans"],
     ]},
     {d:55, iso:"2026-11-19", topic:"Trig in Three Dimensions Practice", note:"", ans:"", extras:[]},
-    {d:56, iso:"2026-11-20", topic:"Review", note:"", ans:"", extras:[
+    {d:56, iso:"2026-11-20", topic:"Review",
+      noteLabel:"Practice Test", ansLabel:"Answers", note:D("1YmFyG15V15N-aG1H_FALpolYAlev6g0X"), ans:"", /* key: D("1WwRJD6OKt3k1w7aGrLCEkpkefnTEoxCc") */ extras:[
       ["Ms Havrot: Unit 5 Review & Practice Test","https://www.youtube.com/watch?v=-WxwPhTrcZQ","vid"],
       ["JensenMath: Trig Geometry Unit Review",D("1e2Yfwaqq8CdB-aGG1mA1RarEB0_YMXMt"),"doc"],
       ["Answers",D("1bUOX200fks4m3DeC3dmU-dlkUbKe1TDK"),"ans"],
@@ -624,7 +627,8 @@ const COURSE = {
       ["JensenMath: Trig Applications Worksheet 2",D("1mF_QuMU8CEMOyFf3CJJf37AXcqT2evMg"),"doc"],
       ["Answers",D("1_ue-5SDtC7Ibhz9PZCL6mms1OjkoEWzj"),"ans"],
     ]},
-    {d:68, iso:"2026-12-09", topic:"Review", note:"", ans:"", extras:[
+    {d:68, iso:"2026-12-09", topic:"Review",
+      noteLabel:"Practice Test", ansLabel:"Answers", note:D("18ohBKyhAnMsWkDRVbSolH26yTrAw-tT_"), ans:"", /* key: D("1aeGCmBw0K8wxfGORpJz9GznJVR6azOxP") */ extras:[
       ["Ms Havrot: Unit 6 Practice Test","https://www.youtube.com/watch?v=FUaJhcVd52o","vid"],
       ["JensenMath: Trig Functions Unit Review",D("1-_j8rmJXIIjAsNDAqK_5A_xed03M_no_"),"doc"],
       ["Answers",D("1FkyAkDFksxttmyI3zPEk-6sb_NJ9_ZEr"),"ans"],
@@ -729,7 +733,8 @@ const COURSE = {
       ["Khan: Word Problems on Compound Interest","https://www.khanacademy.org/math/algebra-2-fl-best/x727ff003d4fc3b92:exponential-functions/x727ff003d4fc3b92:compound-interest/e/word-problems-on-compound-interest","doc"],
       ["Khan: Convert Recursive & Explicit Forms","https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:constructing-arithmetic-sequences/e/explicit-and-recursive-formulas-of-arithmetic-sequences","doc"],
     ]},
-    {d:84, iso:"2027-01-14", topic:"Review", note:"", ans:"", extras:[
+    {d:84, iso:"2027-01-14", topic:"Review",
+      noteLabel:"Practice Test", ansLabel:"Answers", note:D("1WAeLWHTTRsYLKWdEIdEXVfYBihFUlMPM"), ans:"", /* key: D("1qQ32cnTPEm4Xvr9ZFN0X6ZctLWT75OZT") */ extras:[
       ["Ms Havrot: Functions 11 (full course playlist)","https://www.youtube.com/playlist?list=PLGinkJ_ZMO2HB1X2BhOiZE6xy99-zE-_b","vid"],
       ["JensenMath: Discrete Functions Unit Review",D("1xqNZggVu-J53CUDbkf7unqvMtKZDeb-G"),"doc"],
       ["Answers",D("12EFq4uelsxk2GsaUmAlfOxRqzWvqJJ5D"),"ans"],
