@@ -192,7 +192,6 @@ const COURSE = {
       ["Ms Havrot: Complex Trinomials","https://www.youtube.com/watch?v=ZyVwwCxDxt0","vid"],
       ["Ms Havrot: Difference of Squares & Perfect Squares","https://www.youtube.com/watch?v=NVo_jE2LawY","vid"],
       ["Every Factoring Type, Worked","https://www.youtube.com/watch?v=blIh776gVsQ","vid"],
-      ["Worksheet for the Video Above",D("11wPHf6NJ0i8p5KgBgOhujANNeS-zQJIj"),"doc"],
       ["More Factoring Practice",D("16wBxYMkSBnxSJ7isUZbQuxvfOxisBUyy"),"doc"],
     ]},
     {d:16, iso:"2026-09-23",
@@ -364,7 +363,7 @@ const COURSE = {
 
   /* ── UNIT 4 ─────────────────────────────────────────────── */
   {name:"Exponential Functions", days:[
-    {d:35, iso:"2026-10-22", topic:"Integer Exponents", num:"4.2",
+    {d:35, iso:"2026-10-22", topic:"Integer Exponents", num:"4.1",
       note:D("1debMv_rGlsySZMCJq2F5L-AGdEw2vgJo"),
       ans:"", /* key: D("1kVQlVBiVZ5Qf9awFBhM15hWiUsBYqYhT") */ extras:[
       ["Unit 4 Prerequisite Skills (answers included)",D("1Xtx248GDqRVTtbMYa0Q3qy-fTfwactUm"),"skills"],
@@ -375,7 +374,7 @@ const COURSE = {
       ["JensenMath: Exponent Rules Worksheet",D("1icHNp3iTPz0pukFtX3dL6_5hhNZL-nqU"),"doc"],
       ["Answers",D("1d4UAXb4V-zb5tgIx5HLHy_Dy9Mp8aFvw"),"ans"],
     ]},
-    {d:36, iso:"2026-10-23", topic:"Rational Exponents", num:"4.3",
+    {d:36, iso:"2026-10-23", topic:"Rational Exponents", num:"4.2",
       note:D("1mSVRt7DOKDPQqwATdmwwATKiD9sZ1-lO"),
       ans:"", /* key: D("1zr4WHpM8IIkfgJalxWHb9HLzPEsnI2rd") */ extras:[
       ["Ms Havrot 4.3: Rational Exponents","https://www.youtube.com/watch?v=R0lhsIEBC6k","vid"],
@@ -386,7 +385,7 @@ const COURSE = {
       ["JensenMath: Rational Exponents Worksheet",D("1ePJMFvVhAm5qSRhmnfgUVQD1qCO3R-cZ"),"doc"],
       ["Answers",D("1yWOf6bz6Oxj8tF3oJhFK0OOa3ELTIse0"),"ans"],
     ]},
-    {d:37, iso:"2026-10-26", topic:"Simplifying Expressions with Exponents", num:"4.4",
+    {d:37, iso:"2026-10-26", topic:"Simplifying Expressions with Exponents", num:"4.3",
       note:D("1lUxGr_jL-u8A1GgyktCtzrZnXClH7FCk"),
       ans:"", /* key: D("1H0P03PwhteSGjCq5IKqxdGY_vVbcb1zp") */ extras:[
       ["Ms Havrot 4.4: Simplifying Expressions with Exponents","https://www.youtube.com/watch?v=5xA4yb9HuvU","vid"],
@@ -395,7 +394,7 @@ const COURSE = {
       ["Answers",D("1hyWwmCQThFgAOUBk4B338ivEeBmKDE3s"),"ans"],
     ]},
     {d:38, iso:"2026-10-27", flag:"pquiz", covers:"Current Topics + Radicals + Other Old Topic",
-      topic:"Properties of Exponential Functions", num:"4.5",
+      topic:"Properties of Exponential Functions", num:"4.4",
       note:D("1jwNg2L39_9B8Q-dvTpMIt-VsOCz19iVq"),
       ans:"", /* key: D("1iRLeHh85YyGHQvbgSuItbhXbBZdt_nDN") */ extras:[
       ["Ms Havrot 4.5: Graphing Exponential Functions","https://www.youtube.com/watch?v=C0EsktjZIxE","vid"],
@@ -405,7 +404,7 @@ const COURSE = {
       ["JensenMath: Properties of Exponential Functions Worksheet",D("1KKN3lPnKTrQzmwX-T3frrPo2-SgGK2X0"),"doc"],
       ["Answers",D("1IhNv4rdQg5FjO3lYvRRKbdF6GAxod2FC"),"ans"],
     ]},
-    {d:39, iso:"2026-10-28", topic:"Transformations of Exponential Functions", num:"4.6",
+    {d:39, iso:"2026-10-28", topic:"Transformations of Exponential Functions", num:"4.5",
       note:D("1sISi9NWWo76FwiXG-aa5Fu4JWCZCIyes"),
       ans:"", /* key: D("1r1vTPJiULMHrXdctrm9yBDKNezT1rtYw") */ extras:[
       ["Ms Havrot 4.6: Transformations of Exponential Functions","https://www.youtube.com/watch?v=3hafG0rPiYg","vid"],
@@ -418,7 +417,7 @@ const COURSE = {
     {d:40, iso:"2026-10-29", flag:"pquiz", covers:"Current Topics + Solving Quadratics + Other Old Topic",
       topic:"Modelling Investigation",
       noteLabel:"Investigation Handout", note:"", ans:"", extras:[]},
-    {d:41, iso:"2026-10-30", topic:"Applications: Growth & Decay", num:"4.7",
+    {d:41, iso:"2026-10-30", topic:"Applications: Growth & Decay", num:"4.6",
       note:D("1Bltk9GFdpJMoE68tflyyxm0AbkI-JLfQ"),
       ans:"", /* key: D("1Ag-CTCxd7JZhg_LMG0NsZAKsYcwfVrna") */ extras:[
       ["Ms Havrot 4.7: Growth, Decay & Applications","https://www.youtube.com/watch?v=K4J1N1mx1ts","vid"],
