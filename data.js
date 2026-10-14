@@ -36,7 +36,7 @@
 
    To Save Time:
 
-   git add . && git commit -m "u3 practice after quiz" && git push origin main
+   git add . && git commit -m "solving quadratics key" && git push origin main
    ═══════════════════════════════════════════════════════════ */
 
 const D = id => `https://drive.google.com/file/d/${id}/view`;
@@ -314,7 +314,7 @@ const COURSE = {
     {d:28, iso:"2026-10-13",
       topic:"Solving Quadratics & the Discriminant", num:"3.5",
       note:D("1mZonA8_Qjh2etiS0DxprxcPa6NDQGohf"),
-      ans:"", /* key: D("1Fc98G0ZRBU2WBVVHSN5YPmobF7LAjOw8") */ extras:[
+      ans:D("1Fc98G0ZRBU2WBVVHSN5YPmobF7LAjOw8"), /* key: D("1Fc98G0ZRBU2WBVVHSN5YPmobF7LAjOw8") */ extras:[
       ["Ms Havrot 3.5: Solving Quadratic Equations","https://www.youtube.com/watch?v=gFnXJaS93mY","vid"],
       ["Where the Quadratic Formula Comes From","https://www.mathsisfun.com/algebra/quadratic-equation-derivation.html","doc"],
       ["JensenMath: Solving by Factoring Worksheet",D("1ikeR9ZuwzySkvSPdcYo90nJCt5NzzW0S"),"doc"],
