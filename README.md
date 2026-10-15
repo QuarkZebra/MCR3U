@@ -1,6 +1,6 @@
 # MCR3U — Functions
 
-Course website for MCR3U (2026–27). Live at **https://quarkzebra.github.io/MCR3U/**
+Course website for MCR3U (2026–27). Live at **https://mathbrown.com/mcr3u/** (the old https://quarkzebra.github.io/MCR3U/ address redirects there)
 
 ## Adding links during the semester
 
