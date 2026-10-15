@@ -330,7 +330,7 @@ const COURSE = {
     ]},
     {d:30, iso:"2026-10-15", topic:"Families of Quadratic Functions", num:"3.6",
       note:D("1BqFevvF_iH4EHJ74reSfkF-0SK81ZvEp"),
-      ans:"", /* key: D("16X0Vu7M7k8IPuw98otp0mKdL0K3wIlok") */ extras:[
+      ans:D("16X0Vu7M7k8IPuw98otp0mKdL0K3wIlok"), /* key: D("16X0Vu7M7k8IPuw98otp0mKdL0K3wIlok") */ extras:[
       ["Ms Havrot 3.7: Families of Quadratic Functions","https://www.youtube.com/watch?v=L5vpJ3jcWYc","vid"],
     ]},
     {d:31, iso:"2026-10-16", topic:"Linear–Quadratic Systems", num:"3.7",
