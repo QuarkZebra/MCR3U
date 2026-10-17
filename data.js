@@ -36,7 +36,7 @@
 
    To Save Time:
 
-   git add . && git commit -m "solving quadratics key" && git push origin main
+   git add . && git commit -m "3.7 key add" && git push origin main
    ═══════════════════════════════════════════════════════════ */
 
 const D = id => `https://drive.google.com/file/d/${id}/view`;
@@ -335,7 +335,7 @@ const COURSE = {
     ]},
     {d:31, iso:"2026-10-16", topic:"Linear–Quadratic Systems", num:"3.7",
       note:D("1uP90ryBN8O1Ebpiwq_ZWRLMcXUL0Opsz"),
-      ans:"", /* key: D("1QJlU5CfqAA9mff5l28IfxgFWFcDnrx8G") */ extras:[
+      ans:D("1QJlU5CfqAA9mff5l28IfxgFWFcDnrx8G"), /* key: D("1QJlU5CfqAA9mff5l28IfxgFWFcDnrx8G") */ extras:[
       ["Ms Havrot 3.8: Linear-Quadratic Systems","https://www.youtube.com/watch?v=1QuXn3hoRAU","vid"],
       ["Solving Linear Systems","https://www.youtube.com/watch?v=Ft2_QtXAnh8","vid"],
       ["JensenMath: Linear-Quadratic Systems Worksheet",D("1MkoIOvQqeNCJzT3JkCNBlesAKnvNJmA7"),"doc"],
